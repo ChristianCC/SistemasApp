@@ -1,0 +1,61 @@
+.RadTabStrip_skinApp {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadTabStrip_skinApp .rtsLevel1 {
+    border-color: #dddddd; }
+    .RadTabStrip_skinApp .rtsLevel1 .rtsLink {
+      border-color: transparent;
+      color: #337ab7; }
+    .RadTabStrip_skinApp .rtsLevel1 .rtsHovered .rtsLink {
+      border-color: #eeeeee;
+      color: #23527c;
+      background-color: #eeeeee; }
+    .RadTabStrip_skinApp .rtsLevel1 .rtsSelected .rtsLink {
+      border-color: #dddddd;
+      color: #333333;
+      background-color: #ffffff; }
+    .RadTabStrip_skinApp .rtsLevel1 .rtsFocused .rtsLink {
+      border-color: #66afe9;
+      box-shadow: inset 0 0 5px #66afe9; }
+  .RadTabStrip_skinApp .rtsLevel1 ~ .rtsLevel {
+    border-color: #dddddd;
+    color: #333333;
+    background-color: #ffffff; }
+    .RadTabStrip_skinApp .rtsLevel1 ~ .rtsLevel .rtsLink {
+      color: #337ab7; }
+    .RadTabStrip_skinApp .rtsLevel1 ~ .rtsLevel .rtsHovered .rtsLink {
+      color: #23527c; }
+    .RadTabStrip_skinApp .rtsLevel1 ~ .rtsLevel .rtsSelected .rtsLink {
+      color: #333333; }
+    .RadTabStrip_skinApp .rtsLevel1 ~ .rtsLevel .rtsFocused .rtsLink {
+      border-color: #c4c4c4;
+      box-shadow: inset 0 0 5px #c4c4c4; }
+  .RadTabStrip_skinApp .rtsGhostTab {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc;
+    border-radius: 4px; }
+
+.RadTabStrip.rtsTop .rtsLevel1 .rtsLink {
+  border-radius: 4px 4px 0 0; }
+
+.RadTabStrip.rtsTop .rtsLevel1 .rtsSelected .rtsLink {
+  border-bottom-color: transparent; }
+
+.RadTabStrip.rtsBottom .rtsLevel1 .rtsLink {
+  border-radius: 0 0 4px 4px; }
+
+.RadTabStrip.rtsBottom .rtsLevel1 .rtsSelected .rtsLink {
+  border-top-color: transparent; }
+
+.RadTabStrip.rtsLeft .rtsLevel1 .rtsLink {
+  border-radius: 4px 0 0 4px; }
+
+.RadTabStrip.rtsLeft .rtsLevel1 .rtsSelected .rtsLink {
+  border-right-color: transparent; }
+
+.RadTabStrip.rtsRight .rtsLevel1 .rtsLink {
+  border-radius: 0 4px 4px 0; }
+
+.RadTabStrip.rtsRight .rtsLevel1 .rtsSelected .rtsLink {
+  border-left-color: transparent; }

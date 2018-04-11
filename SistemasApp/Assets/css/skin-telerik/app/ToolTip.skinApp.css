@@ -1,0 +1,45 @@
+.RadToolTip_skinApp {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000; }
+  .RadToolTip_skinApp .rtTitleWrapper {
+    color: #ffffff; }
+  .RadToolTip_skinApp .rtClose {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .RadToolTip_skinApp .rtClose:hover {
+    border-color: #204d73;
+    color: #ffffff;
+    background-color: #286090;
+    box-shadow: none; }
+  .RadToolTip_skinApp .rtClose:active {
+    border-color: #122a3f;
+    color: #ffffff;
+    background-color: #286090; }
+  .RadToolTip_skinApp .rtCalloutTopRight,
+  .RadToolTip_skinApp .rtCalloutTopCenter,
+  .RadToolTip_skinApp .rtCalloutTopLeft {
+    border-bottom-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutTopRight:before,
+  .RadToolTip_skinApp .rtCalloutTopCenter:before,
+  .RadToolTip_skinApp .rtCalloutTopLeft:before {
+    border-bottom-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutMiddleRight {
+    border-left-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutMiddleRight:before {
+    border-left-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutMiddleLeft {
+    border-right-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutMiddleLeft:before {
+    border-right-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutBottomRight,
+  .RadToolTip_skinApp .rtCalloutBottomCenter,
+  .RadToolTip_skinApp .rtCalloutBottomLeft {
+    border-top-color: #000000; }
+  .RadToolTip_skinApp .rtCalloutBottomRight:before,
+  .RadToolTip_skinApp .rtCalloutBottomCenter:before,
+  .RadToolTip_skinApp .rtCalloutBottomLeft:before {
+    border-top-color: #000000; }
+  .RadToolTip_skinApp.rtLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading.gif")%>'); }

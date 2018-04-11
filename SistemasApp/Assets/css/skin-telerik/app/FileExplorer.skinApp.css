@@ -1,0 +1,53 @@
+.RadFileExplorer_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff; }
+  .RadFileExplorer_skinApp,
+  .RadFileExplorer_skinApp .rfeFilterTxt {
+    border-color: #dddddd; }
+  .RadFileExplorer_skinApp .rfeAddressBox {
+    background-color: #ffffff;
+    color: #555555;
+    border-color: #4081a7; }
+  .RadFileExplorer_skinApp .rfeLink {
+    color: #ffffff; }
+  .RadFileExplorer_skinApp .rfeLink:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadFileExplorer_skinApp .rfeSelectedLink,
+  .RadFileExplorer_skinApp .rfeSelectedLink:hover {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6; }
+  .RadFileExplorer_skinApp .rfeFilterContainer {
+    background-color: #f2f2f2; }
+  .RadFileExplorer_skinApp .rfeDropZone {
+    background-color: rgba(236, 236, 236, 0.8); }
+  .RadFileExplorer_skinApp .rfePageControlContainer {
+    border-color: #dddddd;
+    background-image: linear-gradient(); }
+  .RadFileExplorer_skinApp .rfeThumbnailView .rlvI .rfeFileCount span,
+  .RadFileExplorer_skinApp .rfePageControlContainer,
+  .RadFileExplorer_skinApp .rfeDropUploadInfoPanel {
+    background-color: #ffffff;
+    color: #333333; }
+  .RadFileExplorer_skinApp .rfePageControlContainer span {
+    color: #333333; }
+  .RadFileExplorer_skinApp .RadToolBar_skinApp .rtbItem + .rtbItem {
+    margin-left: -1px; }
+  .RadFileExplorer_skinApp .RadToolBar_skinApp .rtbButton {
+    border-radius: 0; }
+  .RadFileExplorer_skinApp .RadToolBar_skinApp .rtbGroupStart .rtbButton {
+    border-radius: 0.28571em 0 0 0.28571em; }
+  .RadFileExplorer_skinApp .RadToolBar_skinApp .rtbGroupEnd .rtbButton {
+    border-radius: 0 0.28571em 0.28571em 0; }
+  .RadFileExplorer_skinApp .RadSlider .rslHorizontal a.rslHandle {
+    margin-top: -1.2em; }
+
+.RadWindow_skinApp .rfeUploadInfoPanel {
+  background-color: #f2f2f2;
+  color: #333333;
+  border-color: #dddddd; }
+
+.rfeUploadContainer .RadUpload_skinApp .ruInputs {
+  height: 8.21429em; }

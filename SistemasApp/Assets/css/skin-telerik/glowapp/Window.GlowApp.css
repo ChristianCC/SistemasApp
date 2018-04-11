@@ -1,0 +1,106 @@
+.RadWindow_GlowApp {
+  border-color: #20282d;
+  color: #c1c7ca;
+  background-color: #242e33;
+  /* Base Overrides */
+  /* External content iframe styles */
+  /* Dialog styles */
+  /* Right to left support */ }
+  .RadWindow_GlowApp.rwRoundedCorner,
+  .RadWindow_GlowApp.rwCollapsed.rwRoundedCorner .rwTitleBar,
+  .RadWindow_GlowApp.rwMinimizedWindow.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.46154em; }
+  .RadWindow_GlowApp.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.46154em 0.46154em 0em 0em; }
+  .RadWindow_GlowApp .rwTitleBar {
+    background-image: linear-gradient(#414e55, #2b373d);
+    color: #c1c7ca; }
+  .RadWindow_GlowApp.rwCollapsed .rwTitleBar {
+    border-bottom-color: #151d21; }
+  .RadWindow_GlowApp .rwCommandButton:hover:before {
+    color: #ffa915;
+    text-shadow: 0 0 1px #ffa915; }
+  .RadWindow_GlowApp .rwContent {
+    border: 0; }
+  .RadWindow_GlowApp .rwStatusBar {
+    background-color: #2b373d;
+    border-color: transparent;
+    margin: 0.61538em -0.46154em 0em -0.46154em;
+    border-radius: 0em 0em 0.46154em 0.46154em; }
+  .RadWindow_GlowApp .rwStatusBar input {
+    color: #c1c7ca;
+    font-size: inherit;
+    font-family: inherit; }
+  .RadWindow_GlowApp.rwLoading .rwExternalContent {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading.gif")%>'); }
+  .RadWindow_GlowApp .rwContent.rwExternalContent {
+    border-top: 1px solid transparent; }
+  .RadWindow_GlowApp .rwLoading.rwStatusBar {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+  .RadWindow_GlowApp div.rwDialog {
+    margin: 0.38462em 0em 0em; }
+  .RadWindow_GlowApp .rwDialogButtons button {
+    padding: 0.15385em 0.46154em;
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c);
+    border-color: #1c262c; }
+  .RadWindow_GlowApp .rwDialogButtons button:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100);
+    box-shadow: inset 0 0 1px #1c262c; }
+  .RadWindow_GlowApp .rwDialogButtons button:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none;
+    box-shadow: inset 0 0 1px #1c262c; }
+  .RadWindow_GlowApp .rwPromptDialog button.rwOkBtn, .RadWindow_GlowApp .rwConfirmDialog button.rwOkBtn {
+    border-color: #dc9314;
+    color: #713600;
+    background-color: #dc9314;
+    background-image: linear-gradient(#ecaa37, #dc9314); }
+  .RadWindow_GlowApp .rwPromptDialog button.rwOkBtn:hover, .RadWindow_GlowApp .rwConfirmDialog button.rwOkBtn:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadWindow_GlowApp .rwPromptDialog button.rwOkBtn:active, .RadWindow_GlowApp .rwConfirmDialog button.rwOkBtn:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadWindow_GlowApp .rwPromptInput {
+    border-color: #1c262c;
+    color: #fff;
+    background-color: #1c262c;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif; }
+  .RadWindow_GlowApp .rwPromptInput:hover {
+    border-color: #cd8100;
+    color: #fff;
+    background-color: #1c262c; }
+  .RadWindow_GlowApp .rwPromptInput:active,
+  .RadWindow_GlowApp .rwPromptInput:focus {
+    border-color: #cd8100;
+    color: #fff;
+    background-color: #1c262c; }
+  .RadWindow_GlowApp .rwPromptInput:disabled {
+    border-color: #474f53;
+    color: #677277;
+    background-color: #1c262c; }
+  .RadWindow_GlowApp div.rwAlertDialog {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.Common.ModalDialogAlertDark.gif")%>'); }
+  .RadWindow_GlowApp div.rwConfirmDialog {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.Common.ModalDialogConfirmDark.gif")%>'); }
+  .RadWindow_GlowApp .rwIcon {
+    margin: -0.53846em 0em 0em; }
+  .RadWindow_GlowApp.rwMinimizedWindow .rwCommands {
+    right: 0.38462em; }
+  .RadWindow_GlowApp.rwMinimizedWindow .rwCommands .rwListItem {
+    margin-left: 0;
+    margin-right: 0; }

@@ -1,0 +1,136 @@
+.RadToolBar_GlowApp {
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #2e3b43;
+  background-image: linear-gradient(#44525b, #2e3b43); }
+  .RadToolBar_GlowApp .rtbSeparator {
+    border-color: rgba(28, 38, 44, 0.9) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(28, 38, 44, 0.9); }
+  .RadToolBar_GlowApp .rtbButton {
+    border-radius: 3px; }
+  .RadToolBar_GlowApp .rtbMore {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #2e3b43;
+    background-image: linear-gradient(#44525b, #2e3b43); }
+  .RadToolBar_GlowApp .rtbFocused .rtbButton,
+  .RadToolBar_GlowApp .rtbFocused.rtbMore {
+    border-color: rgba(205, 129, 0, 0.5);
+    box-shadow: inset 0 0 0.3em rgba(205, 129, 0, 0.5); }
+  .RadToolBar_GlowApp .rtbHovered .rtbButton:not(.rtbSplitButton) {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadToolBar_GlowApp .rtbHovered .rtbSplitButton,
+  .RadToolBar_GlowApp .rtbHovered .rtbArrow {
+    border-color: #cd8100; }
+  .RadToolBar_GlowApp .rtbSplitButton .rtbHovered.rtbSplBtnActivator,
+  .RadToolBar_GlowApp .rtbSplitButton .rtbHovered.rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadToolBar_GlowApp .rtbChecked .rtbButton,
+  .RadToolBar_GlowApp .rtbExpanded .rtbButton,
+  .RadToolBar_GlowApp .rtbExpanded .rtbButton.rtbMenuButton, .RadToolBar_GlowApp .rtbExpanded.rtbMore {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadToolBar_GlowApp .rtbExpanded .rtbButton.rtbSplitButton .rtbSplBtnActivator,
+  .RadToolBar_GlowApp .rtbExpanded .rtbButton.rtbSplitButton .rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadToolBar_GlowApp .rtbPressed .rtbButton:not(.rtbSplitButton) {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadToolBar_GlowApp .rtbPressed .rtbSplitButton,
+  .RadToolBar_GlowApp .rtbPressed .rtbArrow {
+    border-color: #cd8100; }
+  .RadToolBar_GlowApp .rtbSplitButton .rtbPressed.rtbSplBtnActivator,
+  .RadToolBar_GlowApp .rtbSplitButton .rtbPressed.rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+
+.rtbPopup_GlowApp {
+  border-color: #20282d;
+  color: #c1c7ca;
+  background-color: #242e33; }
+  .rtbPopup_GlowApp .rtbMenu,
+  .rtbPopup_GlowApp .rtbUL {
+    padding: 0; }
+  .rtbPopup_GlowApp .rtbSeparator {
+    border-color: #0f1315 #394851 #394851 #0f1315; }
+  .rtbPopup_GlowApp .rtbFocused > .rtbLink {
+    border-color: rgba(255, 169, 21, 0.5);
+    box-shadow: inset 0 0 0.3em rgba(255, 169, 21, 0.5); }
+  .rtbPopup_GlowApp .rtbFocused > .rtbInner {
+    border-color: rgba(205, 129, 0, 0.5);
+    box-shadow: inset 0 0 0.3em rgba(205, 129, 0, 0.5); }
+    .rtbPopup_GlowApp .rtbFocused > .rtbInner .rtbArrow {
+      border-left-color: rgba(205, 129, 0, 0.5); }
+  .rtbPopup_GlowApp .rtbHovered > .rtbLink {
+    border-color: #4d5c65;
+    color: #ffffff;
+    background-color: #4d5c65; }
+  .rtbPopup_GlowApp .rtbHovered:not(.rtbSplitItem) > .rtbInner {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .rtbPopup_GlowApp .rtbHovered.rtbSplitItem > .rtbInner,
+  .rtbPopup_GlowApp .rtbHovered > .rtbInner .rtbArrow {
+    border-color: #cd8100; }
+  .rtbPopup_GlowApp .rtbSplitItem .rtbHovered.rtbSplBtnActivator,
+  .rtbPopup_GlowApp .rtbSplitItem .rtbHovered.rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .rtbPopup_GlowApp .rtbSelected > .rtbLink {
+    border-color: #ffa915;
+    color: #000000;
+    background-color: #ffa915; }
+  .rtbPopup_GlowApp .rtbSelected > .rtbInner,
+  .rtbPopup_GlowApp .rtbChecked > .rtbInner,
+  .rtbPopup_GlowApp .rtbExpanded > .rtbInner,
+  .rtbPopup_GlowApp .rtbExpanded > .rtbInner.rtbButton {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+    .rtbPopup_GlowApp .rtbSelected > .rtbInner .rtbArrow,
+    .rtbPopup_GlowApp .rtbChecked > .rtbInner .rtbArrow,
+    .rtbPopup_GlowApp .rtbExpanded > .rtbInner .rtbArrow,
+    .rtbPopup_GlowApp .rtbExpanded > .rtbInner.rtbButton .rtbArrow {
+      border-left-color: #cd8100; }
+  .rtbPopup_GlowApp .rtbExpanded.rtbSplitItem .rtbInner .rtbSplBtnActivator,
+  .rtbPopup_GlowApp .rtbExpanded.rtbSplitItem .rtbInner .rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .rtbPopup_GlowApp .rtbPressed:not(.rtbSplitItem) > .rtbInner {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .rtbPopup_GlowApp .rtbExpanded .rtbButton.rtbMenuButton, .rtbPopup_GlowApp .rtbPressed.rtbSplitItem > .rtbInner,
+  .rtbPopup_GlowApp .rtbPressed > .rtbInner .rtbArrow {
+    border-color: #cd8100; }
+  .rtbPopup_GlowApp .rtbSplitItem .rtbPressed.rtbSplBtnActivator,
+  .rtbPopup_GlowApp .rtbSplitItem .rtbPressed.rtbArrow {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .rtbPopup_GlowApp .rtbMenu:before {
+    display: none; }
+  .rtbPopup_GlowApp.rtbShadows {
+    box-shadow: 3px 3px 3px #20282d; }

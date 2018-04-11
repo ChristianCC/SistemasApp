@@ -1,0 +1,33 @@
+﻿body {
+}
+
+.tarjeta 
+{
+    border:  ridge; 
+    min-height: 150px;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #ff6a00;
+}
+
+.Texte
+{
+    border: 0;
+    border-bottom: solid 1px #000;
+   /* outline: none;*/
+   padding-left:10px;
+}
+
+.rbl input[type="checkbox"]
+{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.TbMultil
+{
+    overflow: hidden;
+    width: 100%;
+}

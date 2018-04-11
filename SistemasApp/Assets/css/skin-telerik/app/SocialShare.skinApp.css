@@ -1,0 +1,17 @@
+.RadSocialShare_skinApp {
+  background-color: #3c8dbc;
+  color: #333333;
+  border-color: #dddddd;
+  padding: 0.42857em 0.85714em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadSocialShare_skinApp .sshLinkItem {
+    color: #000000; }
+  .RadSocialShare_skinApp .sshLinkItem:hover {
+    color: #337cb7; }
+
+.RadComboBoxDropDown_skinApp .rcbItem .sshLinkItem {
+  color: #000000; }
+
+.RadComboBoxDropDown_skinApp .rcbHovered .sshLinkItem {
+  color: #337cb7; }

@@ -1,0 +1,17 @@
+.RadImageGallery_GlowApp {
+  line-height: 14/20; }
+  .RadImageGallery_GlowApp .rigProgressBar div {
+    background-color: #ffa915; }
+  .RadImageGallery_GlowApp .rigPager {
+    background-color: #2b373d;
+    color: #c1c7ca; }
+    .RadImageGallery_GlowApp .rigPager a {
+      color: #c1c7ca; }
+    .RadImageGallery_GlowApp .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_GlowApp .rigToolbar .rigActionButton {
+    color: #e2e8eb; }
+    .RadImageGallery_GlowApp .rigToolbar .rigActionButton:hover {
+      color: #ffa915; }

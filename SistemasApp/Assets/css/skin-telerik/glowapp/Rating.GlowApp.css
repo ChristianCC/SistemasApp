@@ -1,0 +1,23 @@
+.RadRating_GlowApp a:before,
+.RadRating_GlowApp a:hover:before {
+  color: #525f66; }
+
+.RadRating_GlowApp .rrtOver span:before,
+.RadRating_GlowApp a:hover .rrtPartComplement:before,
+.RadRating_GlowApp .rrtVertical .rrtSelected.rrtOver a:before,
+.RadRating_GlowApp .rrtSelected a .rrtPartSelected:before,
+.RadRating_GlowApp .rrtSelected.rrtOver a:before {
+  color: #525f66; }
+
+.RadRating_GlowApp .rrtSelected span:before {
+  color: #e69d1f; }
+
+.RadRating_GlowApp .rrtSelected .rrtPart:before,
+.RadRating_GlowApp .rrtSelected.rrtOver span:before {
+  color: #c06b00; }
+
+.RadRating_GlowApp .rrtReversed .rrtPart:before {
+  color: #525f66; }
+
+.RadRating_GlowApp .rrtReversed .rrtSelected .rrtPartComplement:before {
+  color: #c06b00; }

@@ -1,0 +1,133 @@
+.RadSlider_GlowApp {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .RadSlider_GlowApp.rslDecreaseHandle .rslHorizontal {
+    padding-left: 2.2em; }
+  .RadSlider_GlowApp a.rslHandle {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    background-image: linear-gradient(transparent, transparent);
+    border-color: transparent; }
+  .RadSlider_GlowApp a.rslHandle:before {
+    line-height: 1;
+    color: #e2e8eb; }
+  .RadSlider_GlowApp a.rslHandle:hover:before {
+    color: #ffa915;
+    text-shadow: 0 0 0.3em #ffa915; }
+  .RadSlider_GlowApp div.rslHorizontal a.rslDecrease:before {
+    content: "\E003"; }
+  .RadSlider_GlowApp div.rslHorizontal a.rslIncrease:before {
+    content: "\E000 "; }
+  .RadSlider_GlowApp div.rslVertical a.rslDecrease:before {
+    content: "\E001"; }
+  .RadSlider_GlowApp div.rslVertical a.rslIncrease:before {
+    content: "\E002 "; }
+  .RadSlider_GlowApp div.rslHorizontal a.rslHandle:before {
+    margin: -0.74em 0 0 -0.5em; }
+  .RadSlider_GlowApp div.rslHorizontal.rslTop a.rslHandle:before {
+    margin: -0.69em 0 0 -0.5em; }
+  .RadSlider_GlowApp div.rslHorizontal div.rslTrack {
+    background-image: linear-gradient(#30414b, #1c262c);
+    border-color: #1c262c;
+    height: 0.92308em !important;
+    line-height: 0.92308em;
+    margin: -0.5em 0em 0em; }
+  .RadSlider_GlowApp div.rslHorizontal div.rslSelectedregion {
+    background-color: #ffa915;
+    background-image: linear-gradient(#ecaa37, #dc9314);
+    line-height: 0.61538em;
+    height: .75em; }
+  .RadSlider_GlowApp div.rslHorizontal a.rslDraghandle {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c);
+    box-shadow: 0 2px 2px #192227;
+    width: 1.15385em;
+    height: 1.15385em;
+    border-radius: 45px;
+    top: 0.30769em !important;
+    margin-top: -0.53846em; }
+  .RadSlider_GlowApp div.rslHorizontal a.rslDraghandle:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadSlider_GlowApp div.rslHorizontal a.rslDraghandle:active,
+  .RadSlider_GlowApp div.rslHorizontal a.rslDraghandle:focus {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadSlider_GlowApp div.rslHorizontal .rslItem {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.ItemHorizontalBgr.png")%>'); }
+  .RadSlider_GlowApp div.rslHorizontal.rslBottom a.rslHandle {
+    bottom: -0.53846em; }
+  .RadSlider_GlowApp div.rslHorizontal li.rslItem span {
+    display: inline-block; }
+  .RadSlider_GlowApp div.rslHorizontal.rslMiddle a.rslHandle {
+    margin-top: -.55em; }
+  .RadSlider_GlowApp div.rslVertical a.rslHandle {
+    margin-left: -1em !important; }
+  .RadSlider_GlowApp div.rslVertical a.rslHandle:before {
+    margin: -0.5em 0 0 -0.4em; }
+  .RadSlider_GlowApp div.rslVertical.rslRight a.rslHandle {
+    margin-right: -0.65em; }
+  .RadSlider_GlowApp div.rslVertical div.rslTrack {
+    width: 1em !important;
+    background-image: linear-gradient(to left, #30414b, #1c262c);
+    border-color: #1c262c; }
+  .RadSlider_GlowApp div.rslVertical .rslSelectedregion {
+    width: 0.92308em;
+    background-color: #ffa915;
+    background-image: linear-gradient(to left, #ecaa37, #dc9314); }
+  .RadSlider_GlowApp div.rslVertical a.rslDraghandle {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c);
+    box-shadow: 0 2px 2px #192227;
+    width: 1.15385em;
+    height: 1.15385em;
+    border-radius: 45px;
+    left: 0.5em !important; }
+  .RadSlider_GlowApp div.rslVertical a.rslDraghandle:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadSlider_GlowApp div.rslVertical a.rslDraghandle:active,
+  .RadSlider_GlowApp div.rslVertical a.rslDraghandle:focus {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadSlider_GlowApp div.rslVertical .rslItem {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.ItemVerticalBgr.png")%>'); }
+  .RadSlider_GlowApp div.rslVertical li.rslItem span {
+    padding: 0.07692em 0.23077em; }
+  .RadSlider_GlowApp .rslItemsWrapper .rslItem,
+  .RadSlider_GlowApp .rslItemsWrapper .rslLargeTick span,
+  .RadSlider_GlowApp .rslItemsWrapper .rslItemSelected {
+    color: #e2e8eb; }
+  .RadSlider_GlowApp .rslTop .rslSmallTick,
+  .RadSlider_GlowApp .rslBottom .rslSmallTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.SmallChangeHorizontal.png")%>'); }
+  .RadSlider_GlowApp .rslTop .rslLargeTick,
+  .RadSlider_GlowApp .rslBottom .rslLargeTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.LargeChangeHorizontal.png")%>'); }
+  .RadSlider_GlowApp .rslLeft .rslSmallTick,
+  .RadSlider_GlowApp .rslRight .rslSmallTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.SmallChangeVertical.png")%>'); }
+  .RadSlider_GlowApp .rslLeft .rslLargeTick,
+  .RadSlider_GlowApp .rslRight .rslLargeTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.LargelChangeVertical.png")%>'); }
+  .RadSlider_GlowApp .rslMiddle .rslSmallTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.SmallChangeMiddleHorizontal.png")%>'); }
+  .RadSlider_GlowApp .rslLargeTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.LargeChangeMiddleHorizontal.png")%>'); }
+  .RadSlider_GlowApp .rslCenter .rslSmallTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.SmallChangeCenterVertical.png")%>'); }
+  .RadSlider_GlowApp .rslCenter .rslLargeTick {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Slider.LargelChangeCenterVertical.png")%>'); }

@@ -1,0 +1,39 @@
+.RadTreeView_skinApp {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadTreeView_skinApp .rtImg {
+    position: relative;
+    margin: 0 -20px 0 7px;
+    zoom: 1; }
+  .RadTreeView_skinApp .rtIn {
+    margin: 2px 0;
+    padding: 6px;
+    border-radius: 4px; }
+  .RadTreeView_skinApp .rtImg + .rtIn {
+    padding-left: 25px; }
+  .RadTreeView_skinApp .rtHover .rtIn {
+    border-color: #e1e1e1;
+    color: #000000;
+    background-color: #eeeeee; }
+  .RadTreeView_skinApp .rtSelected .rtIn {
+    border-color: #285f8f;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .RadTreeView_skinApp .rtChecked,
+  .RadTreeView_skinApp .rtUnchecked,
+  .RadTreeView_skinApp .rtIndeterminate {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.radFormToggleSprite.png")%>'); }
+  .RadTreeView_skinApp .rtLoadingIcon {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }
+  .RadTreeView_skinApp .rtPlus,
+  .RadTreeView_skinApp .rtMinus {
+    margin-top: 1px; }
+  .RadTreeView_skinApp .rtPlusHover,
+  .RadTreeView_skinApp .rtMinusHover {
+    color: #337cb7; }
+  .RadTreeView_skinApp .rtLines .rtTop:before,
+  .RadTreeView_skinApp .rtLines .rtMid:before,
+  .RadTreeView_skinApp .rtLines .rtBot:before {
+    top: 8px; }
+  .RadTreeView_skinApp .rtLines .rtLast:before {
+    padding-top: 8px; }

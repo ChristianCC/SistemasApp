@@ -1,0 +1,20 @@
+.RadRating_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadRating_skinApp a:before,
+  .RadRating_skinApp a:hover:before {
+    color: #c4c4c4; }
+  .RadRating_skinApp .rrtOver span:before,
+  .RadRating_skinApp a:hover .rrtPartComplement:before,
+  .RadRating_skinApp .rrtVertical .rrtSelected.rrtOver a:before,
+  .RadRating_skinApp .rrtSelected a .rrtPartSelected:before,
+  .RadRating_skinApp .rrtSelected.rrtOver a:before {
+    color: #adadad; }
+  .RadRating_skinApp .rrtSelected span:before {
+    color: #428bca; }
+  .RadRating_skinApp .rrtSelected .rrtPart:before,
+  .RadRating_skinApp .rrtSelected.rrtOver span:before {
+    color: #3071a9; }
+  .RadRating_skinApp .rrtReversed .rrtPart:before {
+    color: #adadad; }
+  .RadRating_skinApp .rrtReversed .rrtSelected .rrtPartComplement:before {
+    color: #3071a9; }

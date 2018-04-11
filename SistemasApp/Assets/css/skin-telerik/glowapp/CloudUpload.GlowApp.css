@@ -1,0 +1,66 @@
+.RadCloudUpload_GlowApp .rcuButton {
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c);
+  border-radius: 3px; }
+
+.RadCloudUpload_GlowApp .rcuInfoPanel {
+  border-color: #151d21; }
+
+.RadCloudUpload_GlowApp .rcuHeader {
+  border-color: #273237;
+  color: #c1c7ca;
+  background-color: #2b373d;
+  background-image: linear-gradient(#414e55, #2b373d); }
+
+.RadCloudUpload_GlowApp .rcuBody {
+  border-color: #151d21;
+  background-color: #192227; }
+
+.RadCloudUpload_GlowApp .rcuFileList {
+  border-color: #1c2327;
+  color: #e2e8eb;
+  background-color: #35434b; }
+
+.RadCloudUpload_GlowApp .rcuProgressIcon {
+  background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+
+.RadCloudUpload_GlowApp .rcuProgressBar {
+  border-color: #687379;
+  background-color: #35434b; }
+
+.RadCloudUpload_GlowApp .rcuProgress {
+  border-color: #2e2e2e;
+  background-color: #ffa915; }
+
+.RadCloudUpload_GlowApp .rcuLIUploading .rcuStatusIcon:before {
+  background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+
+.RadCloudUpload_GlowApp .rcuDropZone {
+  color: #c1c7ca;
+  border-color: #151d21;
+  background-color: rgba(25, 34, 39, 0.8); }
+
+.RadCloudUpload_GlowApp .rcuHovered.rcuButton {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #cd8100;
+  background-image: linear-gradient(#ffa201, #cd8100); }
+
+.RadCloudUpload_GlowApp .rcuButtons .rcuHovered {
+  color: #ffa915;
+  background: transparent; }
+
+.RadCloudUpload_GlowApp .rcuButton.rcuPressed {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #ffa915;
+  background-image: none; }
+
+.rcuToolTip_GlowApp {
+  border-color: #1c2327;
+  color: #e2e8eb;
+  background-color: #35434b; }
+  .rcuToolTip_GlowApp:before {
+    color: #35434b; }

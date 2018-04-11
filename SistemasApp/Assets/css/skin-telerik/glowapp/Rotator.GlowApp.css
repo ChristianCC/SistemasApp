@@ -1,0 +1,26 @@
+.RadRotator_GlowApp {
+  /* When LoadOnDemand */ }
+  .RadRotator_GlowApp .rrClipRegion {
+    border-color: #1c2327;
+    color: #e2e8eb;
+    background-color: #35434b; }
+  .RadRotator_GlowApp .rrButton,
+  .RadRotator_GlowApp a.rrButton.rrButtonDisabled {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c); }
+  .RadRotator_GlowApp .rrButtonhover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadRotator_GlowApp .rrButton:focus {
+    box-shadow: inset 0 0 0.3em rgba(205, 129, 0, 0.5); }
+  .RadRotator_GlowApp .rrButton:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadRotator_GlowApp .rrLoadingSign {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }

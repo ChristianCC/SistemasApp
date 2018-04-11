@@ -1,0 +1,36 @@
+.RadProgressBar_GlowApp {
+  color: #c1c7ca;
+  background-color: #35434b;
+  background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.03));
+  /* Vertical */ }
+  .RadProgressBar_GlowApp.rpbClassic {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .RadProgressBar_GlowApp > .rpbLabelWrapper {
+    border-color: #687379; }
+  .RadProgressBar_GlowApp .rpbStateSelected,
+  .RadProgressBar_GlowApp .rpbStateSelected:hover,
+  .RadProgressBar_GlowApp .rpbStateSelected:link,
+  .RadProgressBar_GlowApp .rpbStateSelected:visited {
+    background-color: #ffa915;
+    color: #2e2e2e;
+    background-image: none, linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+  .RadProgressBar_GlowApp .rpbChunk {
+    border-color: #687379; }
+  .RadProgressBar_GlowApp .rpbChunk.rpbStateDefault {
+    background-color: #35434b; }
+  .RadProgressBar_GlowApp .rpbStateSelected,
+  .RadProgressBar_GlowApp .rpbStateSelected:hover,
+  .RadProgressBar_GlowApp .rpbStateSelected:link,
+  .RadProgressBar_GlowApp .rpbStateSelected:visited,
+  .RadProgressBar_GlowApp .rpbChunk.rpbStateSelected {
+    border-color: #ffa915; }
+  .RadProgressBar_GlowApp.rpbVertical {
+    background-image: none, linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.03)); }
+  .RadProgressBar_GlowApp.rpbVertical .rpbStateSelected,
+  .RadProgressBar_GlowApp.rpbVertical .rpbStateSelected:hover,
+  .RadProgressBar_GlowApp.rpbVertical .rpbStateSelected:link,
+  .RadProgressBar_GlowApp.rpbVertical .rpbStateSelected:visited {
+    background-image: none, linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+  .RadProgressBar_GlowApp.rpbIndeterminate {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.radIndeterminate.gif")%>'); }

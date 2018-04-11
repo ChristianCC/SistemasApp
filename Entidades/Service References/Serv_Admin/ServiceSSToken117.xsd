@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" />
+  <xs:complexType name="ArrayOfVMModulo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VMModulo" nillable="true" type="tns:VMModulo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVMModulo" nillable="true" type="tns:ArrayOfVMModulo" />
+  <xs:complexType name="VMModulo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DbConexion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdModulo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSistema" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="Items" nillable="true" type="q1:ArrayOfVMItemModulo" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrlDestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrlIcono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VMModulo" nillable="true" type="tns:VMModulo" />
+</xs:schema>

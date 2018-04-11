@@ -1,0 +1,66 @@
+.RadRotator_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* When LoadOnDemand */ }
+  .RadRotator_skinApp .rrClipRegion {
+    border-color: #dddddd;
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 0.28571em; }
+  .RadRotator_skinApp a.rrButton {
+    padding: 6px;
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce; }
+  .RadRotator_skinApp a.rrButtonUp {
+    top: 0.07143em;
+    border-radius: 0.28571em 0.28571em 0em 0em; }
+  .RadRotator_skinApp a.rrButtonRight {
+    border-radius: 0em 0.28571em 0.28571em 0em; }
+  .RadRotator_skinApp a.rrButtonDown {
+    border-radius: 0em 0em 0.28571em 0.28571em; }
+  .RadRotator_skinApp a.rrButtonLeft {
+    left: 1px;
+    border-radius: 0.28571em 0em 0em 0.28571em; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .RadRotator_skinApp a.rrButtonUp {
+      top: 0; }
+    .RadRotator_skinApp a.rrButtonRight {
+      right: 0; }
+    .RadRotator_skinApp a.rrButtonDown {
+      bottom: 0; }
+    .RadRotator_skinApp a.rrButtonLeft {
+      left: 0; } }
+  .RadRotator_skinApp a.rrButton:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 1px #7fb1ce; }
+  .RadRotator_skinApp a.rrButton:focus {
+    outline-width: thin;
+    outline-offset: -2px;
+    outline-color: #2f5f7b; }
+  .RadRotator_skinApp a.rrButton:active {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6;
+    color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset; }
+  .RadRotator_skinApp a.rrButton:before {
+    font-size: 1.33333em;
+    font-size: .7em\9;
+    line-height: 1;
+    font-family: TelerikWebUI, monospace; }
+  .RadRotator_skinApp _:-ms-fullscreen, .RadRotator_skinApp a.rrButton:before {
+    font-size: .5em; }
+  .RadRotator_skinApp a.rrButton:hover:before {
+    color: #333333; }
+  .RadRotator_skinApp a.rrButtonRight:before {
+    content: "\E000"; }
+  .RadRotator_skinApp a.rrButtonLeft:before {
+    content: "\E003"; }
+  .RadRotator_skinApp a.rrButtonUp:before {
+    content: "\E001"; }
+  .RadRotator_skinApp a.rrButtonDown:before {
+    content: "\E002"; }
+  .RadRotator_skinApp .rrLoadingSign {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }

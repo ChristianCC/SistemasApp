@@ -1,0 +1,21 @@
+.RadDataForm_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3c8dbc;
+  overflow: hidden; }
+  .RadDataForm_skinApp .rdfLegend,
+  .RadDataForm_skinApp .rdfBorders {
+    border-color: #000000; }
+  .RadDataForm_skinApp .rdfHr {
+    color: #4081a7; }
+  .RadDataForm_skinApp .rdfFieldHint {
+    color: #fafcfd; }
+  .RadDataForm_skinApp .rdfLegend {
+    font-size: 1.17em; }
+  .RadDataForm_skinApp .rdfFieldHint {
+    font-size: 0.83em;
+    line-height: .8;
+    padding: 0 0 0 0.42em; }
+  .RadDataForm_skinApp .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0; }
+  .RadDataForm_skinApp .rdfLabel.rdfBlock {
+    padding: 0 0 0.17em 0; }

@@ -1,0 +1,76 @@
+.RadSearchBox_GlowApp .rsbInner {
+  border-color: #1c262c;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadSearchBox_GlowApp .rsbEmptyMessage {
+  color: #c1c7ca; }
+
+.RadSearchBox_GlowApp .rsbButtonSearch {
+  color: #fff; }
+
+.RadSearchBox_GlowApp .rsbSCInner {
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c);
+  line-height: inherit; }
+
+.RadSearchBox_GlowApp .rsbLoadingIcon {
+  background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+
+.RadSearchBox_GlowApp .rsbHovered.rsbInner {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadSearchBox_GlowApp .rsbHovered .rsbSCInner {
+  border-color: #cd8100; }
+
+.RadSearchBox_GlowApp .rsbHovered.rsbSCInner,
+.RadSearchBox_GlowApp .rsbHovered.rsbButton {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #cd8100;
+  background-image: linear-gradient(#ffa201, #cd8100); }
+
+.RadSearchBox_GlowApp .rsbFocused.rsbInner {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadSearchBox_GlowApp .rsbFocused .rsbSCInner,
+.RadSearchBox_GlowApp .rsbFocused .rsbHovered.rsbButton {
+  border-color: #cd8100; }
+
+.RadSearchBox_GlowApp .rsbFocused.rsbSCInner,
+.RadSearchBox_GlowApp .rsbFocused.rsbButton {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #ffa915;
+  background-image: none; }
+
+.RadSearchBox_GlowApp .rsbSelected.rsbButton {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #ffa915;
+  background-image: none; }
+
+.rsbPopup_GlowApp {
+  border-color: #20282d;
+  color: #c1c7ca;
+  background-color: #242e33; }
+  .rsbPopup_GlowApp .rsbShowAll {
+    border-color: #273237;
+    color: #c1c7ca;
+    background-color: #2b373d;
+    background-image: linear-gradient(#414e55, #2b373d); }
+  .rsbPopup_GlowApp .rsbListItemHovered {
+    color: #ffffff;
+    background-color: #4d5c65; }
+  .rsbPopup_GlowApp .rsbListItemSelected {
+    color: #000000;
+    background-color: #ffa915; }
+  .rsbPopup_GlowApp .rsbListItemLoading {
+    color: #ffffff;
+    background-color: #4d5c65; }

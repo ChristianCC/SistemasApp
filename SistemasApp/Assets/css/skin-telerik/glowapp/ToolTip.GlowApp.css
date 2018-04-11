@@ -1,0 +1,48 @@
+.RadToolTip_GlowApp {
+  background-color: #35434b;
+  color: #e2e8eb;
+  border-color: #1c2327; }
+  .RadToolTip_GlowApp.rtShadow {
+    box-shadow: 2px 3px 4px #192227; }
+  .RadToolTip_GlowApp .rtClose {
+    border-color: #dc9314;
+    color: #713600;
+    background-color: #dc9314;
+    background-image: linear-gradient(#ecaa37, #dc9314); }
+  .RadToolTip_GlowApp .rtClose:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100);
+    box-shadow: none; }
+  .RadToolTip_GlowApp .rtClose:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadToolTip_GlowApp .rtCalloutTopRight,
+  .RadToolTip_GlowApp .rtCalloutTopCenter,
+  .RadToolTip_GlowApp .rtCalloutTopLeft {
+    border-bottom-color: #1c2327; }
+  .RadToolTip_GlowApp .rtCalloutTopRight:before,
+  .RadToolTip_GlowApp .rtCalloutTopCenter:before,
+  .RadToolTip_GlowApp .rtCalloutTopLeft:before {
+    border-bottom-color: #35434b; }
+  .RadToolTip_GlowApp .rtCalloutMiddleRight {
+    border-left-color: #1c2327; }
+  .RadToolTip_GlowApp .rtCalloutMiddleRight:before {
+    border-left-color: #35434b; }
+  .RadToolTip_GlowApp .rtCalloutMiddleLeft {
+    border-right-color: #1c2327; }
+  .RadToolTip_GlowApp .rtCalloutMiddleLeft:before {
+    border-right-color: #35434b; }
+  .RadToolTip_GlowApp .rtCalloutBottomRight,
+  .RadToolTip_GlowApp .rtCalloutBottomCenter,
+  .RadToolTip_GlowApp .rtCalloutBottomLeft {
+    border-top-color: #1c2327; }
+  .RadToolTip_GlowApp .rtCalloutBottomRight:before,
+  .RadToolTip_GlowApp .rtCalloutBottomCenter:before,
+  .RadToolTip_GlowApp .rtCalloutBottomLeft:before {
+    border-top-color: #35434b; }
+  .RadToolTip_GlowApp.rtLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading.gif")%>'); }

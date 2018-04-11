@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ACD4163-7CB4-40C0-BD5A-25D7C7F3D5C8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemasApp</RootNamespace>
+    <AssemblyName>SistemasApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>Z:\SistemasRiesgos\Dependencias\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AJAXExtensionsToolbox">
+      <HintPath>Z:\SistemasRiesgos\Dependencias\AJAXExtensionsToolbox.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>Z:\SistemasRiesgos\Dependencias\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>Z:\SistemasRiesgos\Dependencias\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllsExt\Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="403.aspx" />
+    <Content Include="Assets\css\AdminLTE.css" />
+    <Content Include="Assets\css\AdminLTE.min.css" />
+    <Content Include="Assets\css\alt\AdminLTE-bootstrap-social.css" />
+    <Content Include="Assets\css\alt\AdminLTE-bootstrap-social.min.css" />
+    <Content Include="Assets\css\alt\AdminLTE-fullcalendar.css" />
+    <Content Include="Assets\css\alt\AdminLTE-fullcalendar.min.css" />
+    <Content Include="Assets\css\alt\AdminLTE-select2.css" />
+    <Content Include="Assets\css\alt\AdminLTE-select2.min.css" />
+    <Content Include="Assets\css\alt\AdminLTE-without-plugins.css" />
+    <Content Include="Assets\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Assets\css\bootstrap-theme.css" />
+    <Content Include="Assets\css\bootstrap-theme.min.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\bootstrap24.css" />
+    <Content Include="Assets\css\bootstrap24.min.css" />
+    <Content Include="Assets\css\font-awesome.min.css" />
+    <Content Include="Assets\css\ionicons.min.css" />
+    <Content Include="Assets\css\ionicons2.0.min.css" />
+    <Content Include="Assets\css\iu-explorador.css" />
+    <Content Include="Assets\css\jquery-ui-dialog.min.css" />
+    <Content Include="Assets\css\jquery-ui-dialog.theme.min.css" />
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\pschecker\pschecker.css" />
+    <Content Include="Assets\css\scroll.css" />
+    <Content Include="Assets\css\skin-telerik\app\AutoCompleteBox.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Button.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Calendar.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\CloudUpload.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ColorPicker.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ComboBox.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\DataForm.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\DataPager.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Dock.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\DropDownList.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\DropDownTree.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Editor.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\FileExplorer.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Filter.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\FormDecorator.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Gantt.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Grid.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ImageEditor.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ImageGallery.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\loading.gif" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\loading_small.gif" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\radActionsSprite.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\radFormToggleSprite.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\radIndeterminate.gif" />
+    <Content Include="Assets\css\skin-telerik\app\images\Common\radProgress.gif" />
+    <Content Include="Assets\css\skin-telerik\app\images\DataForm\sprite.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\ItemHorizontalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\ItemVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\LargeChangeHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\LargeChangeMiddleHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\LargelChangeCenterVertical.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\LargelChangeVertical.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SelectedRegionHorizontalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SelectedRegionVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SmallChangeCenterVertical.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SmallChangeHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SmallChangeMiddleHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\SmallChangeVertical.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\TrackBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Slider\TrackVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\app\images\Tile\rtileSprite.png" />
+    <Content Include="Assets\css\skin-telerik\app\Input.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\LightBox.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ListBox.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Map.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\MediaPlayer.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Menu.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Navigation.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Notification.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\OrgChart.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\PanelBar.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ProgressArea.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ProgressBar.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Rating.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\RibbonBar.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Rotator.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Scheduler.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\SearchBox.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Slider.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\SocialShare.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Splitter.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Spreadsheet.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\TabStrip.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\TagCloud.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Tile.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\TileList.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ToolBar.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\ToolTip.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\TreeList.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\TreeView.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Upload.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Window.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\app\Wizard.skinApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\AutoCompleteBox.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Button.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Calendar.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\CloudUpload.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ColorPicker.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ComboBox.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\DataForm.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\DataPager.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Dock.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\DropDownList.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\DropDownTree.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Editor.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\FileExplorer.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Filter.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\FormDecorator.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Gantt.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Grid.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ImageEditor.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ImageGallery.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Common\loading.gif" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Common\loading_small.gif" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Common\radActionsSprite.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Common\radFormToggleSprite.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Common\radIndeterminate.gif" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\ItemHorizontalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\ItemVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\LargeChangeHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\LargeChangeMiddleHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\LargelChangeCenterVertical.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\LargelChangeVertical.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SelectedRegionHorizontalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SelectedRegionVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SmallChangeCenterVertical.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SmallChangeHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SmallChangeMiddleHorizontal.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\SmallChangeVertical.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\TrackBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\images\Slider\TrackVerticalBgr.png" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Input.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\LightBox.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ListBox.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Map.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\MediaPlayer.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Menu.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Navigation.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Notification.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\OrgChart.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\PanelBar.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ProgressArea.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ProgressBar.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Rating.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\RibbonBar.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Rotator.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Scheduler.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\SearchBox.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Slider.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\SocialShare.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Splitter.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Spreadsheet.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\TabStrip.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\TagCloud.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Tile.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\TileList.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ToolBar.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ToolTip.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\TreeList.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\TreeView.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Upload.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Window.GlowApp.css" />
+    <Content Include="Assets\css\skin-telerik\glowapp\Wizard.GlowApp.css" />
+    <Content Include="Assets\css\skins\skin-black-light.css" />
+    <Content Include="Assets\css\skins\skin-black-light.min.css" />
+    <Content Include="Assets\css\skins\skin-black.css" />
+    <Content Include="Assets\css\skins\skin-black.min.css" />
+    <Content Include="Assets\css\skins\skin-blue-light.css" />
+    <Content Include="Assets\css\skins\skin-blue-light.min.css" />
+    <Content Include="Assets\css\skins\skin-blue.css" />
+    <Content Include="Assets\css\skins\skin-blue.min.css" />
+    <Content Include="Assets\css\skins\skin-green-light.css" />
+    <Content Include="Assets\css\skins\skin-green-light.min.css" />
+    <Content Include="Assets\css\skins\skin-green.css" />
+    <Content Include="Assets\css\skins\skin-green.min.css" />
+    <Content Include="Assets\css\skins\skin-purple-light.css" />
+    <Content Include="Assets\css\skins\skin-purple-light.min.css" />
+    <Content Include="Assets\css\skins\skin-purple.css" />
+    <Content Include="Assets\css\skins\skin-purple.min.css" />
+    <Content Include="Assets\css\skins\skin-red-light.css" />
+    <Content Include="Assets\css\skins\skin-red-light.min.css" />
+    <Content Include="Assets\css\skins\skin-red.css" />
+    <Content Include="Assets\css\skins\skin-red.min.css" />
+    <Content Include="Assets\css\skins\skin-yellow-light.css" />
+    <Content Include="Assets\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Assets\css\skins\skin-yellow.css" />
+    <Content Include="Assets\css\skins\skin-yellow.min.css" />
+    <Content Include="Assets\css\skins\_all-skins.css" />
+    <Content Include="Assets\css\skins\_all-skins.min.css" />
+    <Content Include="Assets\css\VistaTarjetas.css" />
+    <Content Include="Assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\imgs\banderas\1.png" />
+    <Content Include="Assets\imgs\banderas\10.png" />
+    <Content Include="Assets\imgs\banderas\2.png" />
+    <Content Include="Assets\imgs\banderas\6.png" />
+    <Content Include="Assets\imgs\banderas\7.png" />
+    <Content Include="Assets\imgs\banderas\8.png" />
+    <Content Include="Assets\imgs\banderas\9.png" />
+    <Content Include="Assets\imgs\cargando.gif" />
+    <Content Include="Assets\imgs\div-menu.jpg" />
+    <Content Include="Assets\imgs\jquery\ui-icons_444444_256x240.png" />
+    <Content Include="Assets\imgs\jquery\ui-icons_555555_256x240.png" />
+    <Content Include="Assets\imgs\jquery\ui-icons_777620_256x240.png" />
+    <Content Include="Assets\imgs\jquery\ui-icons_777777_256x240.png" />
+    <Content Include="Assets\imgs\jquery\ui-icons_cc0000_256x240.png" />
+    <Content Include="Assets\imgs\jquery\ui-icons_ffffff_256x240.png" />
+    <Content Include="Assets\imgs\metal.png" />
+    <Content Include="Assets\js\app.js" />
+    <Content Include="Assets\js\app.min.js" />
+    <Content Include="Assets\js\bootstrap.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\demo.js" />
+    <Content Include="Assets\js\jquery-3.1.1.js" />
+    <Content Include="Assets\js\jquery-3.1.1.min.js" />
+    <Content Include="Assets\js\jquery-ui-dialog.js" />
+    <Content Include="Assets\js\jquery-ui-dialog.min.js" />
+    <Content Include="Assets\js\jquery-ui-effects.js" />
+    <Content Include="Assets\js\jquery-ui-effects.min.js" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\Notify\notify.js" />
+    <Content Include="Assets\js\Notify\notify.min.js" />
+    <Content Include="Assets\js\pages\dashboard.js" />
+    <Content Include="Assets\js\pages\dashboard2.js" />
+    <Content Include="Assets\js\telerik\scriptsTelerik.js" />
+    <Content Include="Authorization.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="default.aspx" />
+    <Content Include="EndSesion.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="MdlAdmin\Roles.aspx" />
+    <Content Include="MdlAdmin\Usuarios.aspx" />
+    <Content Include="MdlApps\Apps.aspx" />
+    <Content Include="MdlSistema\Aplicacion.aspx" />
+    <Content Include="MdlSistema\loading.html" />
+    <Content Include="packages.config" />
+    <Content Include="Assets\css\skin-telerik\app\ScssPrimitives.json" />
+    <Content Include="Assets\css\skin-telerik\app\UsedControls.json" />
+    <Content Include="Assets\css\skin-telerik\glowapp\ScssPrimitives.json" />
+    <Content Include="Assets\css\skin-telerik\glowapp\UsedControls.json" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="MdlAdmin\Shared\AdminMaster.master" />
+    <Content Include="MdlSistema\Shared\SistemaMaster.master" />
+    <Content Include="MdlApps\Shared\AppsMaster.master" />
+    <None Include="Properties\PublishProfiles\Archivos.pubxml" />
+    <None Include="Properties\PublishProfiles\SistemasApp File.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Assets\js\pschecker\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Assets\js\pschecker\pschecker.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Shared\MasterPage.Master" />
+    <Content Include="Shared\SistemaPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="403.aspx.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="403.aspx.designer.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Authorization.aspx.cs">
+      <DependentUpon>Authorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authorization.aspx.designer.cs">
+      <DependentUpon>Authorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sistema.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EndSesion.aspx.cs">
+      <DependentUpon>EndSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndSesion.aspx.designer.cs">
+      <DependentUpon>EndSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MdlAdmin\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlAdmin\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MdlAdmin\Shared\AdminMaster.master.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlAdmin\Shared\AdminMaster.master.designer.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="MdlAdmin\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlAdmin\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MdlApps\Apps.aspx.cs">
+      <DependentUpon>Apps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlApps\Apps.aspx.designer.cs">
+      <DependentUpon>Apps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MdlApps\Shared\AppsMaster.master.cs">
+      <DependentUpon>AppsMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlApps\Shared\AppsMaster.master.designer.cs">
+      <DependentUpon>AppsMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="MdlSistema\Aplicacion.aspx.cs">
+      <DependentUpon>Aplicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlSistema\Aplicacion.aspx.designer.cs">
+      <DependentUpon>Aplicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MdlSistema\Shared\SistemaMaster.master.cs">
+      <DependentUpon>SistemaMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MdlSistema\Shared\SistemaMaster.master.designer.cs">
+      <DependentUpon>SistemaMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="ParamEncrip.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\SistemaPage.Master.cs">
+      <DependentUpon>SistemaPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\SistemaPage.Master.designer.cs">
+      <DependentUpon>SistemaPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{d1188313-884a-4587-a332-8391c27cfbe6}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{df57001c-18a7-47a0-8cc8-7f31a592d05c}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

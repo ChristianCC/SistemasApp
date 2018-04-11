@@ -1,0 +1,15 @@
+.RadSocialShare_GlowApp {
+  background-color: #2b373d;
+  color: #e2e8eb;
+  border-color: #1c2327;
+  box-shadow: 0 1px 3px black; }
+  .RadSocialShare_GlowApp .sshLinkItem {
+    color: #e2e8eb; }
+  .RadSocialShare_GlowApp .sshLinkItem:hover {
+    color: #ffa915; }
+
+.RadComboBoxDropDown_GlowApp .rcbItem .sshLinkItem {
+  color: #e2e8eb; }
+
+.RadComboBoxDropDown_GlowApp .rcbHovered .sshLinkItem {
+  color: #ffa915; }

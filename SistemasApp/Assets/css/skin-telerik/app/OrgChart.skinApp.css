@@ -1,0 +1,45 @@
+.RadOrgChart_skinApp {
+  /* Loading states */ }
+  .RadOrgChart_skinApp {
+    color: #333333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadOrgChart_skinApp .rocGroup {
+    border-radius: 10px;
+    background: #3c8dbc; }
+  .RadOrgChart_skinApp .rocItem,
+  .RadOrgChart_skinApp .rocItemTemplate {
+    border-radius: 5px;
+    border-color: #f2f2f2;
+    background-color: #e4e4e4; }
+  .RadOrgChart_skinApp .rocExpandArrow,
+  .RadOrgChart_skinApp .rocCollapseArrow,
+  .RadOrgChart_skinApp .rocExpandGroupArrow,
+  .RadOrgChart_skinApp .rocCollapseGroupArrow {
+    color: #ffffff;
+    border-color: #4081a7;
+    background-color: #7fb1ce;
+    border-radius: 3px; }
+  .RadOrgChart_skinApp .rocLoadingNodes .rocExpandArrow,
+  .RadOrgChart_skinApp .rocLoadingNodes .rocCollapseArrow,
+  .RadOrgChart_skinApp .rocLoadingGroups .rocExpandGroupArrow,
+  .RadOrgChart_skinApp .rocLoadingGroups .rocCollapseGroupArrow {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.Bootstrap.Common.loading_small.gif")%>'); }
+
+.RadOrgChart_skinApp.rocHorizontal .rocNode {
+  padding: 1.28571em 0em; }
+
+.RadOrgChart_skinApp.rocDetachedItem,
+.RadOrgChart_skinApp.rocDetachedNode {
+  border-color: #000000;
+  background-color: #ff9933; }
+
+.rocToolbar_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3c8dbc;
+  background: #3c8dbc;
+  border-radius: 4px; }
+  .rocToolbar_skinApp .rocToolbarButton {
+    color: #ffffff;
+    border-color: #4081a7;
+    background-color: #7fb1ce;
+    border-radius: 2px; }

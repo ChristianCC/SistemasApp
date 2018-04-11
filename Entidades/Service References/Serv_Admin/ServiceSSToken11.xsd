@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Pais" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Pais" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfVMPais">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VMPais" nillable="true" type="tns:VMPais" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVMPais" nillable="true" type="tns:ArrayOfVMPais" />
+  <xs:complexType name="VMPais">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdPais" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VMPais" nillable="true" type="tns:VMPais" />
+</xs:schema>

@@ -1,0 +1,47 @@
+.RadImageEditor_GlowApp,
+.RadImageEditor_GlowApp.rieDialogs .riePrintContent,
+.RadImageEditor_GlowApp .rieHighlightVertical,
+.RadImageEditor_GlowApp .rieHighlightHorizontal,
+.RadDock_GlowApp.rieDialogs .rieActiveThumbsLink,
+.RadDock_GlowApp.rieDialogs .rieThumbsLink:hover,
+.RadDock_GlowApp.rieDialogs .riePrintContent,
+.RadDock_GlowApp.rieDialogs .riePrintContent img {
+  border-color: #1c2327;
+  background-color: #35434b; }
+
+.RadImageEditor_GlowApp,
+.RadImageEditor_GlowApp .rieStatusBarInfo .rieLabel,
+.RadDock_GlowApp.rieDialogs .rdContent {
+  color: #e2e8eb; }
+
+.RadImageEditor_GlowApp .rieStatusBarInfo span {
+  color: white; }
+
+.RadImageEditor_GlowApp .rieContentArea,
+.RadDock_GlowApp.rieDialogs .rieThumbsBottomRow td,
+.RadDock_GlowApp.rieDialogs .rieDialogsThumbsLeft,
+.RadDock_GlowApp.rieDialogs .rieThumbsLink {
+  border-color: #41525b; }
+
+.rieRotateTable .rbIcon:before,
+.rieResizeButtons .rbIcon:before {
+  color: #e2e8eb; }
+
+.rieRotateTable .rbHovered .rbIcon:before,
+.rieResizeButtons .rbHovered .rbIcon:before {
+  color: #ffa915; }
+
+.rieBottomCell {
+  border-color: #1c2327; }
+
+.RadImageEditor_GlowApp .rieResizeHandle {
+  color: #e2e8eb; }
+
+.RadDock_GlowApp .RadForm_GlowApp {
+  background-color: #35434b; }
+
+.RadDock_GlowApp.rieDialogs .rieComboCombo {
+  width: 5.1em; }
+
+.RadDock_GlowApp .rieZoomTable .rieInputDigits.rfdTextInput {
+  width: 3.2em; }

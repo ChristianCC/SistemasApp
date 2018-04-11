@@ -1,0 +1,80 @@
+.RadOrgChart_GlowApp {
+  /* Loading states */ }
+  .RadOrgChart_GlowApp {
+    color: #e2e8eb; }
+  .RadOrgChart_GlowApp .rocGroup {
+    border-radius: 10px;
+    background: #151d21; }
+  .RadOrgChart_GlowApp .rocItem,
+  .RadOrgChart_GlowApp .rocItemTemplate {
+    border-color: #1c262c;
+    border-radius: 5px;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c); }
+  .RadOrgChart_GlowApp .rocExpandArrow,
+  .RadOrgChart_GlowApp .rocCollapseArrow,
+  .RadOrgChart_GlowApp .rocExpandGroupArrow,
+  .RadOrgChart_GlowApp .rocCollapseGroupArrow {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c);
+    border-radius: 3px; }
+  .RadOrgChart_GlowApp .rocLoadingNodes .rocExpandArrow,
+  .RadOrgChart_GlowApp .rocLoadingNodes .rocCollapseArrow,
+  .RadOrgChart_GlowApp .rocLoadingGroups .rocExpandGroupArrow,
+  .RadOrgChart_GlowApp .rocLoadingGroups .rocCollapseGroupArrow {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.Glow.Common.loading_small.gif")%>'); }
+  .RadOrgChart_GlowApp .rocNode:before,
+  .RadOrgChart_GlowApp .rocNode:after,
+  .RadOrgChart_GlowApp .rocGroup:before,
+  .RadOrgChart_GlowApp .rocGroup:after {
+    border-color: #515c62; }
+  .RadOrgChart_GlowApp .rocExpandArrow:hover,
+  .RadOrgChart_GlowApp .rocCollapseArrow:hover,
+  .RadOrgChart_GlowApp .rocExpandGroupArrow:hover,
+  .RadOrgChart_GlowApp .rocCollapseGroupArrow:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadOrgChart_GlowApp .rocExpandArrow:active,
+  .RadOrgChart_GlowApp .rocCollapseArrow:active,
+  .RadOrgChart_GlowApp .rocExpandGroupArrow:active,
+  .RadOrgChart_GlowApp .rocCollapseGroupArrow:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+
+.RadOrgChart_GlowApp.rocHorizontal .rocNode:before,
+.RadOrgChart_GlowApp.rocHorizontal .rocGroup:before,
+.RadOrgChart_GlowApp.rocHorizontal .rocGroup:after,
+.RadOrgChart_GlowApp.rocHorizontal.rocSimple .rocNode:after,
+.RadOrgChart_GlowApp.rocHorizontal.rocSimple .rocItem:after {
+  border-color: #555; }
+
+.RadOrgChart_GlowApp.rocDetachedItem,
+.RadOrgChart_GlowApp.rocDetachedNode {
+  border-color: #1c262c;
+  border-radius: 5px;
+  background-color: #192227; }
+
+.rocToolbar_GlowApp {
+  color: #fff;
+  border-radius: 5px;
+  background: #151d21; }
+  .rocToolbar_GlowApp .rocToolbarButton {
+    border-color: #1c262c;
+    border-radius: 3px;
+    background-color: #1c262c; }
+  .rocToolbar_GlowApp .rocToolbarButton:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .rocToolbar_GlowApp .rocToolbarButton:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }

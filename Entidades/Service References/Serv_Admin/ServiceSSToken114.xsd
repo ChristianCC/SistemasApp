@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Pais" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._PermisoItem" />
+  <xs:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ToolItem" />
+  <xs:element name="RegistrarNuevoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="apellidoMaterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="apellidoPaterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="celular" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="correo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEstatus" type="xs:int" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario_sistema" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarNuevoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" minOccurs="0" name="RegistrarNuevoUsuarioResult" nillable="true" type="q1:VMUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" minOccurs="0" name="usuario" nillable="true" type="q2:VMUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoUsuarios">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" minOccurs="0" name="ObtenerCatalogoUsuariosResult" nillable="true" type="q3:ArrayOfVMUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetPassUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario_sistema" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetPassUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario_sistema" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" minOccurs="0" name="ObtenerInfoUsuarioResult" nillable="true" type="q4:VMUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRoles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" minOccurs="0" name="ObtenerRolesResult" nillable="true" type="q5:ArrayOfVMRol" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRolesUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSistema" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRolesUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" minOccurs="0" name="ObtenerRolesUsuarioResult" nillable="true" type="q6:ArrayOfVMRol" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarNuevoRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idPais" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarNuevoRolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" minOccurs="0" name="RegistrarNuevoRolResult" nillable="true" type="q7:VMRol" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarRolUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarRolUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarRolUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarRolUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsModulo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsModuloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="ObtenerItemsModuloResult" nillable="true" type="q8:ArrayOfVMItemModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LimpiarItemsRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LimpiarItemsRolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarItemRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+        <xs:element minOccurs="0" name="idItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarItemRolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarPermisos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuarioRol" type="xs:int" />
+        <xs:element minOccurs="0" name="write" type="xs:boolean" />
+        <xs:element minOccurs="0" name="delete" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarPermisosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarPermisosTool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idUsuarioPermisos" type="xs:int" />
+        <xs:element minOccurs="0" name="idTool" type="xs:int" />
+        <xs:element minOccurs="0" name="permitir" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarPermisosToolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsRolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="ObtenerItemsRolResult" nillable="true" type="q9:ArrayOfVMItemModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarItemRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+        <xs:element minOccurs="0" name="idItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarItemRolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlhome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistemaEmbebido" type="xs:boolean" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" minOccurs="0" name="RegistrarSistemaResult" nillable="true" type="q10:VMSistema" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlhome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistemaEmbebido" type="xs:boolean" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarSistemaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoSistemas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoSistemasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" minOccurs="0" name="ObtenerCatalogoSistemasResult" nillable="true" type="q11:ArrayOfVMSistema" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoSistemas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoSistemasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" minOccurs="0" name="ObtenerInfoSistemasResult" nillable="true" type="q12:VMSistema" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerModulosSistemaApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+        <xs:element minOccurs="0" name="activo" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerModulosSistemaAppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" minOccurs="0" name="ObtenerModulosSistemaAppResult" nillable="true" type="q13:ArrayOfVMModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarModuloSistemaApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+        <xs:element minOccurs="0" name="urlIcono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dbConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarModuloSistemaAppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" minOccurs="0" name="RegistrarModuloSistemaAppResult" nillable="true" type="q14:VMModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarModuloSistemaApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idModulo" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+        <xs:element minOccurs="0" name="urlIcono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dbConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarModuloSistemaAppResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoModuloSistemaApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idModulo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInfoModuloSistemaAppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" minOccurs="0" name="ObtenerInfoModuloSistemaAppResult" nillable="true" type="q15:VMModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarPaginaModulo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idModulo" type="xs:int" />
+        <xs:element minOccurs="0" name="urlIcono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idItemPadre" type="xs:int" />
+        <xs:element minOccurs="0" name="orden" type="xs:int" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarPaginaModuloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="RegistrarPaginaModuloResult" nillable="true" type="q16:VMItemModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarPaginaModulo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPagina" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idModulo" type="xs:int" />
+        <xs:element minOccurs="0" name="urlIcono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="urlDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idItemPadre" type="xs:int" />
+        <xs:element minOccurs="0" name="orden" type="xs:int" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarPaginaModuloResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoPaises">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCatalogoPaisesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Pais" minOccurs="0" name="ObtenerCatalogoPaisesResult" nillable="true" type="q17:ArrayOfVMPais" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="ObtenerItemsUsuarioResult" nillable="true" type="q18:ArrayOfVMItemModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarSesion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="llave" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cerrarSesiones" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarSesionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IniciarSesionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarSesion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarSesionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSistemasUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSistemasUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" minOccurs="0" name="ObtenerSistemasUsuarioResult" nillable="true" type="q19:ArrayOfVMSistema" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPermisosItemsUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSistema" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="idRol" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPermisosItemsUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._PermisoItem" minOccurs="0" name="ObtenerPermisosItemsUsuarioResult" nillable="true" type="q20:ArrayOfVMPermisoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPermisosToolsUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idUsuarioPermisos" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPermisosToolsUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ToolItem" minOccurs="0" name="ObtenerPermisosToolsUsuarioResult" nillable="true" type="q21:ArrayOfVMToolItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRolesDeUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSistema" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRolesDeUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" minOccurs="0" name="ObtenerRolesDeUsuarioResult" nillable="true" type="q22:ArrayOfVMRol" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsDeRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRol" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerItemsDeRolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" minOccurs="0" name="ObtenerItemsDeRolResult" nillable="true" type="q23:ArrayOfVMItemModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPasswordUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passAnterior" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passNueva" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPasswordUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

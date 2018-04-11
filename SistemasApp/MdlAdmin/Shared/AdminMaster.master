@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/MasterPage.Master" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="SistemasApp.MdlAdmin.Shared.AdminMaster" %>
+<%@ MasterType VirtualPath="~/Shared/MasterPage.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cpHead" runat="server">
+    <asp:ContentPlaceHolder ID="cpHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cpTituloPagina" runat="server">
+    <asp:ContentPlaceHolder ID="cpTituloPagina" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cpDescripcion" runat="server">
+    <asp:ContentPlaceHolder ID="cpDescripcion" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cpContenidoPrincipal" runat="server">
+    <asp:UpdatePanel ID="upMansajes" runat="server">
+        <ContentTemplate>
+            <asp:Panel ID="pnlMsjError" runat="server" Visible="false" >
+                <div class="callout callout-danger lead">
+                    <h4>¡Error!</h4>        
+                    <asp:Label ID="lblMensajeError" runat="server" ></asp:Label>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="pnlMsj" runat="server"  Visible="false" >
+                <div class="callout callout-success lead">
+                    <h4>¡Mensaje!</h4>        
+                    <asp:Label ID="lblMensaje" runat="server" ></asp:Label>
+                </div>
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:ContentPlaceHolder ID="cpContenidoPrincipal" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cpFooterScript" runat="server">
+    <asp:ContentPlaceHolder ID="cpFooterScript" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

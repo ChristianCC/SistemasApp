@@ -1,0 +1,23 @@
+.RadTile_skinApp {
+  color: #ffffff;
+  background-color: #337ab7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Loading image */ }
+  .RadTile_skinApp.rtileSelected {
+    border-color: #f0ad4e; }
+  .RadTile_skinApp.rtileHovered {
+    border-color: #204d73; }
+  .RadTile_skinApp.rtileSelected.rtileHovered {
+    border-color: rgba(240, 173, 78, 0.7); }
+  .RadTile_skinApp.rtileSelected .rtileSelectedIcon {
+    background-color: #f0ad4e;
+    color: #ffffff; }
+  .RadTile_skinApp .rtileBadgeIcon {
+    color: #ffffff; }
+  html .RadTile_skinApp.RadTile h6.rtileTitle {
+    color: #ffffff; }
+  .RadTile_skinApp .rtilePeekContent {
+    background-color: #337ab7; }
+  .RadTile_skinApp.rtileLoading,
+  .RadTile_skinApp .rtileLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }

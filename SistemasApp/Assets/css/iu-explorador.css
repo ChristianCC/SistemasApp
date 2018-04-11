@@ -1,0 +1,168 @@
+﻿.list-check-round
+{
+    width: 100%;
+}
+
+    .list-check-round label
+    {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 5% 5px 0px;
+        font-size: 1em;
+        border-radius: 5px;
+        /*-webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;*/
+    }
+
+        .list-check-round label:hover
+        {
+            /*background: rgba(142, 15, 2,0.1);*/
+        }
+
+        .list-check-round label:before
+        {
+            margin-right: 15px;
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 17px;
+            left: 15px;
+            border-radius: 50%;
+            background: none;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+    .list-check-round input[type="radio"]
+    {
+        display: none;
+    }
+
+        .list-check-round input[type="radio"]:checked + label:before
+        {
+            /*display: none;*/
+            background: #8e0f02;
+        }
+
+        .list-check-round input[type="radio"]:checked + label
+        {
+            /* padding: 5px 15px;
+                      background: #0074D9;
+                      border-radius: 2px;
+                      color: #fff;*/
+        }
+
+        
+
+.list-check-square-war
+{
+    width: 100%;
+}
+
+    .list-check-square-war label
+    {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 5% 5px 0px;
+        font-size: 1em;
+        border-radius: 5px;
+        /*-webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;*/
+    }
+
+        .list-check-square-war label:hover
+        {
+            /*backgsquare: rgba(142, 15, 2,0.1);*/
+        }
+
+        .list-check-square-war label:before
+        {
+            margin-right: 5px;
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 1em;
+            left: 15px;
+            /*border-radius: 50%;*/
+            background: none;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+    .list-check-square-war input[type="checkbox"]
+    {
+        display: none;
+    }
+
+        .list-check-square-war input[type="checkbox"]:checked + label:before
+        {
+            background: #f39c12;
+        }
+
+        .list-check-square-war input[type="checkbox"]:checked + label
+        {
+            /* padding: 5px 15px;
+                      backgsquare: #0074D9;
+                      border-radius: 2px;
+                      color: #fff;*/
+        }
+
+
+.list-check-square
+{
+    width: 100%;
+}
+
+    .list-check-square label
+    {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 5% 5px 0px;
+        font-size: 1em;
+        border-radius: 5px;
+        /*-webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;*/
+    }
+
+        .list-check-square label:hover
+        {
+            /*backgsquare: rgba(142, 15, 2,0.1);*/
+        }
+
+        .list-check-square label:before
+        {
+            margin-right: 5px;
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 1em;
+            left: 15px;
+            /*border-radius: 50%;*/
+            background: none;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+    .list-check-square input[type="checkbox"]
+    {
+        display: none;
+    }
+
+        .list-check-square input[type="checkbox"]:checked + label:before
+        {
+            background: #8e0f02;
+        }
+
+        .list-check-square input[type="checkbox"]:checked + label
+        {
+            /* padding: 5px 15px;
+                      backgsquare: #0074D9;
+                      border-radius: 2px;
+                      color: #fff;*/
+        }

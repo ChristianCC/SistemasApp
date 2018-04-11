@@ -1,0 +1,211 @@
+.RadForm_GlowApp {
+  background-color: #192227;
+  /* Primary Button styles */ }
+  .RadForm_GlowApp.rfdLabel label,
+  .RadForm_GlowApp.rfdLabel .rfdAspLabel,
+  .RadForm_GlowApp.rfdFieldset fieldset,
+  .RadForm_GlowApp.rfdFieldset legend,
+  .RadForm_GlowApp .rfdHeading,
+  .RadForm_GlowApp .rfdValidationSummaryControl,
+  .RadForm_GlowApp .rfdLoginControl {
+    color: #e2e8eb; }
+  .RadForm_GlowApp.rfdZone {
+    background-color: #2a363c; }
+  .RadForm_GlowApp .rfdHeading {
+    border-bottom-color: #1c2327; }
+  .RadForm_GlowApp.rfdFieldset fieldset {
+    border-color: #151d21;
+    background-color: #192227; }
+  .RadForm_GlowApp.rfdLabel label,
+  .RadForm_GlowApp.rfdLabel .rfdAspLabel {
+    line-height: 28px; }
+  .RadForm_GlowApp.rfdRadio input[type="radio"] + label,
+  .RadForm_GlowApp.rfdCheckbox input[type="checkbox"] + label,
+  .RadForm_GlowApp legend > label,
+  .RadForm_GlowApp legend > label {
+    line-height: normal; }
+  .RadForm_GlowApp .rfdSkinnedButton,
+  .RadForm_GlowApp.rfdButton .rfdSkinnedButton.rfdInputDisabled {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c); }
+  .RadForm_GlowApp .rfdSkinnedButton:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadForm_GlowApp .rfdSkinnedButton:active,
+  .RadForm_GlowApp .rfdClickedButton,
+  .RadForm_GlowApp .rfdFocusedButton {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadForm_GlowApp .rfdSkinnedButton.rfdPrimaryButton {
+    border-color: #dc9314;
+    color: #713600;
+    background-color: #dc9314;
+    background-image: linear-gradient(#ecaa37, #dc9314); }
+    .RadForm_GlowApp .rfdSkinnedButton.rfdPrimaryButton:hover {
+      border-color: #cd8100;
+      color: #713600;
+      background-color: #cd8100;
+      background-image: linear-gradient(#ffa201, #cd8100);
+      box-shadow: none; }
+    .RadForm_GlowApp .rfdSkinnedButton.rfdPrimaryButton:active,
+    .RadForm_GlowApp .rfdSkinnedButton.rfdPrimaryButton.rfdClickedButton,
+    .RadForm_GlowApp .rfdSkinnedButton.rfdPrimaryButton.rfdFocusedButton {
+      border-color: #cd8100;
+      color: #713600;
+      background-color: #ffa915;
+      background-image: none; }
+  .RadForm_GlowApp.rfdButton .rfdSkinnedButton.rfdPrimaryButton.rfdInputDisabled {
+    border-color: #dc9314;
+    color: #713600;
+    background-color: #dc9314;
+    background-image: linear-gradient(#ecaa37, #dc9314); }
+  .RadForm_GlowApp .rfdTextInput,
+  .RadForm_GlowApp.rfdTextarea textarea {
+    border-color: #1c262c;
+    color: #fff;
+    background-color: #1c262c; }
+  .RadForm_GlowApp .rfdTextInput:hover,
+  .RadForm_GlowApp.rfdTextarea textarea:hover {
+    border-color: #cd8100;
+    color: #fff;
+    background-color: #1c262c; }
+  .RadForm_GlowApp .rfdTextInput:active,
+  .RadForm_GlowApp.rfdTextarea textarea:active,
+  .RadForm_GlowApp .rfdTextInput:focus,
+  .RadForm_GlowApp.rfdTextarea textarea:focus {
+    border-color: #cd8100;
+    color: #fff;
+    background-color: #1c262c; }
+  .RadForm_GlowApp .rfdTextInput:disabled,
+  .RadForm_GlowApp.rfdTextarea textarea:disabled {
+    border-color: #474f53;
+    color: #677277;
+    background-color: #1c262c; }
+  .RadForm_GlowApp .rfdCheckboxUnchecked:before,
+  .RadForm_GlowApp .rfdRadioUnchecked:before,
+  .RadForm_GlowApp .rfdCheckboxChecked:hover:before,
+  .RadForm_GlowApp .rfdRadioChecked:hover:before {
+    color: #e2e8eb; }
+  .RadForm_GlowApp .rfdCheckboxChecked:before,
+  .RadForm_GlowApp .rfdRadioChecked:before,
+  .RadForm_GlowApp .rfdCheckboxUnchecked:hover:before,
+  .RadForm_GlowApp .rfdRadioUnchecked:hover:before {
+    color: #ffa915; }
+  .RadForm_GlowApp .rfdSelect_GlowApp {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c); }
+  .RadForm_GlowApp .rfdSelect_GlowApp:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadForm_GlowApp .rfdSelect_GlowApp:active,
+  .RadForm_GlowApp .rfdSelect_GlowApp:focus {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+  .RadForm_GlowApp .rfdSelect_GlowApp.rfdSelectDisabled,
+  .RadForm_GlowApp .rfdSelect_GlowApp.rfdSelectDisabled:hover,
+  .RadForm_GlowApp .rfdSelect_GlowApp.rfdSelectDisabled:active,
+  .RadForm_GlowApp .rfdSelect_GlowApp.rfdSelectDisabled:focus {
+    border-color: #1c262c;
+    color: #e2e8eb;
+    background-color: #1c262c;
+    background-image: linear-gradient(#30414b, #1c262c); }
+  .RadForm_GlowApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar,
+  .RadForm_GlowApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar-thumb:vertical,
+  .RadForm_GlowApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar-thumb:horizontal,
+  .RadForm_GlowApp.rfdScrollBars form::-webkit-scrollbar,
+  .RadForm_GlowApp.rfdScrollBars form::-webkit-scrollbar-thumb:vertical,
+  .RadForm_GlowApp.rfdScrollBars form::-webkit-scrollbar-thumb:horizontal {
+    background-color: #192227; }
+  .RadForm_GlowApp.rfdScrollBars textarea::-webkit-scrollbar-corner {
+    background-color: #080b0d; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-thumb:vertical,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-thumb:horizontal {
+    border-color: #151d21;
+    background-color: #192227; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement,
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.radActionsSprite.png")%>');
+    background-color: #192227; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement {
+    background-position: -17.5px -1118px; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment {
+    background-position: -17.5px -1168px; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement {
+    background-position: -17.5px -1018px; }
+  .RadForm_GlowApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment {
+    background-position: -17.5px -1068px; }
+  .RadForm_GlowApp.rfdScrollBars {
+    scrollbar-3dlight-color: #1c262c;
+    scrollbar-arrow-color: #616161;
+    scrollbar-base-color: #1c262c;
+    scrollbar-darkshadow-color: #1c262c;
+    scrollbar-face-color: #cd8100;
+    scrollbar-highlight-color: #cd8100;
+    scrollbar-shadow-color: #cd8100;
+    scrollbar-track-color: #1c262c; }
+  .RadForm_GlowApp.rfdGrids .rfdTable {
+    border: 1px solid #151d21;
+    background: #1c262c;
+    color: #e2e8eb;
+    font-family: inherit;
+    font-size: inherit; }
+  .RadForm_GlowApp.rfdGrids .rfdTable th {
+    border-bottom: 1px solid #151d21;
+    border-left: 1px solid #1c262c;
+    background-color: #2b373d;
+    color: #e2e8eb; }
+  .RadForm_GlowApp.rfdGrids .rfdTable a {
+    color: #e2e8eb; }
+  .RadForm_GlowApp .rfdValidationSummaryControl,
+  .RadForm_GlowApp .rfdLoginControl {
+    background-color: #192227;
+    border: 1px solid #151d21; }
+  .RadForm_GlowApp a.rfdLoginControl,
+  .RadForm_GlowApp a.rfdLoginControl:active,
+  .RadForm_GlowApp a.rfdLoginControl:visited {
+    color: #e2e8eb; }
+  .RadForm_GlowApp a.rfdLoginControl:hover {
+    color: #713600; }
+
+.rfdSelectBox_GlowApp {
+  border-color: #1c2327;
+  color: #e2e8eb;
+  background-color: #35434b; }
+
+.rfdSelectBox_GlowApp li:hover,
+.rfdSelectBox_GlowApp .rfdSelect_hovered,
+.rfdSelectBox.rfdSelectBox_GlowApp li:hover {
+  color: #ffffff;
+  background-color: #4d5c65; }
+
+.rfdSelectBox_GlowApp .rfdSelect_selected,
+.rfdSelectBox.rfdSelectBox_GlowApp .rfdSelect_selected:hover {
+  color: #000000;
+  background-color: #ffa915; }
+
+.rfdSelectBox_GlowApp .rfdSelectBox_optgroup_label:hover {
+  background: none;
+  color: #e2e8eb; }
+
+.rfdSelectBox_GlowApp.rfdSelectBoxDropDown {
+  border-color: #20282d;
+  color: #c1c7ca;
+  background-color: #242e33; }

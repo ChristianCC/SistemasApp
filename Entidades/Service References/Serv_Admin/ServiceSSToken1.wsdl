@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceSSToken" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ViewModel" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Usuario" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Rol" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ItemModulo" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Sistema" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Modulo" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._Pais" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._PermisoItem" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/ViewModel.Catalogo._ToolItem" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarNuevoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarNuevoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q1:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q2:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoUsuarios_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q3:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ResetPassUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPassUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ResetPassUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPassUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ResetPassUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q4:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q5:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRoles" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRoles_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q6:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRolesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRolesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRolesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRolesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerRolesUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q7:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarNuevoRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarNuevoRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarNuevoRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q8:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarRolUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarRolUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarRolUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarRolUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarRolUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q9:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarRolUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarRolUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarRolUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarRolUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarRolUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q10:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsModulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsModulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsModulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsModuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsModulo_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q11:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_LimpiarItemsRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:LimpiarItemsRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_LimpiarItemsRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LimpiarItemsRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_LimpiarItemsRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q12:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarItemRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarItemRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarItemRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarItemRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarItemRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q13:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisos_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarPermisos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarPermisosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisos_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q14:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisosTool_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarPermisosTool" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisosTool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarPermisosToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_AsignarPermisosTool_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q15:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerItemsRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q16:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarItemRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarItemRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarItemRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarItemRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EliminarItemRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q17:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarSistema_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarSistema" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarSistema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarSistema_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q18:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarSistema_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarSistema" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarSistema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarSistema_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q19:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoSistemas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoSistemas" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoSistemas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoSistemasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoSistemas_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q20:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoSistemas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoSistemas" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoSistemas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoSistemasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoSistemas_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q21:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerModulosSistemaApp_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerModulosSistemaApp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerModulosSistemaApp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerModulosSistemaAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerModulosSistemaApp_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q22:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarModuloSistemaApp_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarModuloSistemaApp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarModuloSistemaApp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarModuloSistemaAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarModuloSistemaApp_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q23:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarModuloSistemaApp_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarModuloSistemaApp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarModuloSistemaApp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarModuloSistemaAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarModuloSistemaApp_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q24:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoModuloSistemaApp_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoModuloSistemaApp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoModuloSistemaApp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInfoModuloSistemaAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerInfoModuloSistemaApp_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q25:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarPaginaModulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPaginaModulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarPaginaModulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPaginaModuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_RegistrarPaginaModulo_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q26:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarPaginaModulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPaginaModulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarPaginaModulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPaginaModuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_EditarPaginaModulo_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q27:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoPaises_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoPaises" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGestion_ObtenerCatalogoPaises_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoPaisesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q28:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_IniciarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_IniciarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_IniciarSesion_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q29:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_CerrarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_CerrarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_CerrarSesion_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q30:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerSistemasUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSistemasUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerSistemasUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSistemasUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerSistemasUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q31:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosItemsUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPermisosItemsUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosItemsUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPermisosItemsUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosItemsUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q32:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosToolsUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPermisosToolsUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosToolsUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPermisosToolsUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerPermisosToolsUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q33:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerRolesDeUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRolesDeUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerRolesDeUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRolesDeUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerRolesDeUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q34:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsDeRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsDeRol" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsDeRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerItemsDeRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ObtenerItemsDeRol_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q35="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q35:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ModificarPasswordUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPasswordUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ModificarPasswordUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPasswordUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAcceso_ModificarPasswordUsuario_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q36:ExceptionService" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceGestion">
+    <wsdl:operation name="RegistrarNuevoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoUsuario" message="tns:IServiceGestion_RegistrarNuevoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoUsuarioResponse" message="tns:IServiceGestion_RegistrarNuevoUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_RegistrarNuevoUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EditarUsuario" message="tns:IServiceGestion_EditarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EditarUsuarioResponse" message="tns:IServiceGestion_EditarUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EditarUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EditarUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoUsuarios" message="tns:IServiceGestion_ObtenerCatalogoUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoUsuariosResponse" message="tns:IServiceGestion_ObtenerCatalogoUsuarios_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoUsuariosExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerCatalogoUsuarios_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetPassUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ResetPassUsuario" message="tns:IServiceGestion_ResetPassUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ResetPassUsuarioResponse" message="tns:IServiceGestion_ResetPassUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ResetPassUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ResetPassUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoUsuario" message="tns:IServiceGestion_ObtenerInfoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoUsuarioResponse" message="tns:IServiceGestion_ObtenerInfoUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerInfoUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRoles" message="tns:IServiceGestion_ObtenerRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRolesResponse" message="tns:IServiceGestion_ObtenerRoles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRolesExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerRoles_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRolesUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRolesUsuario" message="tns:IServiceGestion_ObtenerRolesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRolesUsuarioResponse" message="tns:IServiceGestion_ObtenerRolesUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerRolesUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerRolesUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarNuevoRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoRol" message="tns:IServiceGestion_RegistrarNuevoRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoRolResponse" message="tns:IServiceGestion_RegistrarNuevoRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarNuevoRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_RegistrarNuevoRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarRolUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/AsignarRolUsuario" message="tns:IServiceGestion_AsignarRolUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/AsignarRolUsuarioResponse" message="tns:IServiceGestion_AsignarRolUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/AsignarRolUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_AsignarRolUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarRolUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EliminarRolUsuario" message="tns:IServiceGestion_EliminarRolUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EliminarRolUsuarioResponse" message="tns:IServiceGestion_EliminarRolUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EliminarRolUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EliminarRolUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsModulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsModulo" message="tns:IServiceGestion_ObtenerItemsModulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsModuloResponse" message="tns:IServiceGestion_ObtenerItemsModulo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsModuloExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerItemsModulo_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LimpiarItemsRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/LimpiarItemsRol" message="tns:IServiceGestion_LimpiarItemsRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/LimpiarItemsRolResponse" message="tns:IServiceGestion_LimpiarItemsRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/LimpiarItemsRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_LimpiarItemsRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarItemRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/AsignarItemRol" message="tns:IServiceGestion_AsignarItemRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/AsignarItemRolResponse" message="tns:IServiceGestion_AsignarItemRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/AsignarItemRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_AsignarItemRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarPermisos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisos" message="tns:IServiceGestion_AsignarPermisos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisosResponse" message="tns:IServiceGestion_AsignarPermisos_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisosExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_AsignarPermisos_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarPermisosTool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisosTool" message="tns:IServiceGestion_AsignarPermisosTool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisosToolResponse" message="tns:IServiceGestion_AsignarPermisosTool_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/AsignarPermisosToolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_AsignarPermisosTool_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsRol" message="tns:IServiceGestion_ObtenerItemsRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsRolResponse" message="tns:IServiceGestion_ObtenerItemsRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerItemsRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerItemsRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarItemRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EliminarItemRol" message="tns:IServiceGestion_EliminarItemRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EliminarItemRolResponse" message="tns:IServiceGestion_EliminarItemRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EliminarItemRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EliminarItemRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarSistema">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarSistema" message="tns:IServiceGestion_RegistrarSistema_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarSistemaResponse" message="tns:IServiceGestion_RegistrarSistema_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarSistemaExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_RegistrarSistema_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarSistema">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EditarSistema" message="tns:IServiceGestion_EditarSistema_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EditarSistemaResponse" message="tns:IServiceGestion_EditarSistema_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EditarSistemaExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EditarSistema_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoSistemas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoSistemas" message="tns:IServiceGestion_ObtenerCatalogoSistemas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoSistemasResponse" message="tns:IServiceGestion_ObtenerCatalogoSistemas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoSistemasExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerCatalogoSistemas_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoSistemas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoSistemas" message="tns:IServiceGestion_ObtenerInfoSistemas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoSistemasResponse" message="tns:IServiceGestion_ObtenerInfoSistemas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoSistemasExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerInfoSistemas_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerModulosSistemaApp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerModulosSistemaApp" message="tns:IServiceGestion_ObtenerModulosSistemaApp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerModulosSistemaAppResponse" message="tns:IServiceGestion_ObtenerModulosSistemaApp_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerModulosSistemaAppExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerModulosSistemaApp_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarModuloSistemaApp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarModuloSistemaApp" message="tns:IServiceGestion_RegistrarModuloSistemaApp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarModuloSistemaAppResponse" message="tns:IServiceGestion_RegistrarModuloSistemaApp_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarModuloSistemaAppExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_RegistrarModuloSistemaApp_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarModuloSistemaApp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EditarModuloSistemaApp" message="tns:IServiceGestion_EditarModuloSistemaApp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EditarModuloSistemaAppResponse" message="tns:IServiceGestion_EditarModuloSistemaApp_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EditarModuloSistemaAppExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EditarModuloSistemaApp_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoModuloSistemaApp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoModuloSistemaApp" message="tns:IServiceGestion_ObtenerInfoModuloSistemaApp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoModuloSistemaAppResponse" message="tns:IServiceGestion_ObtenerInfoModuloSistemaApp_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerInfoModuloSistemaAppExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_ObtenerInfoModuloSistemaApp_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarPaginaModulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarPaginaModulo" message="tns:IServiceGestion_RegistrarPaginaModulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarPaginaModuloResponse" message="tns:IServiceGestion_RegistrarPaginaModulo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/RegistrarPaginaModuloExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_RegistrarPaginaModulo_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarPaginaModulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/EditarPaginaModulo" message="tns:IServiceGestion_EditarPaginaModulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/EditarPaginaModuloResponse" message="tns:IServiceGestion_EditarPaginaModulo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceGestion/EditarPaginaModuloExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceGestion_EditarPaginaModulo_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoPaises">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoPaises" message="tns:IServiceGestion_ObtenerCatalogoPaises_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGestion/ObtenerCatalogoPaisesResponse" message="tns:IServiceGestion_ObtenerCatalogoPaises_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IServiceAcceso">
+    <wsdl:operation name="ObtenerItemsUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsUsuario" message="tns:IServiceAcceso_ObtenerItemsUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsUsuarioResponse" message="tns:IServiceAcceso_ObtenerItemsUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerItemsUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IniciarSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/IniciarSesion" message="tns:IServiceAcceso_IniciarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/IniciarSesionResponse" message="tns:IServiceAcceso_IniciarSesion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/IniciarSesionExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_IniciarSesion_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CerrarSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/CerrarSesion" message="tns:IServiceAcceso_CerrarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/CerrarSesionResponse" message="tns:IServiceAcceso_CerrarSesion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/CerrarSesionExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_CerrarSesion_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSistemasUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerSistemasUsuario" message="tns:IServiceAcceso_ObtenerSistemasUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerSistemasUsuarioResponse" message="tns:IServiceAcceso_ObtenerSistemasUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerSistemasUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerSistemasUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPermisosItemsUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosItemsUsuario" message="tns:IServiceAcceso_ObtenerPermisosItemsUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosItemsUsuarioResponse" message="tns:IServiceAcceso_ObtenerPermisosItemsUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosItemsUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerPermisosItemsUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPermisosToolsUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosToolsUsuario" message="tns:IServiceAcceso_ObtenerPermisosToolsUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosToolsUsuarioResponse" message="tns:IServiceAcceso_ObtenerPermisosToolsUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerPermisosToolsUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerPermisosToolsUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRolesDeUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerRolesDeUsuario" message="tns:IServiceAcceso_ObtenerRolesDeUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerRolesDeUsuarioResponse" message="tns:IServiceAcceso_ObtenerRolesDeUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerRolesDeUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerRolesDeUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsDeRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsDeRol" message="tns:IServiceAcceso_ObtenerItemsDeRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsDeRolResponse" message="tns:IServiceAcceso_ObtenerItemsDeRol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ObtenerItemsDeRolExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ObtenerItemsDeRol_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPasswordUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAcceso/ModificarPasswordUsuario" message="tns:IServiceAcceso_ModificarPasswordUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAcceso/ModificarPasswordUsuarioResponse" message="tns:IServiceAcceso_ModificarPasswordUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceAcceso/ModificarPasswordUsuarioExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceAcceso_ModificarPasswordUsuario_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceGestion" type="tns:IServiceGestion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarNuevoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/RegistrarNuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EditarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerCatalogoUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ResetPassUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ResetPassUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerInfoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRoles">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRolesUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerRolesUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarNuevoRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/RegistrarNuevoRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarRolUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/AsignarRolUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarRolUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EliminarRolUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsModulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerItemsModulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LimpiarItemsRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/LimpiarItemsRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarItemRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/AsignarItemRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarPermisos">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/AsignarPermisos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarPermisosTool">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/AsignarPermisosTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerItemsRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarItemRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EliminarItemRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarSistema">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/RegistrarSistema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditarSistema">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EditarSistema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoSistemas">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerCatalogoSistemas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoSistemas">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerInfoSistemas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerModulosSistemaApp">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerModulosSistemaApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarModuloSistemaApp">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/RegistrarModuloSistemaApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditarModuloSistemaApp">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EditarModuloSistemaApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInfoModuloSistemaApp">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerInfoModuloSistemaApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarPaginaModulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/RegistrarPaginaModulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditarPaginaModulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/EditarPaginaModulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoPaises">
+      <soap:operation soapAction="http://tempuri.org/IServiceGestion/ObtenerCatalogoPaises" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IServiceAcceso" type="tns:IServiceAcceso">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerItemsUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerItemsUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IniciarSesion">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/IniciarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CerrarSesion">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/CerrarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSistemasUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerSistemasUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPermisosItemsUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerPermisosItemsUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPermisosToolsUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerPermisosToolsUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRolesDeUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerRolesDeUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerItemsDeRol">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ObtenerItemsDeRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPasswordUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceAcceso/ModificarPasswordUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceSSToken">
+    <wsdl:port name="BasicHttpBinding_IServiceGestion" binding="tns:BasicHttpBinding_IServiceGestion">
+      <soap:address location="http://10.51.211.168/SSToken/ServiceSSToken.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IServiceAcceso" binding="tns:BasicHttpBinding_IServiceAcceso">
+      <soap:address location="http://10.51.211.168/SSToken/ServiceSSToken.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

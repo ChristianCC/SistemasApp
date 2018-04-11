@@ -1,0 +1,431 @@
+.RadGrid_skinApp {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadGrid_skinApp .rgHeader {
+    background: #3c8dbc; }
+  .RadGrid_skinApp .rgActionButton,
+  .RadGrid_skinApp .rgDrag,
+  .RadGrid_skinApp .rgDragClue,
+  .RadGrid_skinApp .rgExpandIcon,
+  .RadGrid_skinApp .rgCollapseIcon,
+  .RadGrid_skinApp .rgGroupPanelExpand,
+  .RadGrid_skinApp .rgGroupPanelCollapse,
+  .RadGrid_skinApp .rgButtonSortDesc,
+  .RadGrid_skinApp .rgButtonSortDesc,
+  .RadGrid_skinApp .rgButtonSortAsc,
+  .RadGrid_skinApp .rgButtonSortClear,
+  .RadGrid_skinApp .rgMobileExportForm .rgColumnItem,
+  .RadGrid_skinApp a.rgFilter,
+  .RadGrid_skinApp a.rgColumns {
+    color: #ffffff; }
+    .RadGrid_skinApp .rgActionButton:hover,
+    .RadGrid_skinApp .rgDrag:hover,
+    .RadGrid_skinApp .rgDragClue:hover,
+    .RadGrid_skinApp .rgExpandIcon:hover,
+    .RadGrid_skinApp .rgCollapseIcon:hover,
+    .RadGrid_skinApp .rgGroupPanelExpand:hover,
+    .RadGrid_skinApp .rgGroupPanelCollapse:hover,
+    .RadGrid_skinApp .rgButtonSortDesc:hover,
+    .RadGrid_skinApp .rgButtonSortDesc:hover,
+    .RadGrid_skinApp .rgButtonSortAsc:hover,
+    .RadGrid_skinApp .rgButtonSortClear:hover,
+    .RadGrid_skinApp .rgMobileExportForm .rgColumnItem:hover,
+    .RadGrid_skinApp a.rgFilter:hover,
+    .RadGrid_skinApp a.rgColumns:hover {
+      color: #ff9933; }
+  .RadGrid_skinApp .rgInput,
+  .RadGrid_skinApp .rgEditRow > td > [type="text"],
+  .RadGrid_skinApp .rgEditForm td > [type="text"],
+  .RadGrid_skinApp .rgBatchContainer > [type="text"],
+  .RadGrid_skinApp .rgFilterBox {
+    border-color: #4081a7;
+    color: #555555;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px; }
+    .RadGrid_skinApp .rgInput:hover,
+    .RadGrid_skinApp .rgEditRow > td > [type="text"]:hover,
+    .RadGrid_skinApp .rgEditForm td > [type="text"]:hover,
+    .RadGrid_skinApp .rgBatchContainer > [type="text"]:hover,
+    .RadGrid_skinApp .rgFilterBox:hover {
+      border-color: #2f5f7b;
+      color: #555555;
+      background-color: #ffffff; }
+    .RadGrid_skinApp .rgInput:active,
+    .RadGrid_skinApp .rgInput:focus,
+    .RadGrid_skinApp .rgEditRow > td > [type="text"]:active,
+    .RadGrid_skinApp .rgEditRow > td > [type="text"]:focus,
+    .RadGrid_skinApp .rgEditForm td > [type="text"]:active,
+    .RadGrid_skinApp .rgEditForm td > [type="text"]:focus,
+    .RadGrid_skinApp .rgBatchContainer > [type="text"]:active,
+    .RadGrid_skinApp .rgBatchContainer > [type="text"]:focus,
+    .RadGrid_skinApp .rgFilterBox:active,
+    .RadGrid_skinApp .rgFilterBox:focus {
+      border-color: #3b87c8;
+      color: #555555;
+      background-color: #ffffff; }
+    .t-ie .RadGrid_skinApp .rgInput,
+    .t-ie .RadGrid_skinApp .rgEditRow > td > [type="text"],
+    .t-ie .RadGrid_skinApp .rgEditForm td > [type="text"],
+    .t-ie .RadGrid_skinApp .rgBatchContainer > [type="text"],
+    .t-ie .RadGrid_skinApp .rgFilterBox {
+      height: 34px;
+      height: calc(1.42857em + 14px); }
+  .RadGrid_skinApp .rgEdit,
+  .RadGrid_skinApp .rgDel {
+    text-indent: 0; }
+  .RadGrid_skinApp.rgMultiHeader .rgDataDiv > table,
+  .RadGrid_skinApp.rgMultiHeader .rgFooterDiv > table {
+    margin-left: -1px; }
+  .RadGrid_skinApp .rgHeader,
+  .RadGrid_skinApp th.rgResizeCol {
+    padding: 10px 13px 9px; }
+  .RadGrid_skinApp .rgHeader,
+  .RadGrid_skinApp th.rgResizeCol,
+  .RadGrid_skinApp .rgHeaderWrapper,
+  .RadGrid_skinApp .rgMultiHeaderRow th.rgHeader,
+  .RadGrid_skinApp .rgMultiHeaderRow th.rgResizeCol {
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd; }
+  .RadGrid_skinApp .rgHeader,
+  .RadGrid_skinApp th.rgResizeCol,
+  .RadGrid_skinApp .rgHeaderWrapper {
+    background-color: #3c8dbc; }
+  .RadGrid_skinApp .rgHeaderDiv {
+    border-right: 1px solid #dddddd; }
+  .RadGrid_skinApp .rgHeaderWrapper {
+    border-bottom: 1px solid #dddddd; }
+  .RadGrid_skinApp .rgHeader,
+  .RadGrid_skinApp .rgHeader a {
+    color: #ffffff; }
+  .RadGrid_skinApp .rgRow > td,
+  .RadGrid_skinApp .rgAltRow > td,
+  .RadGrid_skinApp .rgEditRow > td,
+  .RadGrid_skinApp .rgFooter > td,
+  .RadGrid_skinApp .rgFilterRow > td,
+  .RadGrid_skinApp .rgHeader,
+  .RadGrid_skinApp .rgResizeCol,
+  .RadGrid_skinApp .rgGroupHeader td {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .RadGrid_skinApp .rgRow,
+  .RadGrid_skinApp .rgAltRow,
+  .RadGrid_skinApp .rgEditRow,
+  .RadGrid_skinApp .rgFooter,
+  .RadGrid_skinApp .rgGroupHeader {
+    height: 40px;
+    height: calc(1.42857em + 20px); }
+  .RadGrid_skinApp .rgRow > td,
+  .RadGrid_skinApp .rgAltRow > td,
+  .RadGrid_skinApp .rgFooter > td {
+    border-color: #dddddd; }
+  .RadGrid_skinApp .rgRow > td,
+  .RadGrid_skinApp .rgAltRow > td {
+    border-style: solid;
+    border-width: 0 0 1px 1px; }
+  .RadGrid_skinApp .rgAltRow > td {
+    background-color: #f9f9f9;
+    color: #333333; }
+  .RadGrid_skinApp .rgAltRow .rgSorted {
+    background-color: #ececec; }
+  .RadGrid_skinApp .rgAltRow.rgHoveredRow .rgSorted {
+    background-color: #dddddd; }
+  .RadGrid_skinApp .rgActiveRow td:not(.rgExpandCol) {
+    box-shadow: inset 0px 5px 5px -5px #285f8f, inset 0px -5px 5px -5px #285f8f; }
+  .RadGrid_skinApp .rgActiveRow td:first-child:not(.rgExpandCol),
+  .RadGrid_skinApp .rgActiveRow .rgExpandCol + td {
+    box-shadow: inset 0px 5px 5px -5px #285f8f, inset 0px -5px 5px -5px #285f8f, inset 5px 0px 5px -5px #285f8f; }
+  .RadGrid_skinApp .rgActiveRow td:not(.rgExpandCol):last-child {
+    box-shadow: inset 0px 5px 5px -5px #285f8f, inset 0px -5px 5px -5px #285f8f, inset -5px 0px 5px -5px #285f8f; }
+  .RadGrid_skinApp .rgActiveCell {
+    box-shadow: inset 0 0 5px #285f8f; }
+  .RadGrid_skinApp .rgHoveredRow > td {
+    background: #eeeeee;
+    color: #000000; }
+  .RadGrid_skinApp .rgEditRow {
+    background: rgba(221, 221, 221, 0.75);
+    color: #333333; }
+    .RadGrid_skinApp .rgEditRow > td {
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      border-color: #dddddd; }
+    .RadGrid_skinApp .rgEditRow td > input[type="text"] {
+      font: inherit;
+      box-sizing: border-box;
+      border: 1px solid #4081a7; }
+  .RadGrid_skinApp .rgBatchOverlay {
+    background: rgba(221, 221, 221, 0.75); }
+  .RadGrid_skinApp .rgBatchUndoDeleteButton {
+    padding: 2px 10px 2px 0px;
+    left: 7px;
+    border: 1px solid;
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce;
+    border-radius: 4px; }
+    .RadGrid_skinApp .rgBatchUndoDeleteButton:hover {
+      border-color: #2f5f7b;
+      color: #ff9933;
+      background-color: #ffffff; }
+  .RadGrid_skinApp .rgBatchContainer {
+    margin: -9px 0px; }
+  .RadGrid_skinApp .rgSorted {
+    background-color: #e4e4e4; }
+  .RadGrid_skinApp .rgMasterTable .rgSelectedCell,
+  .RadGrid_skinApp .rgSelectedRow td,
+  .RadGrid_skinApp td.rgEditRow .rgSelectedRow,
+  .RadGrid_skinApp .rgSelectedRow td.rgSorted {
+    color: #ffffff;
+    background: #337ab7;
+    border-color: #ffffff; }
+  .RadGrid_skinApp .rgSelectedRow.rgHoveredRow {
+    background: #337ab7; }
+  .RadGrid_skinApp .rgSelectedCell a,
+  .RadGrid_skinApp .rgSelectedRow a {
+    color: #ffffff; }
+  .RadGrid_skinApp .rgFooterWrapper,
+  .RadGrid_skinApp .rgFooter {
+    background: #3c8dbc; }
+  .RadGrid_skinApp .rgFooterWrapper {
+    border-top: 1px solid #dddddd; }
+    .RadGrid_skinApp .rgFooterWrapper tr.rgFooter td {
+      border-bottom-width: 0; }
+  .RadGrid_skinApp .rgFooter > td {
+    border-left: 1px solid #dddddd;
+    padding: 10px 5px; }
+    .RadGrid_skinApp .rgFooter > td:first-child {
+      border-left-width: 0; }
+  .RadGrid_skinApp .rgStatus div {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }
+  .RadGrid_skinApp .rgPagerCell {
+    color: #ffffff;
+    background: #3c8dbc;
+    border-top: 1px solid #dddddd; }
+    .RadGrid_skinApp .rgPagerCell .rgWrap {
+      padding: 0; }
+    .RadGrid_skinApp .rgPagerCell .rgNumPart a,
+    .RadGrid_skinApp .rgPagerCell .rgPagerButton,
+    .RadGrid_skinApp .rgPagerCell .rgActionButton {
+      border-width: 1px;
+      border-style: solid;
+      box-sizing: content-box;
+      border-color: #4081a7;
+      color: #ffffff;
+      background-color: #7fb1ce;
+      font-size: 1em; }
+      .RadGrid_skinApp .rgPagerCell .rgNumPart a:hover,
+      .RadGrid_skinApp .rgPagerCell .rgPagerButton:hover,
+      .RadGrid_skinApp .rgPagerCell .rgActionButton:hover {
+        border-color: #2f5f7b;
+        color: #ff9933;
+        background-color: #ffffff; }
+    .RadGrid_skinApp .rgPagerCell .rgNumPart a,
+    .RadGrid_skinApp .rgPagerCell .rgActionButton {
+      margin: 0;
+      width: 1.42857em;
+      border-left-width: 0; }
+    .RadGrid_skinApp .rgPagerCell .rgNumPart a {
+      border-radius: 0;
+      text-align: center; }
+      .RadGrid_skinApp .rgPagerCell .rgNumPart a.rgCurrentPage {
+        border-color: #2d6da3;
+        color: #ffffff;
+        background-color: #337ab7; }
+    .RadGrid_skinApp .rgPagerCell .rgPageFirst {
+      border-left-width: 1px;
+      border-radius: 0.28571em 0 0 0.28571em; }
+    .RadGrid_skinApp .rgPagerCell .rgPageLast {
+      border-radius: 0 0.28571em 0.28571em 0; }
+    .RadGrid_skinApp .rgPagerCell .NumericPages .rgNumPart a:first-child {
+      border-left-width: 1px;
+      border-radius: 0.28571em 0 0 0.28571em; }
+    .RadGrid_skinApp .rgPagerCell .NumericPages .rgNumPart a:last-child {
+      border-radius: 0 0.28571em 0.28571em 0; }
+    .RadGrid_skinApp .rgPagerCell .rgActionButton {
+      box-sizing: content-box; }
+    .RadGrid_skinApp .rgPagerCell .rgPagerButton {
+      border-radius: 0.28571em; }
+  .RadGrid_skinApp .rgGroupPanel {
+    border-bottom: 1px solid #dddddd;
+    background: #3c8dbc; }
+  .RadGrid_skinApp .rgGroupItem {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    color: #333333; }
+  .RadGrid_skinApp .rgGroupHeader td {
+    border-bottom: 1px solid #dddddd;
+    background: #4293c3; }
+  .RadGrid_skinApp .rgGroupHeader .rgGroupCol {
+    border-bottom-width: 0; }
+  .RadGrid_skinApp .rgRow .rgGroupCol,
+  .RadGrid_skinApp .rgAltRow .rgGroupCol {
+    border-bottom-width: 0;
+    background: #4293c3; }
+  .RadGrid_skinApp .rgMasterTable > tbody tr:first-child .rgGroupCol {
+    border-top-width: 0; }
+  .RadGrid_skinApp table.rgMasterTable .rgGroupCol {
+    border-left-width: 0; }
+  .RadGrid_skinApp .rgFooter .rgGroupCol,
+  .RadGrid_skinApp .rgFooter .rgGroupCol ~ td {
+    border-bottom: 1px solid #dddddd; }
+  .RadGrid_skinApp td.rgGroupCol {
+    background: #4293c3 !important; }
+  .RadGrid_skinApp .rgFilterRow > td {
+    border-bottom: 1px solid #dddddd; }
+  .RadGrid_skinApp .rgFilterBox {
+    border-radius: 4px 0 0 4px; }
+  .RadGrid_skinApp .rgFilter {
+    border-color: #4081a7;
+    margin-left: -1px;
+    border-radius: 0 4px 4px 0;
+    background-color: #7fb1ce; }
+    .RadGrid_skinApp .rgFilter:hover,
+    .RadGrid_skinApp .rgFilter:focus {
+      border-color: #2f5f7b;
+      color: #ff9933;
+      background-color: #ffffff; }
+  .RadGrid_skinApp .rgFilterActive,
+  .RadGrid_skinApp .rgFilterActive:hover,
+  .RadGrid_skinApp .rgFilterActive:focus {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6;
+    box-shadow: inset 0 0 6px rgba(165, 165, 165, 0.5); }
+  .RadGrid_skinApp .rgFiltered {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+    .RadGrid_skinApp .rgFiltered:hover,
+    .RadGrid_skinApp .rgFiltered:focus {
+      border-color: #204d73;
+      color: #ffffff;
+      background-color: #286090; }
+    .RadGrid_skinApp .rgFiltered.rgFilterActive {
+      border-color: #122a3f;
+      color: #ffffff;
+      background-color: #286090; }
+  .RadGrid_skinApp .rgFilterRow .riTextBox {
+    border-radius: 0.28571em 0 0 0.28571em; }
+  .RadGrid_skinApp a.rcCalPopup,
+  .RadGrid_skinApp a.rcTimePopup {
+    margin-right: 0;
+    border-radius: 0; }
+  .RadGrid_skinApp .rgOptions {
+    color: #ffffff; }
+  .RadGrid_skinApp .rgOptSelected {
+    color: #337cb7; }
+  .RadGrid_skinApp .rgEditForm .rgHeader {
+    padding: 10px;
+    border-left-width: 0; }
+  .RadGrid_skinApp .rgEditFormContainer table {
+    padding-left: 10px; }
+  .RadGrid_skinApp .rgRow > td > [type="text"],
+  .RadGrid_skinApp .rgAltRow > td > [type="text"],
+  .RadGrid_skinApp .rgEditForm > td > [type="text"] {
+    font: inherit;
+    border: 1px solid #4081a7;
+    border-radius: 4px; }
+  .RadGrid_skinApp .RadComboBox .rcbInput {
+    border: 0 none;
+    padding: 0; }
+  .RadGrid_skinApp .rgEditFormContainer {
+    padding: 12px 0; }
+    .RadGrid_skinApp .rgEditFormContainer .rgUpdate {
+      margin-left: 0.71429em; }
+    .RadGrid_skinApp .rgEditFormContainer .rgUpdate,
+    .RadGrid_skinApp .rgEditFormContainer .rgCancel {
+      background-color: #7fb1ce;
+      border-color: #4081a7;
+      border-radius: 0.28571em; }
+      .RadGrid_skinApp .rgEditFormContainer .rgUpdate:hover,
+      .RadGrid_skinApp .rgEditFormContainer .rgCancel:hover {
+        background-color: #ffffff; }
+  .RadGrid_skinApp .rgEditForm {
+    margin: -1px;
+    padding: 7px;
+    border-bottom: 1px solid #dddddd; }
+    .RadGrid_skinApp .rgEditForm.rgEditPopup {
+      padding: 0;
+      overflow: hidden; }
+      .RadGrid_skinApp .rgEditForm.rgEditPopup > .rgHeader + div {
+        box-sizing: border-box; }
+    .RadGrid_skinApp .rgEditForm [type="image"] {
+      margin-right: 2px;
+      padding: 8px;
+      border: 1px solid #4081a7 !important;
+      border-radius: 4px;
+      background: #7fb1ce; }
+      .RadGrid_skinApp .rgEditForm [type="image"]:hover {
+        background: #ffffff; }
+    .RadGrid_skinApp .rgEditForm [type="text"]:disabled {
+      background: #ffffff;
+      opacity: .7; }
+  .RadGrid_skinApp .rgDetailTable {
+    border-color: #dddddd; }
+    .RadGrid_skinApp .rgDetailTable .rgRow td:first-child,
+    .RadGrid_skinApp .rgDetailTable .rgAltRow td:first-child {
+      border-left-width: 0; }
+  .RadGrid_skinApp .rgFooter .rgExpandCol {
+    border-left-width: 0; }
+  .RadGrid_skinApp .rgRow .rgExpandCol,
+  .RadGrid_skinApp .rgRow .rgCollapseCol,
+  .RadGrid_skinApp .rgAltRow .rgExpandCol,
+  .RadGrid_skinApp .rgAltRow .rgCollapseCol {
+    border-left-width: 0; }
+  .RadGrid_skinApp .rgCommandCell {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+    .RadGrid_skinApp .rgCommandCell .t-button {
+      border-radius: 4px; }
+      .RadGrid_skinApp .rgCommandCell .t-button:hover {
+        border-color: #2f5f7b;
+        color: #ff9933;
+        background-color: #ffffff; }
+      .RadGrid_skinApp .rgCommandCell .t-button:focus,
+      .RadGrid_skinApp .rgCommandCell .t-button:active {
+        border-color: #1d3a4b;
+        color: #333333;
+        background-color: #e6e6e6; }
+  .RadGrid_skinApp .rgCommandCell {
+    border-color: #dddddd; }
+
+.GridItemDropIndicator_skinApp {
+  border-top: 1px dashed #666; }
+
+.GridToolTip_skinApp {
+  border: 1px solid #c98400;
+  padding: 3px;
+  background: #ffefbd;
+  color: #333; }
+
+.RadGridRTL_skinApp .rgHeader:first-child,
+.RadGridRTL_skinApp th.rgResizeCol:first-child,
+.RadGridRTL_skinApp .rgFilterRow > td:first-child,
+.RadGridRTL_skinApp .rgRow > td:first-child,
+.RadGridRTL_skinApp .rgAltRow > td:first-child {
+  border-left-width: 1px;
+  padding-left: 7px; }
+
+.GridContextMenu_skinApp .rgHCMClear,
+.GridContextMenu_skinApp .rgHCMFilter {
+  font-size: 1em;
+  height: 2.42857em;
+  border-color: #4081a7;
+  color: #ffffff;
+  background-color: #7fb1ce;
+  border-radius: 0.28571em; }
+  .GridContextMenu_skinApp .rgHCMClear:hover,
+  .GridContextMenu_skinApp .rgHCMFilter:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+
+.GridContextMenu_skinApp .rmGroup .rgHCMItem div.rmContent {
+  padding: 15px;
+  margin: 0 auto; }

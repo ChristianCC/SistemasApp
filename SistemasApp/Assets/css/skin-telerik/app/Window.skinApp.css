@@ -1,0 +1,166 @@
+.RadWindow_skinApp {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-color: #d9d9d9; }
+  .RadWindow_skinApp.rwShadow {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .RadWindow_skinApp.RadWindow.rwRoundedCorner,
+  .RadWindow_skinApp.RadWindow.rwCollapsed.rwRoundedCorner .rwTitleBar,
+  .RadWindow_skinApp.RadWindow.rwMinimizedWindow.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.28571em; }
+  .RadWindow_skinApp.RadWindow.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.28571em 0.28571em 0em 0em; }
+  .RadWindow_skinApp .rwTitleBar {
+    background-color: #3c8dbc; }
+  .RadWindow_skinApp.rwCollapsed .rwTitleBar {
+    border-bottom-color: #d9d9d9; }
+  .RadWindow_skinApp .rwTitleBar .rwTitleWrapper {
+    padding: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9; }
+  .RadWindow_skinApp.rwMinimizedWindow .rwTitleWrapper {
+    border-bottom: 0; }
+  .RadWindow_skinApp.rwMinimizedWindow .rwTitleWrapper .rwTitle {
+    width: 40%; }
+  .RadWindow_skinApp .rwCommands {
+    margin: -1.14286em 0em 0em; }
+  .RadWindow_skinApp .rwListItem {
+    margin: 0; }
+  .RadWindow_skinApp .rwCommands .rwCommandButton {
+    text-indent: 0;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .RadWindow_skinApp .rwCommands .rwCommandButton:hover {
+    background-color: #ebebeb;
+    border-color: #2f5f7b;
+    border-radius: 0.21429em; }
+  .RadWindow_skinApp .rwCommands .rwCommandButton:before {
+    text-align: center;
+    color: #333333; }
+  .RadWindow_skinApp .rwContent {
+    background-color: #ffffff;
+    border: 0; }
+  .RadWindow_skinApp .rwContent.rwExternalContent {
+    border-top: 1px solid transparent; }
+  .RadWindow_skinApp .rwStatusBar {
+    background-color: #ffffff;
+    border-color: transparent;
+    border-top-color: #d9d9d9;
+    margin: 0.5em -0.5em 0em -0.5em;
+    height: 2.64286em;
+    height: 2.14286em \9;
+    border-radius: 0em 0em 0.28571em 0.28571em; }
+  .RadWindow_skinApp .rwStatusBar input {
+    color: #333333;
+    font-size: 1em; }
+  .RadWindow_skinApp .rwStatusBar .rwResize {
+    right: .1em;
+    right: 0.21429em;
+    bottom: 0.14286em; }
+  .RadWindow_skinApp _:-ms-fullscreen, :root .RadWindow_skinApp .rwResize {
+    right: 0.28571em;
+    bottom: 0.14286em; }
+  @media \0screen {
+    .RadWindow_skinApp .rwStatusBar .rwResize {
+      right: 0.14286em;
+      bottom: 0.14286em; } }
+  .RadWindow_skinApp .rwStatusBar .rwResize:before {
+    font-size: 2.28571em;
+    font-size: 1.2em\9;
+    color: #d9d9d9;
+    content: "\E006"; }
+  .RadWindow_skinApp _:-ms-fullscreen, :root .RadWindow_skinApp .rwResize:before {
+    font-size: .55em; }
+  @media \0screen {
+    .RadWindow_skinApp .rwStatusBar .rwResize:before {
+      font-size: 2.28571em; } }
+  .RadWindow_skinApp.rwLoading .rwExternalContent {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading.gif")%>'); }
+  .RadWindow_skinApp .rwLoading.rwStatusBar {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }
+  .RadWindow_skinApp .rwListItem .rwCommandButton {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    margin: 0em 0.14286em; }
+  .RadWindow_skinApp .rwDialog {
+    margin: 0.35714em 0em 0em;
+    background-image: none; }
+  .RadWindow_skinApp .rwDialog:before {
+    font-size: 36px; }
+  .RadWindow_skinApp .rwAlertDialog:before {
+    content: "\E0FA"; }
+  .RadWindow_skinApp .rwConfirmDialog:before {
+    content: "\E0FB"; }
+  .RadWindow_skinApp .rwDialogButtons button {
+    padding: 0.42857em 0.85714em;
+    padding: 0.46429em 0.85714em \9;
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce; }
+  .RadWindow_skinApp _:-ms-fullscreen, .RadWindow_skinApp :root .rwDialogButtons button {
+    padding: 0.46429em 0.85714em; }
+  .RadWindow_skinApp .rwDialogButtons button:hover,
+  .RadWindow_skinApp .rwDialogButtons button:focus {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadWindow_skinApp .rwDialogButtons button:focus {
+    outline-width: thin;
+    outline-style: dotted;
+    outline-offset: -2px;
+    outline-color: #2f5f7b; }
+  .RadWindow_skinApp .rwPromptDialog button.rwOkBtn, .RadWindow_skinApp .rwConfirmDialog button.rwOkBtn {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .RadWindow_skinApp .rwPromptDialog button.rwOkBtn:hover, .RadWindow_skinApp .rwConfirmDialog button.rwOkBtn:hover,
+  .RadWindow_skinApp .rwPromptDialog input.rwOkBtn:focus, .RadWindow_skinApp .rwConfirmDialog input.rwOkBtn:focus {
+    border-color: #204d73;
+    color: #ffffff;
+    background-color: #286090; }
+  .RadWindow_skinApp .rwPromptDialog button.rwOkBtn:active, .RadWindow_skinApp .rwConfirmDialog button.rwOkBtn:active {
+    border-color: #122a3f;
+    color: #ffffff;
+    background-color: #286090; }
+  .RadWindow_skinApp .rwDialogButtons button:active {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6;
+    color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset; }
+  .RadWindow_skinApp .rwPromptInput,
+  .RadWindow_skinApp .rwPromptInput:hover {
+    height: 1.5em;
+    padding: 0.42857em 0.85714em;
+    background-color: #ffffff;
+    color: #555555;
+    border-color: #4081a7; }
+  .RadWindow_skinApp .rwPromptInput:focus {
+    background-color: #ffffff;
+    color: #555555;
+    border-color: #3b87c8;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none; }
+  .RadWindow_skinApp .rwPromptInput:active {
+    background-color: #ffffff;
+    color: #555555;
+    border-color: #4081a7; }
+  .RadWindow_skinApp .rwPromptInput:disabled {
+    background-color: #eeeeee;
+    color: #888888;
+    border-color: #4081a7; }
+  .RadWindow_skinApp.rwRtl.rwRtl.rwMinimizedWindow .rwCommands {
+    right: auto;
+    left: 0; }
+  .RadWindow_skinApp .rwTitleWrapper .rwTitle {
+    margin: 0; }
+  .RadWindow_skinApp .rwIcon {
+    margin: -0.57143em 0em 0em; }
+  .RadWindow_skinApp.rwMinimizedWindow .rwCommands {
+    top: 1.42857em;
+    right: -0.42857em; }

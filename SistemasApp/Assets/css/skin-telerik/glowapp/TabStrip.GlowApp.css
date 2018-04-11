@@ -1,0 +1,77 @@
+.RadTabStrip_GlowApp {
+  color: #e2e8eb; }
+  .RadTabStrip_GlowApp .rtsLevel1 {
+    border-color: #1c2327; }
+    .RadTabStrip_GlowApp .rtsLevel1 .rtsLink {
+      border-color: #273237;
+      color: #c1c7ca;
+      background-color: #2b373d;
+      background-image: linear-gradient(#414e55, #2b373d);
+      text-shadow: 0 1px 0 #252f34; }
+    .RadTabStrip_GlowApp .rtsLevel1 .rtsHovered .rtsLink {
+      border-color: #273237;
+      color: white;
+      background-color: #202a2e;
+      background-image: linear-gradient(#3b4346, #202a2e); }
+    .RadTabStrip_GlowApp .rtsLevel1 .rtsSelected .rtsLink {
+      border-color: #1a2125;
+      color: #ffa915;
+      background-color: #252f34;
+      background-image: linear-gradient(#1c262c, #252f34); }
+    .RadTabStrip_GlowApp .rtsLevel1 .rtsSelected .rtsLink:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-color: #ffa915; }
+    .RadTabStrip_GlowApp .rtsLevel1 .rtsFocused .rtsLink {
+      border-color: #1a2125;
+      box-shadow: inset 0 0 5px #1a2125; }
+  .RadTabStrip_GlowApp.rtsHorizontal .rtsLevel1 .rtsLink:before {
+    width: 100%;
+    border-width: 4px 0 0;
+    border-style: solid;
+    left: 0; }
+  .RadTabStrip_GlowApp.rtsVertical .rtsLevel1 .rtsLink:before {
+    height: 100%;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+    top: 0; }
+  .RadTabStrip_GlowApp.rtsTop .rtsLevel1 .rtsLink:before {
+    top: 0; }
+  .RadTabStrip_GlowApp.rtsBottom .rtsLevel1 .rtsLink:before {
+    bottom: 0; }
+  .RadTabStrip_GlowApp.rtsLeft .rtsLevel1 .rtsLink:before {
+    left: 0; }
+  .RadTabStrip_GlowApp.rtsRight .rtsLevel1 .rtsLink:before {
+    right: 0; }
+  .RadTabStrip_GlowApp .rtsLevel1 ~ .rtsLevel {
+    border-color: #1c2327;
+    color: #e2e8eb;
+    background-color: #35434b;
+    background: #252f34; }
+    .RadTabStrip_GlowApp .rtsLevel1 ~ .rtsLevel .rtsLink {
+      color: #ffa915; }
+    .RadTabStrip_GlowApp .rtsLevel1 ~ .rtsLevel .rtsHovered .rtsLink {
+      color: #ffa915; }
+    .RadTabStrip_GlowApp .rtsLevel1 ~ .rtsLevel .rtsSelected .rtsLink {
+      color: #d27000; }
+    .RadTabStrip_GlowApp .rtsLevel1 ~ .rtsLevel .rtsFocused .rtsLink {
+      border-color: #1a2125;
+      box-shadow: inset 0 0 5px #1a2125; }
+  .RadTabStrip_GlowApp .rtsGhostTab {
+    border-color: #273237;
+    color: #c1c7ca;
+    background-color: #2b373d;
+    background-image: linear-gradient(#414e55, #2b373d); }
+
+.RadTabStrip.rtsTop .rtsLevel1 .rtsSelected .rtsLink {
+  border-bottom-color: transparent; }
+
+.RadTabStrip.rtsBottom .rtsLevel1 .rtsSelected .rtsLink {
+  border-top-color: transparent; }
+
+.RadTabStrip.rtsLeft .rtsLevel1 .rtsSelected .rtsLink {
+  border-right-color: transparent; }
+
+.RadTabStrip.rtsRight .rtsLevel1 .rtsSelected .rtsLink {
+  border-left-color: transparent; }

@@ -1,0 +1,73 @@
+.RadCloudUpload_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadCloudUpload_skinApp .rcuButton {
+    border-radius: 4px;
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce;
+    padding: 6px 12px; }
+  .RadCloudUpload_skinApp .rcuInfoPanel {
+    border-color: #000000;
+    border-radius: 4px; }
+  .RadCloudUpload_skinApp .rcuHeader {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc;
+    padding: 15px; }
+    .RadCloudUpload_skinApp .rcuHeader .rcuToggleButton {
+      padding: 8px;
+      right: 8px; }
+  .RadCloudUpload_skinApp .rcuBody {
+    padding: 0;
+    border: 0;
+    background-color: #ff9933; }
+  .RadCloudUpload_skinApp .rcuFileList {
+    border-color: #dddddd;
+    color: #333333;
+    background-color: #ffffff;
+    margin: 0;
+    border-width: 1px 0 0; }
+  .RadCloudUpload_skinApp .rcuLI {
+    padding-left: 28px; }
+  .RadCloudUpload_skinApp .rcuFileName,
+  .RadCloudUpload_skinApp .rcuFileSize {
+    padding: 10px; }
+  .RadCloudUpload_skinApp .rcuProgressIcon {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }
+  .RadCloudUpload_skinApp .rcuProgressBar {
+    top: 16px;
+    border-color: #dddddd;
+    background-color: #f5f5f5; }
+  .RadCloudUpload_skinApp .rcuProgress {
+    border-color: #ffffff;
+    background-color: #337ab7; }
+  .RadCloudUpload_skinApp .rcuButtons {
+    right: 12px; }
+    .RadCloudUpload_skinApp .rcuButtons .rcuButton,
+    .RadCloudUpload_skinApp .rcuButtons .rcuFakeButton {
+      margin-left: 16px; }
+  .RadCloudUpload_skinApp .radIcon.rcuStatusIcon {
+    left: 16px; }
+  .RadCloudUpload_skinApp .rcuLIUploading .rcuStatusIcon:before {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }
+  .RadCloudUpload_skinApp .rcuDropZone {
+    color: #3c8dbc;
+    border-color: #000000;
+    background-color: rgba(255, 153, 51, 0.8); }
+  .RadCloudUpload_skinApp .rcuHovered.rcuButton {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadCloudUpload_skinApp .rcuButtons .rcuHovered {
+    color: #337cb7;
+    background: transparent; }
+  .RadCloudUpload_skinApp .rcuButton.rcuPressed {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6; }
+
+.rcuToolTip_skinApp {
+  border-color: #dddddd;
+  color: #333333;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }

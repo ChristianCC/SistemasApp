@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1054a68a-39fa-4309-ae8f-ef243db0bd90" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.51.211.168/SSToken/ServiceSSToken.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceSSToken11.xsd" MetadataType="Schema" ID="a63e06cb-5941-44fc-82d9-d280c5112432" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd8" />
+    <MetadataFile FileName="ServiceSSToken111.xsd" MetadataType="Schema" ID="8541aa73-3292-4c6a-baf7-8d64dd1182d7" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd6" />
+    <MetadataFile FileName="ServiceSSToken112.xsd" MetadataType="Schema" ID="7b34db0d-cc78-454e-a2a5-771316244e2c" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd4" />
+    <MetadataFile FileName="ServiceSSToken113.xsd" MetadataType="Schema" ID="9b8cbd29-2e77-4ef8-ae73-563a6e7227cc" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSSToken114.xsd" MetadataType="Schema" ID="6ef2c9c1-8a33-4c14-a7da-416a196e8000" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceSSToken115.xsd" MetadataType="Schema" ID="7134ba01-a38b-4f7c-87a7-3491ba7de366" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd10" />
+    <MetadataFile FileName="ServiceSSToken116.xsd" MetadataType="Schema" ID="d284d704-b7ba-4dd0-9f2f-7f643adf3c5e" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd9" />
+    <MetadataFile FileName="ServiceSSToken117.xsd" MetadataType="Schema" ID="ea8e61ab-c2ba-4559-b5af-3f4767d1e4e7" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd7" />
+    <MetadataFile FileName="ServiceSSToken118.xsd" MetadataType="Schema" ID="a45bda22-b107-41ea-b264-6d0d9ff1875e" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd5" />
+    <MetadataFile FileName="ServiceSSToken119.xsd" MetadataType="Schema" ID="c83b8d47-1a72-40cd-9652-9841723e4172" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceSSToken1.disco" MetadataType="Disco" ID="c1ec54ec-0323-4f46-ba43-c860ec7b796c" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?disco" />
+    <MetadataFile FileName="ServiceSSToken1110.xsd" MetadataType="Schema" ID="d350570c-115f-4364-8a2a-b82b422ab696" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSSToken1.wsdl" MetadataType="Wsdl" ID="2caca072-9b30-41e3-a16f-42fb52a52529" SourceId="1" SourceUrl="http://10.51.211.168/SSToken/ServiceSSToken.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

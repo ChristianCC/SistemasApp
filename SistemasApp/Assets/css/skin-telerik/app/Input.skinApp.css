@@ -1,0 +1,76 @@
+.RadInput_skinApp,
+.RadInputMgr_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .t-ie .RadInput_skinApp,
+  .t-ie .RadInputMgr_skinApp {
+    height: 34px;
+    height: calc(1.42857em + 14px); }
+
+.RadInput_skinApp .riTextBox,
+.RadInputMgr_skinApp {
+  padding: 6px 12px;
+  border-color: #4081a7;
+  border-radius: 4px;
+  color: #555555;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; }
+
+.RadInput_skinApp .riEmpty,
+.RadInput_Empty_skinApp {
+  color: #888888; }
+
+.RadInput_skinApp .riDisabled,
+.RadInput_Disabled_skinApp {
+  opacity: .7;
+  cursor: default;
+  color: #888888; }
+
+.RadInput_skinApp .riHover,
+.RadInput_Hover_skinApp {
+  border-color: #2f5f7b;
+  color: #555555;
+  background-color: #ffffff; }
+
+html body .RadInput_skinApp .riFocused,
+html body .RadInput_Focused_skinApp {
+  border-color: #3b87c8;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+html body .RadInput_skinApp .riRead,
+html body .RadInput_Read_skinApp {
+  border-color: #888888;
+  color: #888888;
+  background: #eeeeee; }
+
+html body .RadInput_skinApp .riError,
+html body .RadInput_Error_skinApp {
+  border-color: #a94442; }
+
+html body .RadInput_skinApp .riNegative,
+html body .RadInput_Negative_skinApp {
+  color: #6f6f6f; }
+
+.RadInput_skinApp .riSelect {
+  overflow: hidden;
+  border-radius: 0 4px 4px 0; }
+
+.RadInput_skinApp a {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-color: #4081a7;
+  color: #ffffff;
+  background-color: #7fb1ce; }
+  .RadInput_skinApp a:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+
+.RadInput_skinApp .riLabel {
+  color: #333333;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.RadInput_skinApp.riContButton .riDown {
+  margin-left: -33px;
+  margin-left: calc(-13px - 1.42857em); }

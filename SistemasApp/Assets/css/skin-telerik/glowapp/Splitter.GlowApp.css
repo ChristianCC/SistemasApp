@@ -1,0 +1,139 @@
+.RadSplitter_GlowApp .rspLoading {
+  background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading.gif")%>'); }
+
+.RadSplitter_GlowApp,
+.RadSplitter_GlowApp .rspPane,
+.RadSplitter_GlowApp .rspResizeBar,
+.RadSplitter_GlowApp .rspSlideContainerResize,
+.RadSplitter_GlowApp .rspPaneHorizontal,
+.RadSplitter_GlowApp .rspResizeBarHorizontal,
+.RadSplitter_GlowApp .rspSlideContainerResizeHorizontal {
+  border-color: #1c2327; }
+
+.RadSplitter_GlowApp .rspSlideHeader,
+.RadSplitter_GlowApp .rspSlideTitleContainer {
+  background-image: linear-gradient(#414e55, #2b373d);
+  color: #c1c7ca; }
+
+.RadSplitter_GlowApp .rspPaneTabText {
+  color: #e2e8eb; }
+
+.RadSplitter_GlowApp .rspSlideTitleContainer,
+.RadSplitter_GlowApp .rspSlideHeaderIconWrapper {
+  border-bottom: 1px solid #1c2327; }
+
+.RadSplitter_GlowApp .rspSlideHeaderDockIcon,
+.RadSplitter_GlowApp .rspSlideHeaderUndockIcon,
+.RadSplitter_GlowApp .rspSlideHeaderCollapseIcon {
+  height: 26px;
+  width: 26px;
+  color: #c1c7ca; }
+
+.RadSplitter_GlowApp .rspSlideHeaderDockIcon:hover,
+.RadSplitter_GlowApp .rspSlideHeaderUndockIcon:hover,
+.RadSplitter_GlowApp .rspSlideHeaderCollapseIcon:hover {
+  color: #ffa915;
+  text-shadow: 0 0 2px #ffa915; }
+
+.RadSplitter_GlowApp .rspSlideHeaderDockIcon::before,
+.RadSplitter_GlowApp .rspSlideHeaderUndockIcon::before,
+.RadSplitter_GlowApp .rspSlideHeaderCollapseIcon::before {
+  margin: 2px 0 0 2px; }
+
+.RadSplitter_GlowApp .rspSlideContent,
+.RadSplitter_GlowApp .rspTabsContainer {
+  background-color: #35434b;
+  color: #e2e8eb; }
+
+.RadSplitter_GlowApp .rspResizeBar,
+.RadSplitter_GlowApp .rspSlideContainerResize {
+  background-color: #1c262c;
+  border-right-color: #1c262c;
+  background-image: linear-gradient(to right, #30414b, #1c262c); }
+
+.RadSplitter_GlowApp .rspResizeBarOver,
+.RadSplitter_GlowApp .rspSlideContainerResizeOver {
+  background-color: #cd8100;
+  border-right-color: #cd8100;
+  background-image: linear-gradient(to right, #ffa201, #cd8100); }
+
+.RadSplitter_GlowApp .rspResizeBarHorizontal,
+.RadSplitter_GlowApp .rspSlideContainerResizeHorizontal {
+  background-color: #1c262c;
+  border-right-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c); }
+
+.RadSplitter_GlowApp .rspResizeBarOverHorizontal,
+.RadSplitter_GlowApp .rspSlideContainerResizeOverHorizontal {
+  background-color: #cd8100;
+  border-right-color: #cd8100;
+  background-image: linear-gradient(#ffa201, #cd8100); }
+
+.RadSplitter_GlowApp .rspPaneTabContainer {
+  background-image: linear-gradient(to left, #30414b, #1c262c);
+  border-color: #1c262c; }
+
+.RadSplitter_GlowApp .rspPaneTabContainer:hover .rspPaneTabText,
+.RadSplitter_GlowApp .rspPaneTabContainerExpanded .rspPaneTabText {
+  color: #713600; }
+
+.RadSplitter_GlowApp .rspBottom .rspPaneTabContainer,
+.RadSplitter_GlowApp .rspTop .rspPaneTabContainer {
+  background-image: linear-gradient(#30414b, #1c262c); }
+
+.RadSplitter_GlowApp .rspPaneTabContainer:hover {
+  background-image: linear-gradient(to left, #ffa201, #cd8100);
+  border-color: #cd8100; }
+
+.RadSplitter_GlowApp .rspBottom .rspPaneTabContainer:hover,
+.RadSplitter_GlowApp .rspTop .rspPaneTabContainer:hover {
+  background-image: linear-gradient(#ffa201, #cd8100); }
+
+.RadSplitter_GlowApp .rspPaneTabContainerExpanded,
+.RadSplitter_GlowApp .rspBottom .rspPaneTabContainerExpanded,
+.RadSplitter_GlowApp .rspTop .rspPaneTabContainerExpanded {
+  background-image: none;
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #ffa915; }
+
+.RadSplitter_GlowApp .rspCollapseBarExpand,
+.RadSplitter_GlowApp .rspCollapseBarCollapse {
+  background-image: linear-gradient(to right, #30414b, #1c262c);
+  border-color: #1c262c;
+  color: #e2e8eb; }
+
+.RadSplitter_GlowApp .rspCollapseBarHorizontalExpand,
+.RadSplitter_GlowApp .rspCollapseBarHorizontalCollapse {
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c); }
+
+.RadSplitter_GlowApp .rspCollapseBarExpandOver,
+.RadSplitter_GlowApp .rspCollapseBarCollapseOver {
+  background-image: linear-gradient(to right, #ffa201, #cd8100);
+  border-color: #cd8100;
+  text-shadow: 0 0 2px #ffa915;
+  color: #713600; }
+
+.RadSplitter_GlowApp .rspCollapseBarHorizontalExpandOver,
+.RadSplitter_GlowApp .rspCollapseBarHorizontalCollapseOver {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #cd8100;
+  background-image: linear-gradient(#ffa201, #cd8100);
+  text-shadow: 0 0 2px #ffa915; }
+
+.RadSplitter_GlowApp .rspSlideContainer td.rspSlideContainerResizeHorizontal {
+  padding: 2px 0 3px 0; }
+
+.RadSplitter_GlowApp .rspSlideHeader table {
+  height: 36px; }
+
+.RadSplitter_GlowApp .rspSlideHeader .rspSlideTitle {
+  margin: 0 5px 0 15px; }
+
+.RadSplitter .rspHelperBarDrag,
+.RadSplitter .rspHelperBarSlideDrag {
+  background-image: linear-gradient(none); }

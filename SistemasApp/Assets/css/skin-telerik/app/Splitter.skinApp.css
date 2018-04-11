@@ -1,0 +1,131 @@
+.RadSplitter_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadSplitter_skinApp .rspLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading.gif")%>'); }
+  .RadSplitter_skinApp,
+  .RadSplitter_skinApp .rspPaneTabContainer,
+  .RadSplitter_skinApp .rspPane,
+  .RadSplitter_skinApp .rspResizeBar,
+  .RadSplitter_skinApp .rspSlideContainerResize,
+  .RadSplitter_skinApp .rspPaneHorizontal,
+  .RadSplitter_skinApp .rspResizeBarHorizontal,
+  .RadSplitter_skinApp .rspSlideContainerResizeHorizontal {
+    border-color: #dddddd; }
+  .RadSplitter_skinApp .rspSlideHeader,
+  .RadSplitter_skinApp .rspSlideTitleContainer {
+    background-color: #3c8dbc; }
+  .RadSplitter_skinApp .rspSlideHeader .rspSlideTitle {
+    color: #ffffff; }
+  .RadSplitter_skinApp .rspSlideTitleContainer,
+  .RadSplitter_skinApp .rspSlideHeaderIconWrapper {
+    border-bottom: 1px solid #dddddd; }
+  .RadSplitter_skinApp .rspSlideHeaderDockIcon,
+  .RadSplitter_skinApp .rspSlideHeaderUndockIcon,
+  .RadSplitter_skinApp .rspSlideHeaderCollapseIcon {
+    height: 32px;
+    width: 32px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    color: #ffffff; }
+  .RadSplitter_skinApp .rspSlideHeaderDockIcon:hover,
+  .RadSplitter_skinApp .rspSlideHeaderUndockIcon:hover,
+  .RadSplitter_skinApp .rspSlideHeaderCollapseIcon:hover {
+    background-color: #ffffff;
+    border-color: #2f5f7b;
+    color: #ff9933; }
+  .RadSplitter_skinApp .rspSlideHeaderDockIcon:before,
+  .RadSplitter_skinApp .rspSlideHeaderUndockIcon:before,
+  .RadSplitter_skinApp .rspSlideHeaderCollapseIcon:before {
+    margin: 8px 0 0 7px; }
+  .RadSplitter_skinApp .rspSlideContent,
+  .RadSplitter_skinApp .rspTabsContainer {
+    background-color: #ffffff;
+    color: #333333; }
+  .RadSplitter_skinApp .rspResizeBar,
+  .RadSplitter_skinApp .rspSlideContainerResize {
+    background-color: #ffffff;
+    border-right-color: #dddddd; }
+  .RadSplitter_skinApp .rspResizeBarOver,
+  .RadSplitter_skinApp .rspSlideContainerResizeOver {
+    background-color: #e4e4e4; }
+  .RadSplitter_skinApp .rspResizeBarHorizontal,
+  .RadSplitter_skinApp .rspSlideContainerResizeHorizontal {
+    background-color: #ffffff;
+    border-bottom-color: #dddddd; }
+  .RadSplitter_skinApp .rspResizeBarOverHorizontal,
+  .RadSplitter_skinApp .rspSlideContainerResizeOverHorizontal {
+    background-color: #ffffff; }
+  .RadSplitter_skinApp .rspPaneTabContainer,
+  .RadSplitter_skinApp .rspBottom .rspPaneTabContainer,
+  .RadSplitter_skinApp .rspTop .rspPaneTabContainer {
+    background-color: #7fb1ce;
+    color: #337ab7; }
+  .RadSplitter_skinApp .rspPaneTabContainer:hover,
+  .RadSplitter_skinApp .rspBottom .rspPaneTabContainer:hover,
+  .RadSplitter_skinApp .rspTop .rspPaneTabContainer:hover {
+    background-color: #ffffff;
+    color: #286090; }
+  .RadSplitter_skinApp .rspPaneTabContainerExpanded,
+  .RadSplitter_skinApp .rspBottom .rspPaneTabContainerExpanded,
+  .RadSplitter_skinApp .rspTop .rspPaneTabContainerExpanded {
+    background-color: #e6e6e6;
+    color: #286090; }
+  .RadSplitter_skinApp .rspCollapseBarExpand,
+  .RadSplitter_skinApp .rspCollapseBarCollapse,
+  .RadSplitter_skinApp .rspCollapseBarHorizontalExpand,
+  .RadSplitter_skinApp .rspCollapseBarHorizontalCollapse {
+    background-color: #7fb1ce;
+    border-color: #4081a7; }
+  .RadSplitter_skinApp .rspCollapseBarExpandOver,
+  .RadSplitter_skinApp .rspCollapseBarCollapseOver,
+  .RadSplitter_skinApp .rspCollapseBarHorizontalExpandOver,
+  .RadSplitter_skinApp .rspCollapseBarHorizontalCollapseOver {
+    background-color: #ffffff; }
+  .RadSplitter_skinApp .rspCollapseBarHorizontalCollapse + .rspCollapseBarHorizontalExpand {
+    margin: 0 0 0 -2px; }
+  .RadSplitter_skinApp .rspCollapseBarCollapse + .rspCollapseBarExpand {
+    margin: -3px 0 0; }
+  .RadSplitter_skinApp .rspSlideContainer td.rspSlideContainerResize {
+    padding: 0 2px; }
+  .RadSplitter_skinApp .rspResizeBar .rspCollapseBarSpacer {
+    width: 8px !important; }
+  .RadSplitter_skinApp .rspResizeBarHorizontal .rspCollapseBarSpacer {
+    height: 8px !important; }
+  .RadSplitter_skinApp .rspSlideContainer td.rspSlideContainerResize {
+    padding: 0 2px;
+    border-color: #dddddd; }
+  .RadSplitter_skinApp .rspResizeBar .rspCollapseBarSpacer {
+    width: 6px !important; }
+  .RadSplitter_skinApp .rspResizeBarHorizontal .rspCollapseBarSpacer {
+    height: 6px !important; }
+  .RadSplitter_skinApp .rspCollapseBarExpand,
+  .RadSplitter_skinApp .rspCollapseBarCollapse {
+    height: 26px;
+    line-height: 26px;
+    width: 6px;
+    margin: 2px 0; }
+  .RadSplitter_skinApp .rspCollapseBarHorizontalExpand,
+  .RadSplitter_skinApp .rspCollapseBarHorizontalCollapse {
+    height: 6px;
+    line-height: 6px; }
+  .RadSplitter_skinApp .rspSlideContainer td.rspSlideContainerResizeHorizontal {
+    padding: 2px 0 3px 0; }
+  .RadSplitter_skinApp .rspPaneHorizontal .rspPaneTabContainer {
+    height: 22px !important;
+    overflow: hidden; }
+  .RadSplitter_skinApp .rspSlideHeader table {
+    height: 39px;
+    background-color: #3c8dbc; }
+  .RadSplitter_skinApp .rspSlideHeader .rspSlideTitle {
+    margin: 0 5px 0 15px;
+    line-height: 40px;
+    height: 40px; }
+  .RadSplitter_skinApp .rspSlideHeader .rspSlideHeaderIconWrapper {
+    padding: 0 2px 0 0; }
+
+div.RadSplitter .rspHelperBarDrag,
+div.RadSplitter .rspHelperBarSlideDrag {
+  background-color: #337ab7 !important;
+  opacity: 1; }

@@ -1,0 +1,72 @@
+.RadColorPicker_skinApp {
+  font-size: 1em; }
+  .RadColorPicker_skinApp .rcpPalette {
+    background-color: #ff9933;
+    border-color: #000000; }
+  .RadColorPicker_skinApp .rcpHeader {
+    background-color: #3c8dbc;
+    background-image: linear-gradient();
+    border-color: #dddddd; }
+  .RadColorPicker_skinApp .rcpImageButton,
+  .RadColorPicker_skinApp a.rslDraghandle {
+    color: #000000; }
+  .RadColorPicker_skinApp .rcpImageButton {
+    color: #337cb7; }
+  .RadColorPicker_skinApp .rcpIcon em,
+  .RadColorPicker_skinApp .rcpColorPreview,
+  .RadColorPicker_skinApp .rcpInput,
+  .RadColorPicker_skinApp .rcpHexInput,
+  .RadColorPicker_skinApp .rcpMillionColorsPalette,
+  .RadColorPicker_skinApp .rcpMillionColorsSlider div.rslTrack {
+    background-color: #ffffff;
+    color: #555555;
+    border-color: #4081a7; }
+  .RadColorPicker_skinApp .rcpIcon a,
+  .RadColorPicker_skinApp .rcpTabs li,
+  .RadColorPicker_skinApp .rcpButton {
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce; }
+  .RadColorPicker_skinApp .rcpIcon a,
+  .RadColorPicker_skinApp .rcpTabs a {
+    color: #ffffff; }
+  .RadColorPicker_skinApp .rcpIcon a:hover,
+  .RadColorPicker_skinApp .rcpTabs li:hover,
+  .RadColorPicker_skinApp .rcpButton:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadColorPicker_skinApp .rcpIcon a:hover,
+  .RadColorPicker_skinApp .rcpTabs li:hover a {
+    color: #ff9933; }
+  .RadColorPicker_skinApp .rcpIcon a:active,
+  .RadColorPicker_skinApp .rcpTabs .rcpSelectedTab,
+  .RadColorPicker_skinApp .rcpTabs .rcpSelectedTab:hover,
+  .RadColorPicker_skinApp .rcpButton:active {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6; }
+  .RadColorPicker_skinApp .rcpIcon a:focus {
+    box-shadow: inset 0 0 5px rgba(29, 58, 75, 0.5); }
+  .RadColorPicker_skinApp .rcpIcon a:active:before,
+  .RadColorPicker_skinApp .rcpTabs .rcpSelectedTab a,
+  .RadColorPicker_skinApp .rcpTabs .rcpSelectedTab:hover a {
+    color: #333333; }
+  .RadColorPicker_skinApp .rcpRecentColors {
+    border-color: #dddddd; }
+  .RadColorPicker_skinApp.rcpCustomColorWrapper .rcpPalette {
+    box-shadow: 2px 2px 3px rgba(221, 221, 221, 0.5); }
+  .RadColorPicker_skinApp .rcpIcon {
+    padding: 7px 0; }
+  .RadColorPicker_skinApp .rcpPageView label {
+    color: #333333; }
+  .RadColorPicker_skinApp .rcpSlider.RadSlider_skinApp a.rslDraghandle,
+  .RadColorPicker_skinApp .rcpMillionColorsSlider.RadSlider_skinApp a.rslDraghandle {
+    color: #000000; }
+  .RadColorPicker_skinApp .rcpSlider.RadSlider_skinApp a.rslDraghandle:hover,
+  .RadColorPicker_skinApp .rcpSlider.RadSlider_skinApp a.rslDraghandle:active,
+  .RadColorPicker_skinApp .rcpSlider.RadSlider_skinApp a.rslDraghandle:focus,
+  .RadColorPicker_skinApp .rcpMillionColorsSlider.RadSlider_skinApp a.rslDraghandle:hover,
+  .RadColorPicker_skinApp .rcpMillionColorsSlider.RadSlider_skinApp a.rslDraghandle:active,
+  .RadColorPicker_skinApp .rcpMillionColorsSlider.RadSlider_skinApp a.rslDraghandle:focus {
+    color: #337cb7; }

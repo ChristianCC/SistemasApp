@@ -1,0 +1,17 @@
+.RadTagCloud_skinApp {
+  background-color: #ffffff;
+  border: 1px dotted #dddddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_skinApp.rtcClassic {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px; }
+  .RadTagCloud_skinApp .rtcTagList .rtcTagItem,
+  .RadTagCloud_skinApp .rtcTagList .rtcTagItem:hover,
+  .RadTagCloud_skinApp .rtcTagList .rtcTagItem a {
+    color: #337ab7; }
+  .RadTagCloud_skinApp .rtcTagList li.rtcTagItem a:hover {
+    text-decoration: underline;
+    color: #23527c; }
+  .RadTagCloud_skinApp.rtcLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading_small.gif")%>'); }

@@ -1,0 +1,49 @@
+.RadDataPager_skinApp {
+  color: #ffffff;
+  background: #3c8dbc;
+  border: 1px solid #dddddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadDataPager_skinApp .rdpWrap {
+    padding: 0; }
+  .RadDataPager_skinApp .rdpNumPart a,
+  .RadDataPager_skinApp .rdpPagerButton,
+  .RadDataPager_skinApp .rdpActionButton {
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: content-box;
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce;
+    font-size: 1em; }
+    .RadDataPager_skinApp .rdpNumPart a:hover,
+    .RadDataPager_skinApp .rdpPagerButton:hover,
+    .RadDataPager_skinApp .rdpActionButton:hover {
+      border-color: #2f5f7b;
+      color: #ff9933;
+      background-color: #ffffff; }
+  .RadDataPager_skinApp .rdpNumPart a,
+  .RadDataPager_skinApp .rdpActionButton {
+    margin: 0;
+    width: 1.42857em;
+    border-left-width: 0; }
+  .RadDataPager_skinApp .rdpNumPart a {
+    border-radius: 0;
+    text-align: center; }
+    .RadDataPager_skinApp .rdpNumPart a.rdpCurrentPage {
+      border-color: #2d6da3;
+      color: #ffffff;
+      background-color: #337ab7; }
+  .RadDataPager_skinApp .rdpPageFirst {
+    border-left-width: 1px;
+    border-radius: 0.28571em 0 0 0.28571em; }
+  .RadDataPager_skinApp .rdpPageLast {
+    border-radius: 0 0.28571em 0.28571em 0; }
+  .RadDataPager_skinApp .NumericPages .rdpNumPart a:first-child {
+    border-left-width: 1px;
+    border-radius: 0.28571em 0 0 0.28571em; }
+  .RadDataPager_skinApp .NumericPages .rdpNumPart a:last-child {
+    border-radius: 0 0.28571em 0.28571em 0; }
+  .RadDataPager_skinApp .rdpActionButton {
+    box-sizing: content-box; }
+  .RadDataPager_skinApp .rdpPagerButton {
+    border-radius: 0.28571em; }

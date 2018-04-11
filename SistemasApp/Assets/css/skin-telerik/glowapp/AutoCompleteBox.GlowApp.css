@@ -1,0 +1,58 @@
+.RadAutoCompleteBox_GlowApp .racTokenList {
+  border-color: #1c262c;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadAutoCompleteBox_GlowApp .racToken {
+  border-radius: 3px;
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c); }
+
+.RadAutoCompleteBox_GlowApp .racTokenList.racHovered {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadAutoCompleteBox_GlowApp .racToken.racHovered {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #cd8100;
+  background-image: linear-gradient(#ffa201, #cd8100); }
+
+.RadAutoCompleteBox_GlowApp .racTokenList.racFocused {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadAutoCompleteBox_GlowApp .racToken.racFocused {
+  border-color: #cd8100;
+  box-shadow: inset 0 0 5px #cd8100; }
+
+.RadAutoCompleteBox_GlowApp .racToken.racSelected {
+  border-color: #cd8100;
+  color: #713600;
+  background-color: #ffa915;
+  background-image: none; }
+
+.RadAutoCompleteBox_GlowApp .racLoadingIcon {
+  background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+
+.RadAutoCompleteBoxPopup_GlowApp {
+  border-color: #20282d;
+  color: #c1c7ca;
+  background-color: #242e33; }
+  .RadAutoCompleteBoxPopup_GlowApp .racHeader,
+  .RadAutoCompleteBoxPopup_GlowApp .racFooter, .RadAutoCompleteBoxPopup_GlowApp .racShowAll {
+    border-color: #273237;
+    color: #c1c7ca;
+    background-color: #2b373d; }
+  .RadAutoCompleteBoxPopup_GlowApp .racItemHovered {
+    color: #ffffff;
+    background-color: #4d5c65; }
+  .RadAutoCompleteBoxPopup_GlowApp .racFocused {
+    box-shadow: inset 0 0 5px #ffa915; }
+  .RadAutoCompleteBoxPopup_GlowApp .racItemSelected {
+    color: #000000;
+    background-color: #ffa915; }

@@ -1,0 +1,20 @@
+.RadDataForm_GlowApp {
+  color: #e2e8eb;
+  overflow: hidden; }
+  .RadDataForm_GlowApp .rdfLegend,
+  .RadDataForm_GlowApp .rdfBorders {
+    border-color: #515c62; }
+  .RadDataForm_GlowApp .rdfHr {
+    color: #1c262c; }
+  .RadDataForm_GlowApp .rdfFieldHint {
+    color: rgba(226, 232, 235, 0.5); }
+  .RadDataForm_GlowApp .rdfLegend {
+    font-size: 1.17em; }
+  .RadDataForm_GlowApp .rdfFieldHint {
+    font-size: 0.83em;
+    line-height: .8;
+    padding: 0 0 0 0.42em; }
+  .RadDataForm_GlowApp .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0; }
+  .RadDataForm_GlowApp .rdfLabel.rdfBlock {
+    padding: 0 0 0.17em 0; }

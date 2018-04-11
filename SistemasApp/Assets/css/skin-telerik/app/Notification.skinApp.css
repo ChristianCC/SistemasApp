@@ -1,0 +1,25 @@
+.RadNotification_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  border-color: #dddddd;
+  color: #333333; }
+  .RadNotification_skinApp.rnShadows {
+    box-shadow: 2px 2px 3px rgba(221, 221, 221, 0.5); }
+  .RadNotification_skinApp .rnTitleBar {
+    padding: 10px;
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+  .RadNotification_skinApp .rnCommands a:hover {
+    border-radius: 0.21429em;
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadNotification_skinApp .rnTitlleBarTitle {
+    margin: 0; }
+  .RadNotification_skinApp .rnCommands {
+    margin: -1.21429em 0em 0em;
+    right: 0.5em; }
+  .RadNotification_skinApp .rnCommands a {
+    line-height: 1.42857em;
+    padding: 8px; }

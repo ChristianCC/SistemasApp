@@ -1,0 +1,732 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SistemasApp.Shared.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+        <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Scripts.Render("~/bundles/jquery-ui") %>
+        <%: Scripts.Render("~/bundles/bootstrap") %>        
+        <%: Scripts.Render("~/bundles/app") %>
+        <%: Scripts.Render("~/bundles/pschecker") %>
+        <%: Scripts.Render("~/bundles/jquery1.4") %>
+        <%: Scripts.Render("~/bundles/notify") %>        
+    </asp:PlaceHolder>
+
+     <script type="text/javascript">
+
+         function Notificacion(mensaje, issuccess)
+         {
+             var typeMessage = '';
+             if (issuccess == 1)
+                 typeMessage = 'success';
+             else typeMessage = 'warn';
+             
+                 $.notify(mensaje, 'success');
+         }
+
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="es-mx" />
+    <title></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/iu-explorador.css" rel="stylesheet" />
+    <link href="~/Assets/css/skin-telerik/glowapp/Grid.GlowApp.css" rel="stylesheet" />
+    <link href="~/Assets/css/main.css" rel="stylesheet" />
+    <%--<link href="../Assets/css/scroll.css" rel="stylesheet" />--%>
+    <!-- Font Awesome -->
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />  
+    <!-- Ionicons -->
+    <link href="~/Assets/css/ionicons2.0.min.css" rel="stylesheet" />    
+    <link href="~/Assets/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/skins/skin-red.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/jquery-ui-dialog.min.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/pschecker/pschecker.css" rel="stylesheet" />
+    <style>
+        .content-wrapper, .right-side
+        {         
+            background-color: #f8f8f8 !important;         
+        }
+
+        .main-header .logo {
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 230px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0px;
+    font-weight: 300;
+    overflow: inherit;
+}
+        .rmHorizontal rmRootGroup
+        {
+            background:none !important;
+        }
+        .RadMenu .rmHorizontal .rmText
+        {
+            padding:0px !important;
+        }
+        .RadMenu_Default .rmRootGroup
+        {
+            border:none !important;
+        }
+        .RadMenu_Default .rmGroup, .RadMenu_Default .rmGroup .rmVertical
+        {
+            background-color:none;
+            background:none !important;
+            border:none !important;
+        }
+
+        @media (max-width: 767px)
+        {
+            .main-header .logo, .main-header .navbar
+            {
+                width: 100% !important;
+                float: none !important;
+            }
+            .RadMenu .logo
+            {
+                width:100% !important;
+            }
+            .RadMenu .rmHorizontal .rmItem
+            {
+                width:100% !important;
+            }
+            .RadMenu .rmHorizontal .rmText
+            {
+                width:100% !important;
+            }
+            .rmSlide
+            {
+                width:100% !important;
+            }            
+            .RadMenu ul.rmVertical, .rmRootGroup ul.rmHorizontal, .RadMenu_Context ul.rmHorizontal
+            {
+                border-top:1px solid #000;
+                width:100% !important;
+            }
+        }
+
+
+        .pass-error {
+                color: #a94442 !important;
+                
+            }
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="cpHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-red sidebar-mini">
+    <div class="wrapper">
+        <form id="form1" runat="server">
+            <asp:ScriptManager runat="server" ID="scriptManager">
+                <Scripts>
+                </Scripts>
+            </asp:ScriptManager>
+            <!-- Main Header -->
+            <header class="main-header">
+            <!-- Logo -->
+            
+                <tlk:RadMenu ID="radMenuPrincipal" runat="server" CssClass="logo"  EnableRootItemScroll="true"  >                    
+                    <ItemTemplate >
+                        <asp:LinkButton ID="lknPagHome" runat="server" CssClass="logo" OnClick="lknPagHome_Click" OnClientClick="blockPage()" CommandName='<%# DataBinder.Eval(Container,"Attributes[\"urlHome\"]") %>'  CommandArgument='<%# DataBinder.Eval(Container,"Attributes[\"idSistema\"]") %>' >
+                                <!-- mini logo for sidebar mini 50x50 pixels -->
+                            <span class="logo-mini"><%# DataBinder.Eval(Container,"Value") %></span>
+                            <!-- logo for regular state and mobile devices -->                            
+                            <span class="logo-lg"><%# DataBinder.Eval(Container,"Text") %></span>
+                        </asp:LinkButton>
+                    </ItemTemplate>                    
+                </tlk:RadMenu>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                </a>
+                <%--<a id="btnHome" runat="server" >                    
+                <h1 style="display: inherit;padding: 2px 5px;line-height: 1.3;border: solid 1px #FFFFFF;
+    border-radius: 0.1em;
+    background: rgba(0,0,0,0.1);
+    color: #f6f6f6;
+">
+                
+   <i class="fa fa-bar-chart" aria-hidden="true" style="line-height: 0;color: #ffffff;/* border: solid 1px #FFFFFF; */"></i>   
+                </h1>
+                </a>--%>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <%--<li class="dropdown messages-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Tienes 4 mensajes</li>
+                            <li>
+                            <!-- inner menu: contains the messages -->
+                            <ul class="menu">
+                                <li><!-- start message -->
+                                <a href="#">
+                                    <div class="pull-left">
+                                    <!-- User Image -->
+                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    </div>
+                                    <!-- Message title and timestamp -->
+                                    <h4>
+                                    Mensaje sobre actualización
+                                    <small><i class="fa fa-clock-o"></i> hace 5 mins</small>
+                                    </h4>
+                                    <!-- The message -->
+                                    <p>Se realizo una actualización sobre X proceso</p>
+                                </a>
+                                </li>
+                                <!-- end message -->
+                            </ul>
+                            <!-- /.menu -->
+                            </li>
+                            <li class="footer"><a href="#">Ver todos los mensajes</a></li>
+                        </ul>
+                    </li>--%>
+                    <!-- /.messages-menu -->
+
+                    <!-- Notifications Menu -->
+                    <li class="dropdown notifications-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Tienes 10 alertas</li>
+                            <li>
+                            <!-- Inner Menu: contains the notifications -->
+                            <ul class="menu">
+                                <li><!-- start notification -->
+                                <a href="#">
+                                    <i class="fa fa-users text-aqua"></i> Existe un problema con el proceso X
+                                </a>
+                                </li>
+                                <!-- end notification -->
+                            </ul>
+                            </li>
+                            <li class="footer"><a href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tasks Menu -->
+                    <%--<li class="dropdown tasks-menu">
+                        <!-- Menu Toggle Button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Tienes 9 procesos relacionados contigo</li>
+                            <li>
+                            <!-- Inner menu: contains the tasks -->
+                            <ul class="menu">
+                                <li><!-- Task item -->
+                                <a href="#">
+                                    <!-- Task title and progress text -->
+                                    <h3>
+                                    Proceso de calificación de cartera
+                                    <small class="pull-right">20%</small>
+                                    </h3>                            
+                                </a>
+                                </li>
+                                <!-- end task item -->
+                            </ul>
+                            </li>
+                            <li class="footer">
+                            <a href="#">Ver todos mis procesos</a>
+                            </li>
+                        </ul>
+                    </li>--%>
+                    <!-- User Account Menu -->
+                    <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <%--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="Imagen de usuario">--%>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                        <span id="lblUsuario" class="hidden-xs" runat="server" ></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                        <%--<p>
+                            Base De Datos - Sistemas Operaciones
+                            <small>(DB)</small>
+                        </p>--%>
+                        </li>
+                        <!-- Menu Body -->
+                        <li class="user-body">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                            <%--<a href="#">Aquí alguna otra información necesaría</a>--%>
+                            </div>                        
+                        </div>
+                        <!-- /.row -->
+                        </li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                        <div class="pull-left">
+                            <%--<a href="#" class="btn btn-default btn-flat">Perfil</a>--%>
+                            <asp:Button runat="server" class="btn btn-default btn-flat" Text="Cambiar Contraseña" OnClick="btnEditarPerfil_Click" />
+                        </div>
+                        <div class="pull-right">
+                            <asp:Button ID="btnCerrarSesion" runat="server" OnClick="btnCerrarSesion_Click" CssClass="btn btn-default btn-flat" Text="Cerrar Sesión" OnClientClick="blockPage()" />
+                            <%--<a href="#" class="btn btn-default btn-flat"></a>--%>
+                        </div>
+                        </li>
+                    </ul>
+                    </li>
+                    
+                </ul>
+                </div>
+            </nav>
+            </header>
+
+            <!-- Columna izquierda... Contiene el menú del sistema -->
+            <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section id="leftSideBar" class="sidebar" runat="server">                
+                <div class="sidebar-form">
+                    <div class="input-group" >
+                        <input type="text" name="q" class="form-control" placeholder="Busqueda de procesos..." />
+                            <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                            </button>
+                            </span>
+                    </div>
+                </div>
+                <%--<asp:ListView runat="server" ID="vs">
+                </asp:ListView>--%>
+                <%--<ul class="sidebar-menu">
+                <li class="header">Menú de sistema</li>
+                <!-- Optionally, you can add icons to the links -->                    
+                <li class="active"><a href="../MdlMonitoreo/VistaDeProcesos"><i class="fa fa-link"></i> <span>Procesos</span></a></li>
+                    <li><asp:HyperLink runat="server" ID="aa" Text='<i class="fa fa-link"></i> <span>ProcesosX</span>'></asp:HyperLink>
+                        <ul class="treeview-menu">
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Tipo ETL</a></li>
+                    </ul>
+
+                    </li>
+                <li><a href="#"><i class="fa fa-link"></i> <span>Opción 2</span></a></li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Procesos</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>                    
+                    <ul class="treeview-menu">
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Tipo ETL</a></li>
+                    </ul>
+                </li>
+                </ul>--%>
+            </section>
+            <!-- /.sidebar -->
+            </aside>
+
+            <!-- Contenido pricipal.  -->
+            <div class="content-wrapper">
+            <!-- Titulo de página -->
+            <section class="content-header">
+                <h1>
+                <asp:ContentPlaceHolder ID="cpTituloPagina" runat="server">               
+                </asp:ContentPlaceHolder>                    
+                <small>
+                    <asp:ContentPlaceHolder ID="cpDescripcion" runat="server"> 
+                    </asp:ContentPlaceHolder>
+                </small>
+                    <asp:LinkButton ID="lknBack" runat="server" CssClass="btn-back" OnClick="lknBack_Click" OnClientClick="blockPage()" >
+                        <i class="fa fa-hand-o-left fa-sm" aria-hidden="true"></i>&nbsp; Regresar
+                    </asp:LinkButton>
+                </h1>    
+                <hr class="hr-base-black" />        
+            </section>
+
+            <!-- Contenido -->
+            <section class="content">
+                
+                <asp:ContentPlaceHolder ID="cpContenidoPrincipal" runat="server">                            
+                </asp:ContentPlaceHolder>
+                        
+                <tlk:RadWindowManager ID="wmAlertas" runat="server" Modal="true" Skin="WebBlue" CssClass="win-manager"  >        
+        <ConfirmTemplate>
+            <table style="width:100%; height:100%;">
+                <tr>
+                    <td style="width:20%; text-align:center;vertical-align:middle; color:#f39c12;"  colspan="1">
+                        <i class="fa fa-question-circle fa-3x" aria-hidden="true"></i>
+                    </td>
+                    <td style="width:80%; text-align:center;vertical-align:middle;" colspan="1">
+                        <label style="float:left;padding: 15px;" >{1}</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:100%; text-align:center;vertical-align:top;" colspan="2" >
+                        <input type="button" class="btn btn-primary" style="margin-right:3%;" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" onclick="$find('{0}').close(true);" />
+                        <input type="button" class="btn btn-pinterest" style="margin-left:3%;" value="Cancelar" onclick="$find('{0}').close(false);"   />                        
+                    </td>
+                </tr>                
+            </table>                        
+        </div>            
+        </ConfirmTemplate>
+    </tlk:RadWindowManager>
+            </section>
+            <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            
+
+            <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+           <div class="control-sidebar-bg"></div>
+
+            <!-------------------MODAL EDICION DE USUARIOS--------------------------->
+            <cc1:ModalPopupExtender ID="mpEdicionUsuario" runat="server"
+                TargetControlID="hfEdicionUsuario"
+                PopupControlID="pnlEdicionUsuario"
+                BackgroundCssClass="FondoModal"
+                BehaviorID="mpEdicionUsuario">
+            </cc1:ModalPopupExtender>
+            <asp:HiddenField ID="hfEdicionUsuario" runat="server" />
+            <asp:Panel ID="pnlEdicionUsuario" runat="server" CssClass="PanelModal" Style="display: none;" Width="100%" Height="100%">
+                <asp:UpdatePanel ID="upFrameEdicionUsuario" runat="server" class="col-lg-offset-3 col-lg-6" style="height: 100%;">
+                    <ContentTemplate>
+                        <div class="box box-solid box-border-sys">
+                            <div class="box-header with-border box-sys">
+                                <h3 class="box-title">Edición de contraseña</h3>
+                                <div class="box-tools pull-right">
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <asp:Panel ID="pnlErrorRegPagina" runat="server">
+                                    <div class="callout callout-danger lead">
+                                        <asp:Label ID="lblErrorRegPagina" runat="server"></asp:Label>
+                                        <asp:HiddenField ID="hidIdModulo" runat="server" />
+                                        <asp:HiddenField ID="hidIdItemParent" runat="server" />
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="pnlErrorReg" runat="server" Visible="false">
+                                    <div class="callout callout-danger lead">
+                                        <asp:Label ID="lblErrorReg" runat="server"></asp:Label>
+                                    </div>
+                                </asp:Panel>
+                                <div class="form-horizontal">
+                                    <div class="password-container">
+                                    <div class="form-group">
+                                        <label class="col-lg-4 contPagina-label" id ="diverror3">Contraseña Actual</label>
+                                        <div class="col-lg-8 ">
+                                            <asp:TextBox ID="tbLastPass" runat="server"  CssClass="form-contPagina" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    <%--<div class="form-group" id="diverror1">
+                                        <label class="col-lg-4 contPagina-label">Nueva Contraseña</label>
+                                        <div class="col-lg-8">
+                                            <asp:TextBox ID="tbNewPass" runat="server" CssClass="form-contPagina" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="diverror2">
+                                        <label class="col-lg-4 contPagina-label">Confirmar Contraseña</label>
+                                        <div class="col-lg-8">
+                                            <asp:TextBox ID="tbConfirmNewPass" runat="server" CssClass="form-contPagina" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                    </div>--%>
+                                    
+
+                                    <div class="password-container">
+                                            <div class="form-group" id="diverror1">
+                                                <label class="col-lg-4 contPagina-label">Nueva Contraseña</label>
+                                                <div class="col-lg-8">
+                                                    <asp:TextBox ID="tbNewPass" class="strong-password" runat="server" TextMode="Password"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="diverror2">
+                                                <label class="col-lg-4 contPagina-label">Confirmar Contraseña</label>
+                                                <div class="col-lg-8">
+                                                    <asp:TextBox ID="tbConfirmNewPass" runat="server" class="strong-password" TextMode="Password"></asp:TextBox>
+                                                </div>
+                                            </div>
+
+                                        <div class="form-group strength-indicator">
+                                            <div class="meter">
+                                            </div>
+                                            <span class="MensajeError" style="font-size: 15px; background-color: aliceblue; border-radius: 7px 0px 7px 7px; color: gray; padding: 15px; float: left; " id="PassError1">
+                                            <i class="fa fa-exclamation-circle text-primary" style="font-size: 20px;"></i>&nbsp;<span style="font-size: 20px;" class="text-primary">Error en la contraseña</span><br />
+                                            Verifica los datos Mínimo 9 carácteres alfanuméricos, al menos 3 números y un carácter especial entre ($@$!%*?&).
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <br />
+                                     <br />
+                                    <br />
+                                     <br />
+                                    <br />
+                                    <%--<asp:Panel runat="server">
+                                        <span class="MensajeError" style="font-size: 15px; background-color: aliceblue; border-radius: 7px 0px 7px 7px; color: gray; padding: 15px; float: left; display: none;" id="PassError1">
+                                            <i class="fa fa-exclamation-circle text-primary" style="font-size: 20px;"></i>&nbsp;<span style="font-size: 20px;" class="text-primary">Error en la contraseña</span><br />
+                                            Verifica los datos Mínimo 9 carácteres alfanuméricos, al menos 3 números y un carácter especial entre ($@$!%*?&).
+                                        </span>
+                                        </asp:Panel>
+                                    <asp:Panel runat="server">
+                                        <span  class="MensajeError" style="font-size: 15px; background-color: aliceblue; border-radius: 7px 0px 7px 7px; color: gray; padding: 15px; float: left; display: none" id="PassError"><i class="fa fa-exclamation-circle text-primary" style="font-size: 20px;"></i>&nbsp;<span style="font-size: 20px;" class="text-primary">Las contraseña vacia y/o no coinciden</span><br />
+                    Por favor, verifica tus datos ingresados.</span>
+                                    </asp:Panel>--%>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: right; vertical-align: middle;">
+                                            <asp:Button ID="btnCancelarRegPagina" runat="server" Text="Cancelar" CssClass="btn btn-pinterest" OnClick="btnCancelarEditaPerfil_Click" />
+                                            <asp:Button ID="btnRegistrarRegPagina" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="btnEditaPerfil_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- box-footer -->
+                        </div>
+                        <!-- /.box -->
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </asp:Panel>
+
+
+
+        </form>
+    </div>
+<!-- Java Script -->
+
+   <%-- <script src="../Assets/js/jquery-3.1.1.min.js"></script>
+    <script src="../Assets/js/jquery-ui-effects.min.js"></script>
+    <script src="../Assets/js/jquery-ui-dialog.min.js"></script>    
+    <script src="../Assets/js/bootstrap.min.js"></script>
+    <script src="../Assets/js/telerik/scriptsTelerik.js"></script>
+    <script src="../Assets/js/app.min.js"></script>
+    <script src="../Assets/js/main.js"></script>    --%>
+    <asp:PlaceHolder runat="server" ID="phfoot">
+    <%: Scripts.Render("~/bundles/telerik") %>
+    </asp:PlaceHolder>
+   
+    
+  
+    <script type="text/javascript">
+
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequest);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequest);
+
+        function blockPage() {
+            $("body").append("<div class='cargando' style='z-index:300001;' ></div>");
+        }
+        function beginRequest(sender, args) {
+            if (sender._postBackSettings.sourceElement.id.indexOf("rgResultado") < 0) {
+                blockPage();
+            }
+        }
+
+        function endRequest(sender, args) {
+            if ($("body .cargando") != undefined) {
+                $("body .cargando").remove();
+            }
+        }
+        /*mvg 13/12/2017
+        Se ageragn las siguientes funciones para validacion y edicion de contraseña
+        */
+        var validaPass = 0;
+        $(function ()
+        {
+            $("#btnRegistrarRegPagina").prop("disabled", true);
+        })
+
+        $("#tbNewPass").keyup(function ()
+        {
+            VerificaContraseñas();
+        });
+
+        $("#tbConfirmNewPass").keyup(function ()
+        {
+            VerificaContraseñas();
+        });
+
+        $("#tbLastPass").keyup(function ()
+        {
+            VerificaContraseñas();
+        });
+
+        function Exp_Reg_ValidaPass(Pass) {
+            return (/^(?=.*[A-Za-z])(?=(.*\d){3,})(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{9,}$/).test(Pass);
+        }
+
+        function VerificaContraseñas()
+        {
+            if ($("#tbLastPass").val() != "")
+            {
+                /*CONTRASEÑA ACTUAL*/
+                AgregaEliminaClase("PassError", "pass-error", 0);
+                AgregaEliminaClase("tbLastPass", "pass-error", 0);
+                AgregaEliminaClase("diverror3", "pass-error", 0);
+                
+                if (!Exp_Reg_ValidaPass($("#tbNewPass").val()))
+                {
+                    AgregaEliminaClase("tbNewPass", "pass-error", 1);
+                    AgregaEliminaClase("diverror1", "pass-error", 1);
+                    AgregaEliminaClase("PassError1", "pass-error", 1);
+                    $("#btnRegistrarRegPagina").prop("disabled", true);
+
+                    if (!Exp_Reg_ValidaPass($("#tbConfirmNewPass").val()))
+                    {
+                        AgregaEliminaClase("tbConfirmNewPass", "pass-error", 1);
+                        AgregaEliminaClase("diverror2", "pass-error", 1);
+                        AgregaEliminaClase("PassError1", "pass-error", 1);
+                        $("#btnRegistrarRegPagina").prop("disabled", true);
+                    }
+                    else
+                    {
+                        AgregaEliminaClase("tbConfirmNewPass", "pass-error", 0);
+                        AgregaEliminaClase("diverror2", "pass-error", 0);
+
+                        $("#PassError1").hide();
+
+                        if ($("#tbConfirmNewPass").val() == $("#tbNewPass").val())
+                        {
+                            $("#PassError").hide();
+                            $("#btnRegistrarRegPagina").prop("disabled", false);
+                        }
+                        else
+                        {
+                            $("#PassError").show();
+                            $("#PassError").addClass("pass-error");
+                            $("#btnRegistrarRegPagina").prop("disabled", true);
+                        }
+                        
+                    }
+                    $("#PassError1").show();
+
+                }
+                else
+                {
+                    AgregaEliminaClase("tbNewPass", "pass-error", 0);
+                    AgregaEliminaClase("diverror1", "pass-error", 0);
+                    
+                    if (!Exp_Reg_ValidaPass($("#tbConfirmNewPass").val()))
+                    {
+                        AgregaEliminaClase("tbConfirmNewPass", "pass-error", 1);
+                        AgregaEliminaClase("diverror2", "pass-error", 1);
+                        AgregaEliminaClase("PassError1", "pass-error", 1);
+                        $("#PassError1").show();
+                        $("#btnRegistrarRegPagina").prop("disabled", true);
+                    }
+                    else
+                    {
+                        AgregaEliminaClase("tbConfirmNewPass", "pass-error", 0);
+                        AgregaEliminaClase("diverror2", "pass-error", 0);
+
+                        if ($("#tbConfirmNewPass").val() == $("#tbNewPass").val())
+                        {
+                            $("#PassError").hide();
+                            $("#btnRegistrarRegPagina").prop("disabled", false);
+                        }
+                        else
+                        {
+                            $("#PassError").show();
+                            $("#PassError").addClass("pass-error");
+                            $("#btnRegistrarRegPagina").prop("disabled", true);
+                        }
+
+                        $("#PassError1").hide();
+                        
+                    }
+                }
+            }
+            else
+            {
+                /*CONTRASEÑA ACTUAL ERROR*/
+                AgregaEliminaClase("PassError", "pass-error", 1);
+                AgregaEliminaClase("tbLastPass", "pass-error", 1);
+                AgregaEliminaClase("diverror3", "pass-error", 1);
+                $("#tbLastPass").focus();
+
+
+                $("#btnRegistrarRegPagina").prop("disabled", true);
+            }
+        }
+
+        function AgregaEliminaClase(Elemento,Clase,isActive)
+        {
+            if (isActive == 1)
+            {
+                $("#" + Elemento).addClass(Clase);
+            }
+            else
+            {
+                $("#" + Elemento).removeClass(Clase);
+            }
+        }
+
+
+        $(document).ready(function () {
+
+            
+            $('.password-container').pschecker({ onPasswordValidate: validatePassword, onPasswordMatch: matchPassword });
+            var submitbutton = $('.submit-button');
+            var errorBox = $('.error');
+            errorBox.css('visibility', 'hidden');
+            submitbutton.attr("disabled", "disabled");
+            //this function will handle onPasswordValidate callback, which mererly checks the password against minimum length
+            function validatePassword(isValid) {
+                if (!isValid)
+                    errorBox.css('visibility', 'visible');
+                else
+                    errorBox.css('visibility', 'hidden');
+            }
+            //this function will be called when both passwords match
+            function matchPassword(isMatched) {
+                if (isMatched) {
+                    submitbutton.addClass('unlocked').removeClass('locked');
+                    submitbutton.removeAttr("disabled", "disabled");
+                }
+                else {
+                    submitbutton.attr("disabled", "disabled");
+                    submitbutton.addClass('locked').removeClass('unlocked');
+                }
+            }
+        });
+
+        function Notificacion() {
+            $.notify('Contraseña actualizada', 'success');
+        }
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="cpFooterScript" runat="server">               
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

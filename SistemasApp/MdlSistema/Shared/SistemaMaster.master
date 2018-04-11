@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/SistemaPage.Master" AutoEventWireup="true" CodeBehind="SistemaMaster.master.cs" Inherits="SistemasApp.MdlSistema.Shared.SistemaMaster" %>
+<%@ MasterType VirtualPath="~/Shared/SistemaPage.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cpHead" runat="server">
+    <asp:ContentPlaceHolder ID="cpHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cpContenidoPrincipal" runat="server">
+    <asp:ContentPlaceHolder ID="cpContenidoPrincipal" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cpFooterScript" runat="server">
+    <asp:ContentPlaceHolder ID="cpFooterScript" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>

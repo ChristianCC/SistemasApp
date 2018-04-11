@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceToken" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceToken.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceToken.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ViewModel" />
+      <xsd:import schemaLocation="http://10.51.211.168/SSToken/ServiceToken.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceToken_ValidarToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarToken" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_ValidarToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_ValidarToken_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q1:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_ValidarAcceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarAcceso" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_ValidarAcceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarAccesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_ValidarAcceso_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q2:ExceptionService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_CerrarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_CerrarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceToken_CerrarSesion_ExceptionServiceFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ViewModel" name="detail" element="q3:ExceptionService" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceToken">
+    <wsdl:operation name="ValidarToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceToken/ValidarToken" message="tns:IServiceToken_ValidarToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceToken/ValidarTokenResponse" message="tns:IServiceToken_ValidarToken_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceToken/ValidarTokenExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceToken_ValidarToken_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarAcceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceToken/ValidarAcceso" message="tns:IServiceToken_ValidarAcceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceToken/ValidarAccesoResponse" message="tns:IServiceToken_ValidarAcceso_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceToken/ValidarAccesoExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceToken_ValidarAcceso_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CerrarSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceToken/CerrarSesion" message="tns:IServiceToken_CerrarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceToken/CerrarSesionResponse" message="tns:IServiceToken_CerrarSesion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceToken/CerrarSesionExceptionServiceFault" name="ExceptionServiceFault" message="tns:IServiceToken_CerrarSesion_ExceptionServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceToken" type="tns:IServiceToken">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarToken">
+      <soap:operation soapAction="http://tempuri.org/IServiceToken/ValidarToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarAcceso">
+      <soap:operation soapAction="http://tempuri.org/IServiceToken/ValidarAcceso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CerrarSesion">
+      <soap:operation soapAction="http://tempuri.org/IServiceToken/CerrarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionServiceFault">
+        <soap:fault use="literal" name="ExceptionServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceToken">
+    <wsdl:port name="BasicHttpBinding_IServiceToken" binding="tns:BasicHttpBinding_IServiceToken">
+      <soap:address location="http://10.51.211.168/SSToken/ServiceToken.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

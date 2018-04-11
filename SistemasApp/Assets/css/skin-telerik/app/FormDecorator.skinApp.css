@@ -1,0 +1,248 @@
+.RadForm_skinApp {
+  background-color: #ffffff;
+  /* Primary Button styles */ }
+  .RadForm_skinApp.rfdLabel label,
+  .RadForm_skinApp.rfdLabel .rfdAspLabel,
+  .RadForm_skinApp.rfdFieldset fieldset,
+  .RadForm_skinApp.rfdFieldset legend,
+  .RadForm_skinApp .rfdHeading,
+  .RadForm_skinApp .rfdValidationSummaryControl,
+  .RadForm_skinApp .rfdLoginControl {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333; }
+  .RadForm_skinApp.rfdZone {
+    background-color: #ffffff; }
+  .RadForm_skinApp .rfdHeading {
+    border-bottom-color: #dddddd; }
+  .RadForm_skinApp.RadForm.rfdFieldset fieldset {
+    border-color: #000000;
+    background-color: #ff9933; }
+  .RadForm_skinApp.rfdLabel label,
+  .RadForm_skinApp.rfdLabel .rfdAspLabel {
+    line-height: 32px; }
+  .RadForm_skinApp.rfdRadio input[type="radio"] + label,
+  .RadForm_skinApp.rfdCheckbox input[type="checkbox"] + label,
+  .RadForm_skinApp legend > label,
+  .RadForm_skinApp legend > label {
+    line-height: normal; }
+  .RadForm_skinApp .rfdSkinnedButton,
+  .RadForm_skinApp.rfdButton .rfdSkinnedButton.rfdInputDisabled {
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce;
+    padding: 6px 12px;
+    box-shadow: none; }
+  .RadForm_skinApp .rfdSkinnedButton:hover,
+  .RadForm_skinApp .rfdSkinnedButton:focus {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 1px #7fb1ce; }
+  .RadForm_skinApp .rfdSkinnedButton:focus {
+    outline-width: thin;
+    outline-offset: -2px;
+    outline-color: #2f5f7b; }
+  .RadForm_skinApp .rfdSkinnedButton:active,
+  .RadForm_skinApp .rfdClickedButton,
+  .RadForm_skinApp .rfdFocusedButton {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    color: #ffffff; }
+  .RadForm_skinApp .rfdSkinnedButton.rfdPrimaryButton {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+    .RadForm_skinApp .rfdSkinnedButton.rfdPrimaryButton:hover {
+      border-color: #204d73;
+      color: #ffffff;
+      background-color: #286090;
+      box-shadow: none; }
+    .RadForm_skinApp .rfdSkinnedButton.rfdPrimaryButton:active,
+    .RadForm_skinApp .rfdSkinnedButton.rfdPrimaryButton.rfdClickedButton,
+    .RadForm_skinApp .rfdSkinnedButton.rfdPrimaryButton.rfdFocusedButton {
+      border-color: #122a3f;
+      color: #ffffff;
+      background-color: #286090; }
+  .RadForm_skinApp.rfdButton .rfdSkinnedButton.rfdPrimaryButton.rfdInputDisabled {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .RadForm_skinApp .rfdTextInput,
+  .RadForm_skinApp.rfdTextarea textarea {
+    padding: 6px 12px;
+    height: calc(1.42857em + 14px) \9; }
+  .RadForm_skinApp _:-ms-fullscreen, .RadForm_skinApp .rfdTextInput {
+    height: calc(1.42857em + 14px); }
+  @media \0screen\,screen\9 {
+    .RadForm_skinApp .rfdTextInput {
+      height: 34px; } }
+  .RadForm_skinApp .rfdTextInput,
+  .RadForm_skinApp.rfdTextarea textarea {
+    border-color: #4081a7;
+    color: #555555;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; }
+  .RadForm_skinApp .rfdTextInput:hover,
+  .RadForm_skinApp.rfdTextarea textarea:hover {
+    border-color: #2f5f7b;
+    color: #555555;
+    background-color: #ffffff; }
+  .RadForm_skinApp .rfdTextInput:focus,
+  .RadForm_skinApp.rfdTextarea textarea:focus {
+    border-color: #3b87c8;
+    color: #555555;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none; }
+  .RadForm_skinApp .rfdTextInput:active,
+  .RadForm_skinApp.rfdTextarea textarea:active {
+    border-color: #4081a7;
+    color: #555555;
+    background-color: #ffffff; }
+  .RadForm_skinApp .rfdCheckboxUnchecked .rfdToggleImage,
+  .RadForm_skinApp .rfdRadioUnchecked .rfdToggleImage,
+  .RadForm_skinApp .rfdCheckboxChecked:hover .rfdToggleImage,
+  .RadForm_skinApp .rfdRadioChecked:hover .rfdToggleImage {
+    color: #000000; }
+  .RadForm_skinApp .rfdCheckboxChecked .rfdToggleImage,
+  .RadForm_skinApp .rfdRadioChecked .rfdToggleImage,
+  .RadForm_skinApp .rfdCheckboxUnchecked:hover .rfdToggleImage,
+  .RadForm_skinApp .rfdRadioUnchecked:hover .rfdToggleImage {
+    color: #337cb7; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .RadForm_skinApp.rfdRadio input[type="radio"],
+    .RadForm_skinApp.rfdCheckbox input[type="checkbox"],
+    .RadForm_skinApp.rfdRadio input[type="radio"]:checked:hover,
+    .RadForm_skinApp.rfdCheckbox input[type="checkbox"]:checked:hover {
+      color: #000000; }
+    .RadForm_skinApp.rfdRadio input[type="radio"]:hover,
+    .RadForm_skinApp.rfdCheckbox input[type="checkbox"]:hover,
+    .RadForm_skinApp.rfdRadio input[type="radio"]:checked,
+    .RadForm_skinApp.rfdCheckbox input[type="checkbox"]:checked {
+      color: #337cb7; } }
+  .RadForm_skinApp .rfdSelect_skinApp,
+  .RadForm_skinApp .rfdSelect_skinApp.rfdDropDownExpanded {
+    border-radius: 0.28571em; }
+  .RadForm_skinApp .rfdSelect_skinApp {
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce;
+    padding: 6px 12px; }
+  .RadForm_skinApp .rfdSelect_skinApp:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .RadForm_skinApp .rfdSelect_skinApp:focus {
+    outline-width: thin;
+    outline-offset: -2px;
+    outline-color: #2f5f7b; }
+  .RadForm_skinApp .rfdSelect_skinApp:active,
+  .RadForm_skinApp .rfdSelect_skinApp:focus {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    color: #ffffff; }
+  .RadForm_skinApp .rfdDropDownArrow {
+    width: 2.28571em;
+    height: 2.28571em; }
+  .RadForm_skinApp .rfdDropDownArrow:before {
+    margin: 0.5em 0em 0em 0.71429em; }
+  .RadForm_skinApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar,
+  .RadForm_skinApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar-thumb:vertical,
+  .RadForm_skinApp.rfdScrollBars .rfdSelectBox::-webkit-scrollbar-thumb:horizontal,
+  .RadForm_skinApp.rfdScrollBars form::-webkit-scrollbar,
+  .RadForm_skinApp.rfdScrollBars form::-webkit-scrollbar-thumb:vertical,
+  .RadForm_skinApp.rfdScrollBars form::-webkit-scrollbar-thumb:horizontal {
+    background-color: #ff9933; }
+  .RadForm_skinApp.rfdScrollBars textarea::-webkit-scrollbar-corner {
+    background-color: #ffffff; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-thumb:vertical,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-thumb:horizontal {
+    border-color: #000000;
+    background-color: #ff9933; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement,
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.radActionsSprite.png")%>');
+    background-color: #ff9933; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:decrement {
+    background-position: -2.5px -443px; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:horizontal:increment {
+    background-position: -2.5px -463px; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:decrement {
+    background-position: -3px -403px; }
+  .RadForm_skinApp.rfdScrollBars ::-webkit-scrollbar-button:vertical:increment {
+    background-position: -3px -423px; }
+  .RadForm_skinApp.rfdScrollBars {
+    scrollbar-3dlight-color: #4081a7;
+    scrollbar-arrow-color: #616161;
+    scrollbar-base-color: #7fb1ce;
+    scrollbar-darkshadow-color: #4081a7;
+    scrollbar-face-color: #ffffff;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-track-color: #7fb1ce; }
+  .RadForm_skinApp.rfdGrids .rfdTable {
+    border: 1px solid #000000;
+    background: #ffffff;
+    color: #333333;
+    font-family: inherit;
+    font-size: inherit; }
+  .RadForm_skinApp.rfdGrids .rfdTable th {
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #3c8dbc;
+    color: #333333; }
+  .RadForm_skinApp.rfdGrids .rfdTable a {
+    color: #333333; }
+  .RadForm_skinApp .rfdValidationSummaryControl,
+  .RadForm_skinApp .rfdLoginControl {
+    background-color: #ff9933;
+    border: 1px solid #000000; }
+  .RadForm_skinApp a.rfdLoginControl,
+  .RadForm_skinApp a.rfdLoginControl:active,
+  .RadForm_skinApp a.rfdLoginControl:visited {
+    color: #333333; }
+  .RadForm_skinApp a.rfdLoginControl:hover {
+    color: #23527c; }
+  .RadForm_skinApp .rfdRtl .rfdSelect .rfdDropDownArrow:before {
+    width: 2.28571em;
+    margin: 0.42857em -0.42857em 0em 0em; }
+
+.rfdSelectBox_skinApp {
+  border-color: #4081a7;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 2em; }
+
+.rfdRoundedCorners .rfdSelectBox_skinApp.rfdSelectBoxDropDown {
+  margin-top: 0.14286em;
+  border-radius: 0.28571em; }
+
+.rfdSelectBox_skinApp li {
+  padding: 3px 12px;
+  background-color: #ffffff;
+  color: #333333; }
+
+.rfdSelectBox_skinApp li:hover,
+.rfdSelectBox_skinApp .rfdSelect_hovered,
+.rfdSelectBox.rfdSelectBox_skinApp li:hover {
+  color: #000000;
+  background-color: #eeeeee; }
+
+.rfdSelectBox_skinApp .rfdSelect_selected,
+.rfdSelectBox.rfdSelectBox_skinApp .rfdSelect_selected:hover {
+  color: #ffffff;
+  background-color: #337ab7; }
+
+.rfdSelectBox_skinApp .rfdSelectBox_optgroup_label:hover {
+  background: none;
+  color: #333333; }

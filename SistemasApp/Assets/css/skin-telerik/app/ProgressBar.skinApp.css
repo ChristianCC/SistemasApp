@@ -1,0 +1,50 @@
+.RadProgressBar_skinApp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #f5f5f5;
+  /* Vertical */ }
+  .RadProgressBar_skinApp.rpbClassic {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadProgressBar_skinApp,
+  .RadProgressBar_skinApp .rpbStateSelected,
+  .RadProgressBar_skinApp .rpbStateSelected:hover {
+    background-image: none; }
+  .RadProgressBar_skinApp.rpbHorizontal {
+    height: 1.42857em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; }
+  .RadProgressBar_skinApp > .rpbLabelWrapper {
+    border-color: #dddddd;
+    line-height: normal; }
+  .RadProgressBar_skinApp .rpbLabel {
+    font-size: 0.85714em; }
+  .RadProgressBar_skinApp .rpbStateSelected,
+  .RadProgressBar_skinApp .rpbStateSelected:hover,
+  .RadProgressBar_skinApp .rpbStateSelected:link,
+  .RadProgressBar_skinApp .rpbStateSelected:visited {
+    background-color: #337ab7;
+    color: #ffffff; }
+  .RadProgressBar_skinApp .rpbChunk {
+    border-color: #dddddd; }
+  .RadProgressBar_skinApp .rpbChunk.rpbStateDefault {
+    background-color: #f5f5f5; }
+  .RadProgressBar_skinApp.rpbHorizontal .rpbStateSelected,
+  .RadProgressBar_skinApp.rpbHorizontal .rpbStateSelected:hover,
+  .RadProgressBar_skinApp.rpbHorizontal .rpbStateSelected:link,
+  .RadProgressBar_skinApp.rpbHorizontal .rpbStateSelected:visited,
+  .RadProgressBar_skinApp.rpbHorizontal .rpbChunk.rpbStateSelected {
+    border-color: #2e6da4; }
+  .RadProgressBar_skinApp.rpbStripped .rpbStateSelected {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 2.85714em 2.85714em; }
+  .RadProgressBar_skinApp.rpbVertical {
+    width: 1.42857em;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1) inset; }
+  .RadProgressBar_skinApp.rpbVertical .rpbStateSelected,
+  .RadProgressBar_skinApp.rpbVertical .rpbStateSelected:hover,
+  .RadProgressBar_skinApp.rpbVertical .rpbStateSelected:link,
+  .RadProgressBar_skinApp.rpbVertical .rpbStateSelected:visited,
+  .RadProgressBar_skinApp.rpbVertical .rpbChunk.rpbStateSelected {
+    border-color: #2e6da4; }
+  .RadProgressBar_skinApp.rpbIndeterminate {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.radIndeterminate.gif")%>'); }

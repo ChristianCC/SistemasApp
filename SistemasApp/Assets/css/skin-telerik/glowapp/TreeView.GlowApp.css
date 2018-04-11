@@ -1,0 +1,22 @@
+.RadTreeView_GlowApp {
+  color: #e2e8eb; }
+  .RadTreeView_GlowApp .rtIn {
+    border-radius: 3px; }
+  .RadTreeView_GlowApp .rtHover .rtIn {
+    border-color: #4d5c65;
+    color: #ffffff;
+    background-color: #4d5c65; }
+  .RadTreeView_GlowApp .rtSelected .rtIn {
+    border-color: #ffa915;
+    color: #000000;
+    background-color: #ffa915; }
+  .RadTreeView_GlowApp .rtChecked,
+  .RadTreeView_GlowApp .rtUnchecked,
+  .RadTreeView_GlowApp .rtIndeterminate {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.radFormToggleSprite.png")%>'); }
+  .RadTreeView_GlowApp .rtLoadingIcon {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Common.loading_small.gif")%>'); }
+  .RadTreeView_GlowApp .rtMinus,
+  .RadTreeView_GlowApp .rtPlusHover,
+  .RadTreeView_GlowApp .rtMinusHover {
+    color: #ffa915; }

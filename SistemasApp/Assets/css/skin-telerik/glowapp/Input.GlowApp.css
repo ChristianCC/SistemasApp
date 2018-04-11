@@ -1,0 +1,81 @@
+.RadInput_GlowApp,
+.RadInputMgr_GlowApp {
+  border-color: #1c262c;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadInput_GlowApp:hover,
+.RadInput_GlowApp.RadInputHovered,
+.RadInput_Hover_GlowApp {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadInput_GlowApp.RadInputFocused,
+.RadInput_Focused_GlowApp {
+  border-color: #cd8100;
+  color: #fff;
+  background-color: #1c262c; }
+
+.RadInput_GlowApp .riEmpty,
+.RadInput_Empty_GlowApp {
+  color: #c1c7ca; }
+
+.RadInput_GlowApp .riRead,
+.RadInput_Read_GlowApp {
+  border-color: #677277; }
+
+.RadInput_GlowApp .riDisabled,
+.RadInput_Disabled_GlowApp {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  cursor: default; }
+
+.RadInput_GlowApp .riError,
+.RadInput_Error_GlowApp {
+  border-color: #ff0000;
+  color: #ff0000; }
+
+.RadForm.rfdTextbox .RadInput_GlowApp .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_GlowApp[type="text"] {
+  border-color: #ff0000;
+  background: #1c262c;
+  color: #ff0000; }
+
+.RadInput_GlowApp .riNegative,
+.RadInput_Negative_GlowApp {
+  color: white; }
+
+.RadInput_GlowApp a {
+  border-color: #1c262c;
+  color: #e2e8eb;
+  background-color: #1c262c;
+  background-image: linear-gradient(#30414b, #1c262c); }
+  .RadInput_GlowApp a:hover {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #cd8100;
+    background-image: linear-gradient(#ffa201, #cd8100); }
+  .RadInput_GlowApp a:focus,
+  .RadInput_GlowApp a:active {
+    border-color: #cd8100;
+    color: #713600;
+    background-color: #ffa915;
+    background-image: none; }
+
+.RadInput_GlowApp .riLabel {
+  color: #e2e8eb; }
+
+.RadInput_GlowApp .riResizeIcon {
+  background: transparent 0 0 no-repeat url('<%=WebResource("Telerik.Web.UI.Skins.GlowApp.Input.ResizeEdge.gif")%>'); }
+
+.RadInputRTL_GlowApp .riError,
+.RadInputRTL_Error_GlowApp {
+  background-position: 3px -298px; }
+
+.RadInputRTL_GlowApp .riResizeIcon {
+  background-position: 0 -19px; }
+
+.RadForm.rfdTextbox .RadInputRTL_GlowApp .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_GlowApp[type="text"] {
+  background-position: 3px -298px; }

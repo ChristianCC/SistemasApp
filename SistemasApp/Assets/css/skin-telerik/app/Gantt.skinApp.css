@@ -1,0 +1,405 @@
+.RadGantt_skinApp {
+  border-color: #dddddd;
+  color: #333333;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .RadGantt_skinApp .k-loading-color {
+    background-color: #ffffff; }
+  .RadGantt_skinApp .k-loading-image {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.skinApp.Common.loading.gif")%>'); }
+  .RadGantt_skinApp .rgtHeader {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc;
+    padding: 8px; }
+  .RadGantt_skinApp .rgtFooter {
+    border-color: #000000;
+    color: #3c8dbc;
+    background-color: #ff9933;
+    padding: 8px; }
+  .RadGantt_skinApp .rgtViews > li:first-child + li .radButton {
+    border-radius: 4px 0 0 4px; }
+  .RadGantt_skinApp .rgtTreelist {
+    background-color: #fafafa; }
+  .RadGantt_skinApp .rgtTreelist .radGridHeader tr {
+    height: calc(2*1.42857143em + 40px); }
+  .RadGantt_skinApp .rgtTreelist .rgtTreelistGroup {
+    font-weight: inherit; }
+  .RadGantt_skinApp .rgtTreelist .radAlt {
+    background-color: #ededed; }
+  .RadGantt_skinApp .rgtTreelist .radStateFocused {
+    box-shadow: inset 0 0 5px #285f8f; }
+  .RadGantt_skinApp .rgtTreelist .radStateSelected {
+    border-color: #337ab7;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .RadGantt_skinApp .rgtTreelist td.k-edit-cell {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .RadGantt_skinApp .rgtSplitbar {
+    border-color: #000000;
+    background-color: #ffffff; }
+  .RadGantt_skinApp .rgtSplitbar .radResizeHandle {
+    border-radius: 2px;
+    background-color: #000000; }
+  .RadGantt_skinApp .rgtSplitbarHover {
+    border-color: black; }
+  .RadGantt_skinApp .radLine {
+    background-color: #333333; }
+  .RadGantt_skinApp .radArrowE,
+  .RadGantt_skinApp .radArrowW {
+    color: #333333; }
+  .RadGantt_skinApp .radLine.radStateSelected {
+    background-color: #1a1a1a;
+    box-shadow: 0 1px 3px #333333; }
+  .RadGantt_skinApp .radLine.radStateSelected .radArrowE,
+  .RadGantt_skinApp .radLine.radStateSelected .radArrowW {
+    color: #1a1a1a; }
+  .RadGantt_skinApp .radMarqueeColor {
+    background-color: rgba(51, 122, 183, 0.4); }
+  .RadGantt_skinApp .rgtTaskDot {
+    top: 4px; }
+  .RadGantt_skinApp .rgtTaskDot:after {
+    border-color: #333333;
+    background-color: #333333; }
+  .RadGantt_skinApp .rgtTaskDot:hover:after {
+    border-color: #333333;
+    background-color: #ffffff; }
+  .RadGantt_skinApp .rgtResource {
+    background-color: #ffffff; }
+  .RadGantt_skinApp .rgtResource.radAlt {
+    background-color: #f9f9f9; }
+  .RadGantt_skinApp .rgtTaskMilestone {
+    margin-top: 5px;
+    width: 1.42857em;
+    height: 1.42857em;
+    border-color: #337ab7;
+    background-color: #337ab7; }
+  .RadGantt_skinApp .rgtTaskMilestone.radStateSelected {
+    border-color: #285f8f;
+    background-color: #337ab7; }
+  .RadGantt_skinApp .rgtMilestoneWrap {
+    margin-left: -31px; }
+  .RadGantt_skinApp .rgtTaskMilestone ~ .rgtTaskDot {
+    top: 8px; }
+  .RadGantt_skinApp .rgtTaskSummary {
+    margin-top: 12px;
+    border-color: #999999;
+    background-color: #999999; }
+  .RadGantt_skinApp .rgtComplete {
+    border-color: #333333;
+    background-color: #333333; }
+  .RadGantt_skinApp .rgtTaskSummary.radStateSelected {
+    border-color: #63a0d4;
+    background-color: #63a0d4; }
+  .RadGantt_skinApp .radStateSelected .rgtComplete {
+    border-color: #337ab7;
+    background-color: #337ab7; }
+  .RadGantt_skinApp .rgtTaskSummary ~ .rgtTaskDot {
+    top: 8px; }
+  .RadGantt_skinApp .rgtTaskSingle {
+    border-color: #337ab7;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #67a2d5;
+    text-shadow: 0 0 1px rgba(51, 51, 51, 0.3); }
+  .RadGantt_skinApp .rgtTaskComplete {
+    border-color: #337ab7;
+    background-color: #337ab7; }
+  .RadGantt_skinApp .rgtTaskTemplate {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: 1.42857; }
+  .RadGantt_skinApp .rgtTaskSingle ~ .rgtTaskDot {
+    top: 8px; }
+  .RadGantt_skinApp .rgtTaskSingle .radResizeHandle:after {
+    background-color: #ffffff; }
+  .RadGantt_skinApp .rgtTaskActions {
+    top: 8px;
+    right: 5px; }
+  .RadGantt_skinApp .rgtTaskSingle.radStateSelected,
+  .RadGantt_skinApp .rgtTaskSingle.radStateSelected .rgtTaskComplete {
+    border-color: #1d4567; }
+
+.radSkin_skinApp {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .radSkin_skinApp .k-grid, .radSkin_skinApp .radCalendar {
+    border-color: #dddddd;
+    color: #333333;
+    background-color: #ffffff; }
+  .radSkin_skinApp .k-popup,
+  .radSkin_skinApp.k-popup,
+  .radSkin_skinApp .radPopup,
+  .radSkin_skinApp.radPopup, .radSkin_skinApp .radDragClue,
+  .radSkin_skinApp.radDragClue, .radSkin_skinApp.k-window {
+    border-color: #dddddd;
+    color: #333333;
+    background-color: #ffffff; }
+  .radSkin_skinApp .k-button,
+  .radSkin_skinApp .radButton, .radSkin_skinApp .k-numeric-wrap .k-link,
+  .radSkin_skinApp .k-numeric-wrap .k-select, .radSkin_skinApp .k-dropdown-wrap, .radSkin_skinApp .k-picker-wrap .k-select {
+    border-color: #4081a7;
+    color: #ffffff;
+    background-color: #7fb1ce; }
+  .radSkin_skinApp .k-button:hover,
+  .radSkin_skinApp .radButton:hover,
+  .radSkin_skinApp .radButton.radStateHovered,
+  .radSkin_skinApp .radStateHovered > .radButton, .radSkin_skinApp .k-numeric-wrap .k-link:hover, .radSkin_skinApp .k-dropdown-wrap.k-state-hover, .radSkin_skinApp .k-picker-wrap .k-select:hover {
+    border-color: #2f5f7b;
+    color: #ff9933;
+    background-color: #ffffff; }
+  .radSkin_skinApp .radButton.radStateSelected,
+  .radSkin_skinApp .radStateSelected > .radButton, .radSkin_skinApp .k-numeric-wrap .k-link.k-state-selected, .radSkin_skinApp .k-dropdown-wrap.k-state-active {
+    border-color: #1d3a4b;
+    color: #333333;
+    background-color: #e6e6e6; }
+  .radSkin_skinApp .k-textbox,
+  .radSkin_skinApp .radTextbox, .radSkin_skinApp .k-numeric-wrap, .radSkin_skinApp .k-picker-wrap {
+    border-color: #4081a7;
+    color: #555555;
+    background-color: #ffffff; }
+  .radSkin_skinApp .k-popup,
+  .radSkin_skinApp.k-popup,
+  .radSkin_skinApp .radPopup,
+  .radSkin_skinApp.radPopup {
+    padding: 0;
+    border-radius: 4px; }
+  .radSkin_skinApp .radDragClue,
+  .radSkin_skinApp.radDragClue {
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(130, 130, 130, 0.5); }
+  .radSkin_skinApp .radList,
+  .radSkin_skinApp .k-list {
+    white-space: nowrap; }
+  .radSkin_skinApp .radList > .radItem,
+  .radSkin_skinApp .k-list > .k-item {
+    padding: 3px 15px;
+    min-height: 0;
+    line-height: inherit; }
+  .radSkin_skinApp .radList > .radStateHovered,
+  .radSkin_skinApp .k-list > .k-state-hover {
+    color: #000000;
+    background-color: #eeeeee; }
+  .radSkin_skinApp .radList > .radStateFocused,
+  .radSkin_skinApp .k-list > .k-state-focused {
+    box-shadow: inset 0 0 5px #285f8f; }
+  .radSkin_skinApp .radList > .radStateSelected,
+  .radSkin_skinApp .k-list > .k-state-selected {
+    color: #ffffff;
+    background-color: #337ab7; }
+  .radSkin_skinApp .radGrid td {
+    padding: 8px;
+    border-top-width: 1px;
+    border-color: #dddddd; }
+  .radSkin_skinApp .radGrid tr {
+    height: calc(1.42857143em + 20px); }
+  .radSkin_skinApp .radGridHeader,
+  .radSkin_skinApp .radGridHeaderWrap {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+  .radSkin_skinApp .radGridHeader th {
+    padding: 8px;
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+  .radSkin_skinApp .radFauxRows .radAlt {
+    background-color: #f9f9f9; }
+  .radSkin_skinApp .radFauxColumns .radNonwork {
+    background-color: rgba(60, 141, 188, 0.4); }
+  .radSkin_skinApp .rgtTasks td {
+    padding: 2px 0; }
+  .radSkin_skinApp .k-grid-header,
+  .radSkin_skinApp .k-grid-header-wrap {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+  .radSkin_skinApp .k-grid-header .k-header {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc; }
+  .radSkin_skinApp .k-grid-content .k-alt {
+    background-color: #f9f9f9; }
+  .radSkin_skinApp .k-grid-content td {
+    border-color: #dddddd; }
+  .radSkin_skinApp .k-tooltip,
+  .radSkin_skinApp .radTooltip {
+    border-color: black;
+    color: #cccccc;
+    background-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+  .radSkin_skinApp .k-tooltip-validation {
+    border-color: #ffffff;
+    color: #d51923;
+    background-color: #ffffff;
+    background-image: none; }
+  .radSkin_skinApp .k-button,
+  .radSkin_skinApp .radButton {
+    padding: 6px 12px;
+    border-radius: 4px; }
+  .radSkin_skinApp .radButton.radPrimary {
+    border-color: #2d6da3;
+    color: #ffffff;
+    background-color: #337ab7; }
+  .radSkin_skinApp .radButton.radPrimary:hover,
+  .radSkin_skinApp .radButton.radPrimary.radStateHovered {
+    border-color: #204d73;
+    color: #ffffff;
+    background-color: #286090; }
+  .radSkin_skinApp .radButton.radPrimary:focus,
+  .radSkin_skinApp .radButton.radPrimary.radStateSelected {
+    border-color: #122a3f;
+    color: #ffffff;
+    background-color: #286090; }
+  .radSkin_skinApp .radToolbar .radButton {
+    border-radius: 0; }
+  .radSkin_skinApp .radToolbar > li:first-child .radButton {
+    border-radius: 4px 0 0 4px; }
+  .radSkin_skinApp .radToolbar > li:last-child .radButton {
+    border-radius: 0 4px 4px 0; }
+  .radSkin_skinApp .radToolbar > li:only-child .radButton {
+    border-radius: 4px; }
+  .radSkin_skinApp .k-textbox,
+  .radSkin_skinApp .radTextbox {
+    padding: 6px 12px;
+    width: 160px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    line-height: 1.42857; }
+  .radSkin_skinApp .k-numeric-wrap {
+    padding: 0 34px 0 12px;
+    border-radius: 4px;
+    line-height: 1.42857; }
+    .radSkin_skinApp .k-numeric-wrap .k-input {
+      padding: 6px 0; }
+    .radSkin_skinApp .k-numeric-wrap .k-select {
+      width: 32px;
+      border-radius: 0 4px 4px 0; }
+  .radSkin_skinApp .radDatePicker .k-picker-wrap,
+  .radSkin_skinApp .radTimePicker .k-picker-wrap {
+    padding: 0 34px 0 12px; }
+  .radSkin_skinApp .radDatePicker .k-select,
+  .radSkin_skinApp .radTimePicker .k-select {
+    width: 32px; }
+  .radSkin_skinApp .radDateTimePicker .k-picker-wrap {
+    padding: 0 66px 0 12px; }
+  .radSkin_skinApp .radDateTimePicker .k-select {
+    width: 64px; }
+  .radSkin_skinApp .radDateTimePicker .k-select .k-i-calendar {
+    margin-left: -24px; }
+  .radSkin_skinApp .radDateTimePicker .k-select .k-i-clock {
+    margin-left: 8px; }
+  .radSkin_skinApp .k-picker-wrap {
+    border-radius: 4px;
+    line-height: 1.42857; }
+    .radSkin_skinApp .k-picker-wrap .k-input {
+      padding: 6px 0; }
+    .radSkin_skinApp .k-picker-wrap .k-select {
+      border-radius: 0 4px 4px 0; }
+  .radSkin_skinApp .radCalendar {
+    width: 252px;
+    border-radius: 4px;
+    line-height: 1.42857; }
+    .radSkin_skinApp .radCalendar .k-header {
+      border-color: #dddddd;
+      color: #ffffff;
+      background-color: #3c8dbc; }
+    .radSkin_skinApp .radCalendar .k-nav-prev,
+    .radSkin_skinApp .radCalendar .k-nav-next {
+      padding: 8px; }
+    .radSkin_skinApp .radCalendar .k-nav-fast {
+      padding: 6px 0; }
+    .radSkin_skinApp .radCalendar .k-nav-today {
+      padding: 6px 0; }
+    .radSkin_skinApp .radCalendar th {
+      padding: 6px 8px;
+      border-color: #dddddd;
+      line-height: 1.42857; }
+    .radSkin_skinApp .radCalendar td.k-weekend {
+      color: #666666; }
+    .radSkin_skinApp .radCalendar td.k-other-month {
+      color: #999999; }
+    .radSkin_skinApp .radCalendar td .k-link {
+      padding: 6px 8px;
+      width: 16px; }
+    .radSkin_skinApp .radCalendar .k-meta-view td .k-link {
+      padding: 6px 12px;
+      width: auto;
+      white-space: normal; }
+    .radSkin_skinApp .radCalendar .k-link {
+      border: 1px solid transparent;
+      border-radius: 4px; }
+    .radSkin_skinApp .radCalendar .k-link.k-state-hover,
+    .radSkin_skinApp .radCalendar .k-state-hover > .k-link {
+      border-color: #e1e1e1;
+      color: #000000;
+      background-color: #eeeeee; }
+    .radSkin_skinApp .radCalendar .k-link.k-state-focused,
+    .radSkin_skinApp .radCalendar .k-state-focused > .k-link {
+      border-color: #285f8f;
+      box-shadow: 0 0 6px #285f8f; }
+    .radSkin_skinApp .radCalendar .k-link.k-state-selected,
+    .radSkin_skinApp .radCalendar .k-state-selected > .k-link {
+      border-color: #285f8f;
+      color: #ffffff;
+      background-color: #337ab7; }
+  .radSkin_skinApp.k-window {
+    border-radius: 4px; }
+  .radSkin_skinApp .k-window-titlebar {
+    border-color: #dddddd;
+    color: #ffffff;
+    background-color: #3c8dbc;
+    padding: 6px 12px;
+    width: auto;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+    position: relative; }
+  .radSkin_skinApp .k-window-title {
+    position: static; }
+  .radSkin_skinApp .radEditFormContainer .radFormLabel {
+    width: 25%; }
+  .radSkin_skinApp .radEditFormContainer .radFormField {
+    width: 65%; }
+  .radSkin_skinApp .radEditFormContainer .radTextBox,
+  .radSkin_skinApp .radEditFormContainer .radDateTimePicker {
+    width: 100%; }
+  .radSkin_skinApp .radEditFormContainer .radNumericTextBox {
+    width: 50%; }
+  .radSkin_skinApp .rgtButtonsContainer {
+    border-color: #dddddd;
+    background-color: #3c8dbc; }
+
+.radSkin_skinApp.k-rtl .rgtViews > li:first-child + li .radButton {
+  border-radius: 0 4px 4px 0; }
+
+.radSkin_skinApp.k-rtl .rgtViews > li:last-child .radButton {
+  border-radius: 4px 0 0 4px; }
+
+.radSkin_skinApp.k-rtl .rgtTaskActions {
+  right: auto;
+  left: 5px; }
+
+.radSkin_skinApp.k-rtl .k-numeric-wrap {
+  padding-right: 12px;
+  padding-left: 34px; }
+  .radSkin_skinApp.k-rtl .k-numeric-wrap .k-select {
+    border-radius: 4px 0 0 4px; }
+
+.radSkin_skinApp.k-rtl .radDatePicker .k-picker-wrap,
+.radSkin_skinApp.k-rtl .radTimePicker .k-picker-wrap {
+  padding-right: 12px;
+  padding-left: 34px; }
+
+.radSkin_skinApp.k-rtl .radDateTimePicker .k-picker-wrap {
+  padding-right: 12px;
+  padding-left: 66px; }
+
+.radSkin_skinApp.k-rtl .radDateTimePicker .k-select .k-i-calendar {
+  margin-left: 8px; }
+
+.radSkin_skinApp.k-rtl .radDateTimePicker .k-select .k-i-clock {
+  margin-left: -24px; }
+
+.radSkin_skinApp.k-rtl .k-picker-wrap .k-select {
+  border-radius: 4px 0 0 4px; }
